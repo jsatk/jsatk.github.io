@@ -39,7 +39,7 @@
     
       
       
-      <link rel="stylesheet" href="https://jsatk.us/css/coder.min.e7c6f17bdc6e2827695a109103319629e0a7cd3bd76e2186557453034335501c.css" integrity="sha256-58bxe9xuKCdpWhCRAzGWKeCnzTvXbiGGVXRTA0M1UBw=" crossorigin="anonymous" media="screen" />
+      <link rel="stylesheet" href="https://jsatk.us/css/coder.min.7cc85e60b4951b780d02f5d0f799d711f805b3e6042a95f61d1fa840a2f5ce6d.css" integrity="sha256-fMheYLSVG3gNAvXQ95nXEfgFs&#43;YEKpX2HR&#43;oQKL1zm0=" crossorigin="anonymous" media="screen" />
     
 
     
@@ -113,7 +113,7 @@
             </span>
             <span class="reading-time">
               <i class="fas fa-clock"></i>
-              2-minute read
+              3-minute read
             </span>
           </div>
           
@@ -128,8 +128,36 @@ The biggest problem I faced was that I needed to mock a third-party API. I avoid
 <p>I knew about the lovely <a href="https://github.com/domenic/chai-as-promised">chai-as-promised</a>, but I stubbornly resisted adding another dependency to my <code>package.json</code>. After creating a <a href="https://en.wikipedia.org/wiki/Rube_Goldberg_machine">Rube Goldberg machine</a> to test my promises, I gave in and added chai-as-promised to my module. And for a brief moment I was happy.</p>
 <hr>
 <p>So I write a test and watch it fail (like the good TDD developer I am). Here&rsquo;s a simplified psuedo example of what I was working on below.</p>
-<script src="https://gist.github.com/jsatk/0226cbd8219a00816223df2d5c635159.js"></script>
-<p>I watch it fail.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="font-weight:bold">import</span> thirdPartyClient from <span style="font-style:italic">&#39;some-third-party-client&#39;</span>
+<span style="font-weight:bold">import</span> myApi from <span style="font-style:italic">&#39;../../src/my-api&#39;</span>
+
+describe(<span style="font-style:italic">&#39;myApi&#39;</span>, () =&gt; {
+  describe(<span style="font-style:italic">&#39;Error handling&#39;</span>, () =&gt; {
+    <span style="font-weight:bold">const</span> myRejection = {
+      errorCode: 404,
+      errorMessage: <span style="font-style:italic">&#39;You broke everything&#39;</span>,
+      errorUrl: <span style="font-style:italic">&#39;http://coolapp.api.docs/error/404/&#39;</span>
+    }
+
+    beforeEach(() =&gt; {
+      sinon.stub(thirdPartyClient.prototype, <span style="font-style:italic">&#39;dingus&#39;</span>)
+         .returns(Promise.reject(myRejection)
+    })
+
+    afterEach(() =&gt; thirdPartyClient.prototype.dingus.restore())
+
+    it(<span style="font-style:italic">&#39;should be rejected with the correct error object&#39;</span>, () =&gt; {
+      <span style="font-weight:bold">const</span> expected = myRejection
+
+      <span style="font-weight:bold">return</span> myApi.someMethod()
+        .then(() =&gt; {
+          <span style="font-weight:bold">const</span> actual = thirdPartyClient.prototype.dingus
+          <span style="font-weight:bold">return</span> expect(actual).to.be.rejectedWith(expected)
+        })
+    })
+  })
+})
+</code></pre></div><p>I watch it fail.</p>
 <p>I write the code.</p>
 <p>I watch it pass.</p>
 <p>Success, right?</p>
@@ -140,8 +168,37 @@ So how do I test if a promise is rejected and also deeply test the rejection?</p
 <p>My coworker <a href="https://medium.com/u/d41b471adec6?source=post_page-----c65c7c33f329----------------------">Pete Hodgson</a> mentioned that the latest version of chai-as-promised supports some very declarative syntax and gave me this example: <code>expect(foo).to.be.rejected.and.eventually.have.property('quxx')</code>. I was overjoyed.</p>
 <p>Now I had a way to both test if something was rejected but also what the rejection actually was.</p>
 <p>I updated the above code to now read:</p>
-<script src="https://gist.github.com/jsatk/c33e7e16435aa4ab647e1a3f53b4e08a.js"></script>
-<p>This is not only much easier to read but allows for a deep equals comparison on the rejection.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="font-weight:bold">import</span> thirdPartyClient from <span style="font-style:italic">&#39;some-third-party-client&#39;</span>
+<span style="font-weight:bold">import</span> myApi from <span style="font-style:italic">&#39;../../src/my-api&#39;</span>
+
+describe(<span style="font-style:italic">&#39;myApi&#39;</span>, () =&gt; {
+  describe(<span style="font-style:italic">&#39;Error handling&#39;</span>, () =&gt; {
+    <span style="font-weight:bold">const</span> myRejection = {
+      errorCode: 404,
+      errorMessage: <span style="font-style:italic">&#39;You broke everything&#39;</span>,
+      errorUrl: <span style="font-style:italic">&#39;http://coolapp.api.docs/error/404/&#39;</span>
+    }
+
+    beforeEach(() =&gt; {
+      sinon.stub(thirdPartyClient.prototype, <span style="font-style:italic">&#39;dingus&#39;</span>)
+         .returns(Promise.reject(myRejection)
+    })
+
+    afterEach(() =&gt; thirdPartyClient.prototype.dingus.restore())
+
+    it(<span style="font-style:italic">&#39;should be rejected with the correct error object&#39;</span>, () =&gt; {
+      <span style="font-weight:bold">const</span> expected = myRejection
+
+      <span style="font-weight:bold">return</span> myApi.someMethod()
+        .then(() =&gt; {
+          <span style="font-weight:bold">const</span> actual = thirdPartyClient.prototype.dingus
+          <span style="font-weight:bold">return</span> expect(actual).to.be.rejected
+            .and.to.eventually.deep.equal(expected)
+        })
+    })
+  })
+})
+</code></pre></div><p>This is not only much easier to read but allows for a deep equals comparison on the rejection.</p>
 <hr>
 <p>In summary, there is now a nice and declarative way to test promises and what they actually return using chai-as-promised. I avoid adding unnecessary dependencies, but I found the benefits here far outweighed the cost of having another dependency.</p>
 <p>Thanks for reading and I hope this was helpful!</p>

@@ -43,7 +43,7 @@ Also in the past two years, more thinkpieces than I care to link to have been wr
     
       
       
-      <link rel="stylesheet" href="https://jsatk.us/css/coder.min.e7c6f17bdc6e2827695a109103319629e0a7cd3bd76e2186557453034335501c.css" integrity="sha256-58bxe9xuKCdpWhCRAzGWKeCnzTvXbiGGVXRTA0M1UBw=" crossorigin="anonymous" media="screen" />
+      <link rel="stylesheet" href="https://jsatk.us/css/coder.min.7cc85e60b4951b780d02f5d0f799d711f805b3e6042a95f61d1fa840a2f5ce6d.css" integrity="sha256-fMheYLSVG3gNAvXQ95nXEfgFs&#43;YEKpX2HR&#43;oQKL1zm0=" crossorigin="anonymous" media="screen" />
     
 
     
@@ -117,7 +117,7 @@ Also in the past two years, more thinkpieces than I care to link to have been wr
             </span>
             <span class="reading-time">
               <i class="fas fa-clock"></i>
-              6-minute read
+              7-minute read
             </span>
           </div>
           
@@ -133,17 +133,69 @@ Also in the past two years, more thinkpieces than I care to link to have been wr
 <p>All this change and usage of new words like &ldquo;monad&rdquo; and &ldquo;functor&rdquo; can seem very daunting if you&rsquo;re a more traditional (read &ldquo;older&rdquo;) javascript developer. The goal of this post is not to convenience you that FP is better than OO. It is not meant to persuade you one way or the other. Its goal is to introduce to you some of the smaller, simpler, and more powerful patterns that I&rsquo;ve grown to love since studying and learning just exactly what FP in JS is. Even if you love OO or are stuck in a codebase that uses it, these principles apply there too. And ultimately I believe they will make your code more bulletproof.</p>
 <p><em>1. Don&rsquo;t mutate an object unnecessarily</em></p>
 <p>Whenever possible avoid mutating an object. Notice I didn&rsquo;t say &ldquo;never&rdquo; (and I&rsquo;m sure there are some FP purists shaking their fists at me). Objects in javascript are passed by reference–meaning that if you pass around an object and various methods mutate that object it can have drastic and unwanted side-effects. I&rsquo;ve created a trivial example of what I often see below:</p>
-<script src="https://gist.github.com/jsatk/73312b6ee6db9a05976637e9c84a348a.js"></script>
-<p>In the above we do some trivial checks and conversions. The reasons why aren&rsquo;t important. What is important is that, in this context, we have no idea where that response object came from or who&rsquo;s using it. Assuming it came from somewhere else in our codebase we can do the research and make sure it&rsquo;s okay we modify this object. But a much safer way that causes less burden on any future developers that look at this code is to use <code>Object.assign</code> (or if you&rsquo;re on a newer version of node or only support newer browsers you can use the <code>…</code> operator).</p>
-<script src="https://gist.github.com/jsatk/23823b09a947137b2ef027c4a12b51f9.js"></script>
-<p>In the latter example we return an entirely new object without modifying the original object. This is paramount for ensuring our code has as little footprint as possible, doesn&rsquo;t cause side-effects, and is easier to understand for developers new to the codebase.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="font-weight:bold">const</span> transform = response =&gt; {
+  <span style="font-weight:bold">if</span> (response.verify) {
+    response.verificationRequired = <span style="font-weight:bold">true</span>;
+  }
+
+  response.amount = response.amount * 100; <span style="font-style:italic">// I see this often for cents to dollars converion between APIs
+</span><span style="font-style:italic"></span>  <span style="font-weight:bold">return</span> response;
+};
+</code></pre></div><p>In the above we do some trivial checks and conversions. The reasons why aren&rsquo;t important. What is important is that, in this context, we have no idea where that response object came from or who&rsquo;s using it. Assuming it came from somewhere else in our codebase we can do the research and make sure it&rsquo;s okay we modify this object. But a much safer way that causes less burden on any future developers that look at this code is to use <code>Object.assign</code> (or if you&rsquo;re on a newer version of node or only support newer browsers you can use the <code>…</code> operator).</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="font-weight:bold">const</span> transform = response =&gt; {
+  <span style="font-weight:bold">return</span> Object.assign({}, response, {
+    verificationRequired: Boolean(response.verify),
+    amount: response.amount * 100
+  });
+};
+
+<span style="font-weight:bold">const</span> transform = response =&gt; {
+  <span style="font-weight:bold">return</span> {
+    ...response,
+    verificationRequired: Boolean(response.verify),
+    <span style="font-style:italic">// Since this comes *after* the original response the `amount` here will
+</span><span style="font-style:italic"></span>    <span style="font-style:italic">// overwrite the original `response.amount`.
+</span><span style="font-style:italic"></span>    amount: response.amount * 100
+  });
+};
+</code></pre></div><p>In the latter example we return an entirely new object without modifying the original object. This is paramount for ensuring our code has as little footprint as possible, doesn&rsquo;t cause side-effects, and is easier to understand for developers new to the codebase.</p>
 <p><em>2. Classes aren&rsquo;t always the answer</em></p>
 <p>Often a class is overkill. Particularly if it&rsquo;s for a one-time use situation. Yet, when it&rsquo;s what you know it can be hard to wrap your head around not using it. One of the biggest and most common &ldquo;gotcha&quot;s with using classes is the <code>this</code> keyword. The problems with <code>this</code> are many and have been written about <a href="https://www.i-programmer.info/programmer-puzzles/137-javascript/1922-the-this-problem.html">elsewhere</a> so I won&rsquo;t elaborate on them here. But they are real and they are many.
 Lets take a look at the MDN example for classes.</p>
-<script src="https://gist.github.com/jsatk/ec654f73e7af88f0818d7ee5217facbc.js"></script>
-<p>This can be easily re-written as a simple function that returns an object.</p>
-<script src="https://gist.github.com/jsatk/36a783450a412230861605ef5c2691b6.js"></script>
-<p>The result of both examples is the same, but the wrapper pattern used in the latter example requires fewer lines, doesn&rsquo;t require usage of (or understanding of) <code>this</code>, and lastly doesn&rsquo;t require the <code>new</code> keyword to invoke. Overall there are fewer concepts to keep track of and understand.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="font-weight:bold">class</span> Rectangle {
+  constructor(height, width) {
+    <span style="font-weight:bold">this</span>.height = height;
+    <span style="font-weight:bold">this</span>.width = width;
+  }
+
+  get area() {
+    <span style="font-weight:bold">return</span> <span style="font-weight:bold">this</span>.height * <span style="font-weight:bold">this</span>.width;
+  }
+}
+
+<span style="font-style:italic">// Pre-ES6
+</span><span style="font-style:italic"></span><span style="font-weight:bold">function</span> Rectangle(height, width) {
+  <span style="font-weight:bold">this</span>.height = height;
+  <span style="font-weight:bold">this</span>.width = width;
+}
+
+Rectangle.prototype.getArea = <span style="font-weight:bold">function</span> () {
+  <span style="font-weight:bold">return</span> <span style="font-weight:bold">this</span>.height * <span style="font-weight:bold">this</span>.width;
+}
+</code></pre></div><p>This can be easily re-written as a simple function that returns an object.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="font-weight:bold">const</span> rectangle = (height, width) =&gt; ({
+  height,
+  width,
+  get area() {
+    <span style="font-weight:bold">return</span> height * width;
+  }
+});
+
+<span style="font-weight:bold">const</span> myRectangle = rectangle(10, 20);
+myRectangle.area <span style="font-style:italic">// =&gt; 200
+</span><span style="font-style:italic"></span>myRectangle.height <span style="font-style:italic">// =&gt; 10
+</span><span style="font-style:italic"></span>myRectangle.width <span style="font-style:italic">// =&gt; 20
+</span></code></pre></div><p>The result of both examples is the same, but the wrapper pattern used in the latter example requires fewer lines, doesn&rsquo;t require usage of (or understanding of) <code>this</code>, and lastly doesn&rsquo;t require the <code>new</code> keyword to invoke. Overall there are fewer concepts to keep track of and understand.</p>
 <p><em>3. <code>Object.freeze</code> is an informative little tool</em></p>
 <p>For some reason it seems that everyone forgot about or never learned about <code>Object.freeze</code>. I only started using it in the past year. But it has quickly become one of my favorite no-brainer tools. It does pretty much what it says on the tin. Any object you don&rsquo;t need to mutate can be &ldquo;frozen&rdquo; by passing it into <code>Object.freeze</code>. The <code>Object.freeze</code> method returns a frozen copy of the object passed in.</p>
 <p>There are two gotchas with using <code>Object.freeze</code>.</p>
@@ -153,14 +205,65 @@ Lets take a look at the MDN example for classes.</p>
 </ol>
 <p>I&rsquo;ve found this to be particularly useful in my test suite. It ensures I&rsquo;m not making any false assumptions about what my code does or benefiting from any side-effects unknowingly.</p>
 <p>For example:</p>
-<script src="https://gist.github.com/jsatk/c20df47a1b876622a4ab2af18c412192.js"></script>
-<p>The above code modifies <code>options</code> once it&rsquo;s passed into <code>awesomeMethod</code>. Let&rsquo;s say <code>options</code> is used for multiple methods all invoked at about the same time, depending on order of execution this can produce unwanted results since we are modifying the options object at the beginning of <code>awesomeMethod</code>. If that object were frozen we&rsquo;d have gotten a javascript error (in strict mode, you&rsquo;re using strict mode right?!) letting us know we were attempting to modify a frozen object, which is super useful feedback for not only the original author but any new developers coming into the code.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="font-weight:bold">const</span> options = {
+  async: <span style="font-weight:bold">true</span>,
+  page: 4
+};
+
+<span style="font-weight:bold">const</span> awesomeFunction = options =&gt; {
+  <span style="font-weight:bold">if</span> (!options.offset) {
+    options.offset = 10;
+  }
+
+  <span style="font-style:italic">// do stuff with options
+</span><span style="font-style:italic"></span>};
+
+awesomeFunction(options);
+someOtherFunction(options);
+yetAnotherFunction(options);
+</code></pre></div><p>The above code modifies <code>options</code> once it&rsquo;s passed into <code>awesomeMethod</code>. Let&rsquo;s say <code>options</code> is used for multiple methods all invoked at about the same time, depending on order of execution this can produce unwanted results since we are modifying the options object at the beginning of <code>awesomeMethod</code>. If that object were frozen we&rsquo;d have gotten a javascript error (in strict mode, you&rsquo;re using strict mode right?!) letting us know we were attempting to modify a frozen object, which is super useful feedback for not only the original author but any new developers coming into the code.</p>
 <p>Lets see what that would look like with <code>Object.freeze</code>.</p>
-<script src="https://gist.github.com/jsatk/bd6730a9559268db7f6db410c8a24db8.js"></script>
-<p>Here we&rsquo;re combining things we learned in the first point with things we&rsquo;re learning here. <code>Object.freeze</code> causes JS to throw an error if we attempt to modify the object, so we then use <code>Object.assign</code> (or <code>...</code>) to create a new options object that&rsquo;s local to the method thus preventing any timing issues. Concepts like this can be very useful even in OO programing.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="font-weight:bold">const</span> options = Object.freeze({
+  async: <span style="font-weight:bold">true</span>,
+  page: 4
+});
+
+<span style="font-weight:bold">const</span> awesomeFunction = options =&gt; {
+  <span style="font-weight:bold">const</span> updatedOptions = Object.assign({}, options, {
+    offset: options.offset || 10
+  });
+
+  <span style="font-style:italic">// do stuff with updatedOptions
+</span><span style="font-style:italic"></span>};
+
+awesomeFunction(options);
+someOtherFunction(options);
+yetAnotherFunction(options);
+</code></pre></div><p>Here we&rsquo;re combining things we learned in the first point with things we&rsquo;re learning here. <code>Object.freeze</code> causes JS to throw an error if we attempt to modify the object, so we then use <code>Object.assign</code> (or <code>...</code>) to create a new options object that&rsquo;s local to the method thus preventing any timing issues. Concepts like this can be very useful even in OO programing.</p>
 <p>Finally, lets combine all three of the above concepts. The example here is trivial, but it gives you an idea of the simplicity and power of working without classes (when appropriate) and not mutating objects.</p>
-<script src="https://gist.github.com/jsatk/670438bc762f7960e3b3568e6f32c582.js"></script>
-<p>Combining the deceptively simple concepts from the three points listed above can radically change how confident you are in your code. If you combine <code>Object.freeze</code> with a function that returns an object (rather than a class) and <code>Object.assign</code> you can ensure that you have a configured object that is immutable and that nothing along the way mutated it due to a side-effect.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="font-weight:bold">const</span> config = Object.freeze({
+  async: <span style="font-weight:bold">true</span>,
+  page: 4
+});
+
+<span style="font-weight:bold">const</span> getThing = config =&gt; {
+  <span style="font-weight:bold">const</span> awesomeFunction = options =&gt; {
+    <span style="font-weight:bold">const</span> updatedOptions = Object.assign({}, options, {
+      offset: options.offset || 10
+    });
+
+    <span style="font-style:italic">// do stuff with updatedOptions
+</span><span style="font-style:italic"></span>  };
+
+  <span style="font-weight:bold">return</span> Object.freeze({
+    ...config,
+    awesomeFunction,
+    amount: config.amount * 100
+  });
+};
+
+<span style="font-weight:bold">const</span> thing = getThing(config);
+</code></pre></div><p>Combining the deceptively simple concepts from the three points listed above can radically change how confident you are in your code. If you combine <code>Object.freeze</code> with a function that returns an object (rather than a class) and <code>Object.assign</code> you can ensure that you have a configured object that is immutable and that nothing along the way mutated it due to a side-effect.</p>
 <p>These tiny concepts have saved me from shooting myself in the foot with vanilla JS and I hope you find them useful too.</p>
 
       </div>
