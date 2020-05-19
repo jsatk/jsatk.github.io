@@ -6,10 +6,30 @@
     <description>Recent content on Jesse Atkinson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 04 May 2020 11:41:32 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 17 May 2020 11:56:08 -0700</lastBuildDate>
     
 	<atom:link href="https://jsatk.us/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Et Cetera</title>
+      <link>https://jsatk.us/et-cetera/</link>
+      <pubDate>Sun, 17 May 2020 11:56:08 -0700</pubDate>
+      
+      <guid>https://jsatk.us/et-cetera/</guid>
+      <description>This page serves as a reference page of sorts. A combination of answers to FAQs &amp;amp; recommendations. A brain dump to house everything that I want to be able to point people to (or reference myself), but doesn&amp;rsquo;t have a sanctioned place on this site.
+ Tools  Software Hardware    Tools Software  Vim - Forcing myself to properly learn Vim was one of the best decisions I ever made and has paid dividends.</description>
+    </item>
+    
+    <item>
+      <title>.plan</title>
+      <link>https://jsatk.us/dotplan/</link>
+      <pubDate>Sun, 17 May 2020 11:30:06 -0700</pubDate>
+      
+      <guid>https://jsatk.us/dotplan/</guid>
+      <description>2020 .plan  Table of contents  January 2020  2020-01-02   March 2020  2020-03-27 2020-03-28 2020-03-29   May 2020  2020-05-04    January 2020 2020-01-16 Wow. I hardly used this in 2019. Lets see if 2020&amp;rsquo;s different.
+Been learning a ton of Scala. Working my way through The Red Book. Got Metals working nicely in Vim. Maybe I&amp;rsquo;ll finally make my own damn website this year.</description>
+    </item>
     
     <item>
       <title>About</title>
