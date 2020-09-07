@@ -4,11 +4,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Language" content="en">
 
     <meta name="author" content="Jesse Atkinson">
-    <meta name="description" content="This is the first post in a series I plan on doing. Practical tips and lessons learned that I apply to my work or use daily.
-As a developer, one of my favorite things is when I am pairing with someone and all of a sudden they do something magical. They convert JSON to CSV with a keystroke. They run only the staged files for git commit through the linter. They run the test suite from inside their editor.">
+    <meta name="description" content="Jesse Atkinson&#39;s personal website">
     <meta name="keywords" content="blog,developer,personal">
 
     <meta name="twitter:card" content="summary"/>
@@ -37,13 +35,13 @@ As a developer, one of my favorite things is when I am pairing with someone and 
     
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
 
     
       
       
-      <link rel="stylesheet" href="https://jsatk.us/css/coder.min.a4f332213a21ce8eb521670c614470c58923aaaf385e2a73982c31dd7642decb.css" integrity="sha256-pPMyITohzo61IWcMYURwxYkjqq84XipzmCwx3XZC3ss=" crossorigin="anonymous" media="screen" />
+      <link rel="stylesheet" href="https://jsatk.us/css/coder.min.7cc85e60b4951b780d02f5d0f799d711f805b3e6042a95f61d1fa840a2f5ce6d.css" integrity="sha256-fMheYLSVG3gNAvXQ95nXEfgFs&#43;YEKpX2HR&#43;oQKL1zm0=" crossorigin="anonymous" media="screen" />
     
 
     
@@ -56,10 +54,12 @@ As a developer, one of my favorite things is when I am pairing with someone and 
 
     
 
+    
+
     <link rel="icon" type="image/png" href="https://jsatk.us/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://jsatk.us/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.69.2" />
+    <meta name="generator" content="Hugo 0.74.3" />
   </head>
 
   
@@ -130,7 +130,7 @@ As a developer, one of my favorite things is when I am pairing with someone and 
 <p>I live for these moments. It&rsquo;s partly why I love reading through people&rsquo;s dotfiles and sharing my <a href="https://github.com/jsatk/dotfiles">dotfiles</a> with others. Today I wanted to cover one such go-to timesaver/hack/whatever-you-wanna-call it.</p>
 <h2 id="alfred-dash">Alfred + Dash</h2>
 <p>One of the most beneficial things I&rsquo;ve taught myself is how to go to the documentation first instead of <a href="https://stackoverflow.com">Stackoverflow</a>. When I started out as a developer, anytime I ran into trouble or needed to look something up I&rsquo;d Google it, which would almost always return a Stackoverflow post as the top result. This is incredibly convenient for finding a quick answer, but doesn&rsquo;t teach you how to read and navigate documentation. This might sound silly, but reading <code>man</code> files or API &amp; library docs takes some getting used to. It&rsquo;s a skill that you have to develop. Especially since API docs are so incredibly varied and unfortunately do not follow any sort of standard.</p>
-<p>There is a wonderful app called <a href="https://kapeli.com/dash">Dash</a> for macOS and iOS that will archive any library, language, or API for offline reading. And best of all it&rsquo;s free (although you can purchase an upgrade license for $25). This is not only helpful for when you&rsquo;re actually offline (on an airplane per say), but also for raw speed. I am a very easily distractable creature. I find it hard to focus on something if I have to wait during the process. I find my brain thinks,&ldquo;While this loads let me check this real quick…&quot;. Twenty-minutes later I find myself forgetting what I was working on and doing something else. Offline caching of API docs helps me to avoid this simply due to raw speed.</p>
+<p>There is a wonderful app called <a href="https://kapeli.com/dash">Dash</a> for macOS and iOS that will archive any library, language, or API for offline reading. And best of all it&rsquo;s free (although you can purchase an upgrade license for $25). This is not only helpful for when you&rsquo;re actually offline (on an airplane per say), but also for raw speed. I am a very easily distractable creature. I find it hard to focus on something if I have to wait during the process. I find my brain thinks,&ldquo;While this loads let me check this real quick…&rdquo;. Twenty-minutes later I find myself forgetting what I was working on and doing something else. Offline caching of API docs helps me to avoid this simply due to raw speed.</p>
 <p>Now that we know what Dash is this brings us to <a href="https://www.alfredapp.com/">Alfred</a>. Alfred is an amazing Spotlight replacement for macOS and it&rsquo;s free. There are several out there (Quicksilver, etc…), but I&rsquo;ve found Alfred to be the one that has seen the most active development and love from its contributors. I could spend an entire blogpost detailing why I like Alfred, but many others <a href="https://birchtree.me/blog/alfred-3-review/">have already done that</a> so I won&rsquo;t do that here. But I do have to tell you about how it integrates with Dash. To get Alfred to integrate with other apps you must purchase the <a href="https://www.alfredapp.com/powerpack/">Powerpack</a>. It&rsquo;s only £19 and well worth it. (Support indie devs, people.)</p>
 <p><img src="https://jsatk.us/images/dash.png" alt="The Preferences screen for Dash integrations"> There is a Dash &ldquo;workflow&rdquo; available for Alfred that pulls in the libraries you have in Dash. To add it to Alfred open up Dash&rsquo;s preferences pane (⌘+,). Then click on &ldquo;Integration&rdquo;. And finally click on &ldquo;Alfred&rdquo;.</p>
 <p>Then you can quickly query Alfred for what you are looking for and it will instantly pull it up and auto-suggest answers in Dash. And since Alfred can be invoked with a simple keyboard shortcut I find myself using this about 10+ times a day. Especially when I&rsquo;m working with langauges or libraries I&rsquo;m not deeply familiar with.</p>
@@ -171,26 +171,23 @@ As a developer, one of my favorite things is when I am pairing with someone and 
 
       </div>
 
+      <footer class="footer">
+  <section class="container">
+    
+      <p>🥃</p>
+    
+    
       
-  <footer class="footer">
-    <section class="container">
+        © 2020
       
-        <p>🥃</p>
-      
-      
-        ©
-        
-        2020
-         Jesse Atkinson 
-      
-      
-      
-    </section>
-  </footer>
+       Jesse Atkinson 
+    
+    
+    
+  </section>
+</footer>
 
     </main>
-
-    
 
     
 

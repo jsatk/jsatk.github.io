@@ -6,7 +6,7 @@
     <description>Recent content on Jesse Atkinson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 May 2020 11:56:08 -0700</lastBuildDate>
+    <lastBuildDate>Tue, 09 Jun 2020 23:22:35 -0700</lastBuildDate>
     
 	<atom:link href="https://jsatk.us/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,42 +17,7 @@
       <pubDate>Tue, 09 Jun 2020 23:22:35 -0700</pubDate>
       
       <guid>https://jsatk.us/posts/new-website-launch/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve been publishing my writing on the internet for approximately 23 years.  I&amp;rsquo;d have never dared call it &amp;ldquo;publishing&amp;rdquo; or even &amp;ldquo;writing&amp;rdquo; in my earlier years.  When I was 12 I created a website on &lt;a href=&#34;http://www.angelfire.lycos.com/&#34;&gt;Angelfire&lt;/a&gt; – which I think I chose only because it had a smaller ad-banner than &lt;a href=&#34;https://en.wikipedia.org/wiki/Yahoo!_GeoCities&#34;&gt;Geocities&lt;/a&gt; – that was a complete rip-off of another cooler website I&amp;rsquo;d found detailing skateboard tricks.  Despite not being able to ollie I decided this was going to be the focus of my first website and therefore my first &amp;ldquo;blog&amp;rdquo; (that portmanteau wasn&amp;rsquo;t in wide usage yet).&lt;/p&gt;
-&lt;p&gt;My next attempt at writing on the internet was &lt;a href=&#34;https://www.livejournal.com/&#34;&gt;Livejournal&lt;/a&gt;.  If you&amp;rsquo;re a elder millennial who happened to have a family computer in the 90&amp;rsquo;s you&amp;rsquo;ll most-likely have also spent a significant portion of your teen years writing (and styling) a Livejournal or three.  Livejournal was great for myriad reasons – you could have &amp;ldquo;friends&amp;rdquo;, a custom domain, a rich text editor to write in, and customize the look.  But I gave up something when I decided my earlier website, which was all hand-written HTML, and despite being hosted on Angelfire, distinctly &lt;em&gt;mine&lt;/em&gt;.  Now all my content was on and trapped inside of Livejournal.  I didn&amp;rsquo;t really &lt;em&gt;own&lt;/em&gt; it anymore.&lt;/p&gt;
-&lt;p&gt;I moved on to &lt;a href=&#34;https://myspace.com/&#34;&gt;MySpace&lt;/a&gt;.  And then &lt;a href=&#34;https://www.blogger.com/blogger.g#welcome&#34;&gt;Blogger&lt;/a&gt;.  Gave &lt;a href=&#34;http://xanga.com/&#34;&gt;Xanga&lt;/a&gt; a whirl for a few years.  Tried to do a &lt;a href=&#34;https://www.squarespace.com/&#34;&gt;Squarespace&lt;/a&gt; website after they started sponsoring every podcast ever, but didn&amp;rsquo;t keep it up and eventually moved over to &lt;a href=&#34;https://medium.com&#34;&gt;Medium&lt;/a&gt; where, yet again, I failed to write at any sort of frequent cadence.&lt;/p&gt;
-&lt;p&gt;The bummer of this journey though isn&amp;rsquo;t that I failed to develop a consistent writing habit, it&amp;rsquo;s that I&amp;rsquo;ve lost everything I&amp;rsquo;ve written since before approximately 2014.  It&amp;rsquo;s gone.  I don&amp;rsquo;t have local back-ups of those writings.  They were composed in the rich text editors of those sites.  Unfortunately most of those sites have gone under or transformed in destructive ways where the old sites on them that hadn&amp;rsquo;t been updated in years were purged.  My angsty teen Livejournal sites are gone.  And as embarrassing as it&amp;rsquo;d be to read them, there&amp;rsquo;s a big part of me that&amp;rsquo;s bummed that it&amp;rsquo;s gone and that I had no real control over it.  If there were emails sent warning me about it they were sent to old email addresses I hadn&amp;rsquo;t checked in a decade.&lt;/p&gt;
-&lt;p&gt;Which brings us to this site.&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;ve long wanted to set up my own website that I actually owned and had some control over.  My goals with this website were simple.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;I can write in &lt;a href=&#34;https://www.vim.org&#34;&gt;Vim&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;I can publish from the commandline.&lt;/li&gt;
-&lt;li&gt;I can write in Markdown or HTML at my discretion.&lt;/li&gt;
-&lt;li&gt;No javascript involved.&lt;/li&gt;
-&lt;li&gt;I can change the domain registrar and not lose the website.&lt;/li&gt;
-&lt;li&gt;I can change the domain name and not lose the website.&lt;/li&gt;
-&lt;li&gt;I can change where the website is hosted and not lose the website.&lt;/li&gt;
-&lt;li&gt;I didn&amp;rsquo;t want to write my own hand-rolled blogging engine/tool.&lt;/li&gt;
-&lt;li&gt;Whatever blogging engine/tool I chose shouldn&amp;rsquo;t stick it&amp;rsquo;s tendrils into the site so much that if it becomes obsolete or I wish to move my content to a different tool it&amp;rsquo;s impossible.  (Again, back to the wanting to be able to write in Markdown &amp;amp; HTML.)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I spent some time researching (and lets be honest – procrastinating) and this is what I came up with.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Hosting via &lt;a href=&#34;https://www.github.com&#34;&gt;Github&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; for the blogging engine/tool/framework/whatever.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Hugo won by a long shot because of how dead simple it is.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;You can install it via &lt;a href=&#34;https://brew.sh/&#34;&gt;Homebrew&lt;/a&gt; or whatever package manager you want.&lt;/li&gt;
-&lt;li&gt;I can publish with a simple bash script &lt;code&gt;./deploy.sh&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;I can write in Markdown or HTML.&lt;/li&gt;
-&lt;li&gt;It does some stuff for me but doesn&amp;rsquo;t force me to do things its way.&lt;/li&gt;
-&lt;li&gt;The bundled output that&amp;rsquo;s deployed is plain ol&amp;rsquo; HTML &amp;amp; CSS.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;There are a lot of cool wiz-bang tools out there for hosting your own website and blogging.  Many of them are awesome and if you&amp;rsquo;re looking to start your own site you should consider them.  The last thing I&amp;rsquo;d want to do is tell anyone that my needs are the same as their needs.  But for me personally all the others didn&amp;rsquo;t meet my criteria.  They were either too fiddly or didn&amp;rsquo;t give enough freedom.&lt;/p&gt;
-&lt;p&gt;And since this is hosted via Github the only cost for this site (unless it gets wildly popular and I go over Github&amp;rsquo;s data limits and have to change hosting) is the $10 annual fee for &lt;code&gt;jsatk.us&lt;/code&gt; (which I registered via &lt;a href=&#34;https://www.namecheap.com/&#34;&gt;Namecheap&lt;/a&gt;).&lt;/p&gt;
-&lt;p&gt;So here it is.  This is the website.  This is &lt;em&gt;my&lt;/em&gt; website.  And for how almost comically simple it is I spent &lt;em&gt;a lot&lt;/em&gt; of time fussing and tweaking it.  I wanted to get that part done and correct so that I&amp;rsquo;d be more encouraged to write in the future and less encouraged to fiddle with the CSS or whatever.&lt;/p&gt;
-&lt;p&gt;Now it&amp;rsquo;s time to write.  What will I write?  Probably software-engineering focused stuff.  But frankly, whatever I want.  Who knows, maybe I&amp;rsquo;ll go nuts and start writing &amp;ldquo;Cowboy Bebop&amp;rdquo; fanfic.  The important thing is that I write and have a place to publish said writing.&lt;/p&gt;
-&lt;p&gt;Anyways, if you&amp;rsquo;ve made it this far thanks for reading and here&amp;rsquo;s hoping I actually write at a descent cadence here.&lt;/p&gt;
-</description>
+      <description>I&amp;rsquo;ve been publishing my writing on the internet for approximately 23 years. I&amp;rsquo;d have never dared call it &amp;ldquo;publishing&amp;rdquo; or even &amp;ldquo;writing&amp;rdquo; in my earlier years. When I was 12 I created a website on Angelfire – which I think I chose only because it had a smaller ad-banner than Geocities – that was a complete rip-off of another cooler website I&amp;rsquo;d found detailing skateboard tricks. Despite not being able to ollie I decided this was going to be the focus of my first website and therefore my first &amp;ldquo;blog&amp;rdquo; (that portmanteau wasn&amp;rsquo;t in wide usage yet).</description>
     </item>
     
     <item>
@@ -61,53 +26,8 @@
       <pubDate>Sun, 17 May 2020 11:56:08 -0700</pubDate>
       
       <guid>https://jsatk.us/et-cetera/</guid>
-      <description>&lt;p&gt;This page serves as a reference page of sorts.  A combination of answers to FAQs &amp;amp; recommendations.  A brain dump to house everything that I want to be able to point people to (or reference myself), but doesn&amp;rsquo;t have a sanctioned place on this site.  It is focused on tech and software engineering.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#tools&#34;&gt;Tools&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#software&#34;&gt;Software&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#hardware&#34;&gt;Hardware&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#reference-library&#34;&gt;Reference Library&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#blogs&#34;&gt;Blogs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;tools&#34;&gt;Tools&lt;/h2&gt;
-&lt;h3 id=&#34;software&#34;&gt;Software&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://vim.org&#34;&gt;Vim&lt;/a&gt; - Forcing myself to properly learn Vim was one of the best decisions I ever made and has paid dividends.  Worth learning properly.  Not sure where to start?  Go through &lt;code&gt;vimtutor&lt;/code&gt;.  Next read Drew Neil&amp;rsquo;s two short books on the subject, &lt;a href=&#34;https://pragprog.com/book/dnvim2/practical-vim-second-edition&#34;&gt;Practical Vim&lt;/a&gt; &amp;amp; &lt;a href=&#34;https://pragprog.com/book/modvim/modern-vim&#34;&gt;Modern Vim&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/tmux/tmux#welcome-to-tmux&#34;&gt;Tmux&lt;/a&gt; - Tmux is admittedly less of a killer app now that most terminal emulators have support for splits and tabs.  Still, I find myself being lost without it.  I recommend &lt;a href=&#34;https://pragprog.com/book/bhtmux2/tmux-2&#34;&gt;Tmux 2&lt;/a&gt; by Brian P. Hogan if you want to learn it properly and quickly.  And &lt;a href=&#34;https://github.com/tmuxinator/tmuxinator&#34;&gt;tmuxinator&lt;/a&gt; for defining what you want your session(s) to look like so you don&amp;rsquo;t have to re-set-up everything every time you restart your computer.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://1password.com/&#34;&gt;1Password&lt;/a&gt; - My life is in 1Password.  It&amp;rsquo;s probably the single most useful piece of software I own that I happily pay $5/mo for.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://weechat.org/&#34;&gt;Weechat&lt;/a&gt; - Using IRC in 2020 may seem antiquated to some, particularly if you haven&amp;rsquo;t been on there since the 90s.  But it&amp;rsquo;s alive and well and has been incredibly helpful.  I&amp;rsquo;ve tried many clients but Weechat has been the best of the pack.  It&amp;rsquo;s daunting at first but the docs are great.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&#34;macos-exclusive&#34;&gt;macOS Exclusive&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.alfredapp.com/&#34;&gt;Alfred&lt;/a&gt; - a Spotlight replacement that is light years ahead of Spotlight.  If you take the time to read the docs and learn it you&amp;rsquo;ll be rewarded.  It&amp;rsquo;s &lt;a href=&#34;https://kapeli.com/dash&#34;&gt;Dash&lt;/a&gt; integration is particularly useful for engineers, which I wrote about &lt;a href=&#34;https://jsatk.us/posts/how-i-code-alfred-and-dash/&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://kapeli.com/dash&#34;&gt;Dash&lt;/a&gt; - Offline API docs and excellent search.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://marked2app.com/&#34;&gt;Marked&lt;/a&gt; - &lt;a href=&#34;https://daringfireball.net/projects/markdown/&#34;&gt;Markdown&lt;/a&gt; previewer.  I have been using this for 7+ years and produced countless PDFs with it.  If you prefer Markdown to &lt;a href=&#34;https://www.latex-project.org/&#34;&gt;LateX&lt;/a&gt; this is a must.  It&amp;rsquo;s worth every penny.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;hardware&#34;&gt;Hardware&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.caldigit.com/ts3-plus/&#34;&gt;CalDigit TS3+&lt;/a&gt; - I love this thing so much.  I bought one for work and home.  This is the missing piece that should come with every MacBook Pro since Apple decided &amp;ldquo;pros&amp;rdquo; don&amp;rsquo;t have use for any ports other than USB-C.  With that said, it is amazing that through one USB-C cable from my MacBook Pro to the TS3+ I get ethernet, external keyboard, dual monitors, etc.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://keyboard.io&#34;&gt;Keyboard.io&lt;/a&gt; - I went down the mechanical keyboard rabbit hole a few years back when Apple switched to butterfly switches and various keys stopped working (they&amp;rsquo;ve since &lt;a href=&#34;https://www.vice.com/en_us/article/3kxmw5/apple-gives-up-on-its-worst-design-mistake-ever-the-butterfly-keyboard&#34;&gt;switched back&lt;/a&gt;).  I spent a not-insignificant amount of money trying out various mechanical keyboards.  Keyboard.io is the best.  The split keyboard thing weirded me out at first and the keyboard.io in particular has a learning curve.  But now that I&amp;rsquo;ve had it for a few years I am grateful I made the switch.  Best keyboard I&amp;rsquo;ve ever used by a long shot.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;reference-library&#34;&gt;Reference Library&lt;/h2&gt;
-&lt;h3 id=&#34;blogs&#34;&gt;Blogs&lt;/h3&gt;
-&lt;p&gt;This is a list of technical-leaning blogs that have had a large influence on me.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://brettterpstra.com/&#34;&gt;Brett Terpstra&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://stevelosh.com/&#34;&gt;Steve Losh&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://randsinrepose.com/&#34;&gt;Rands in Repose&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.dreamsongs.com/index.html&#34;&gt;Richard P. Gabriel&amp;rsquo;s Dreamsongs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://tbaggery.com/&#34;&gt;Tim Pope&amp;rsquo;s tbaggery&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.thepete.net/blog/&#34;&gt;Pete Hodgson&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://tpolecat.github.io/&#34;&gt;tpolecat&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://chris-kipp.io/blog&#34;&gt;Chris Kipp&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>This page serves as a reference page of sorts. A combination of answers to FAQs &amp;amp; recommendations. A brain dump to house everything that I want to be able to point people to (or reference myself), but doesn&amp;rsquo;t have a sanctioned place on this site. It is focused on tech and software engineering.
+ Tools  Software Hardware   Reference Library  Blogs    Tools Software  Vim - Forcing myself to properly learn Vim was one of the best decisions I ever made and has paid dividends.</description>
     </item>
     
     <item>
@@ -116,61 +36,8 @@
       <pubDate>Sun, 17 May 2020 11:30:06 -0700</pubDate>
       
       <guid>https://jsatk.us/dotplan/</guid>
-      <description>&lt;h1 id=&#34;2020-plan&#34;&gt;2020 .plan&lt;/h1&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of contents&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#january-2020&#34;&gt;January 2020&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#2020-01-02&#34;&gt;2020-01-02&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#march-2020&#34;&gt;March 2020&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#2020-03-27&#34;&gt;2020-03-27&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#2020-03-28&#34;&gt;2020-03-28&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#2020-03-29&#34;&gt;2020-03-29&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#may-2020&#34;&gt;May 2020&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#2020-05-04&#34;&gt;2020-05-04&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#june-2020&#34;&gt;June 2020&lt;/a&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#2020-06-08&#34;&gt;2020-06-08&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;january-2020&#34;&gt;January 2020&lt;/h2&gt;
-&lt;h3 id=&#34;2020-01-16&#34;&gt;2020-01-16&lt;/h3&gt;
-&lt;p&gt;Wow.  I hardly used this in 2019.  Lets see if 2020&amp;rsquo;s different.&lt;/p&gt;
-&lt;p&gt;Been learning a ton of Scala.  Working my way through &lt;a href=&#34;https://www.manning.com/books/functional-programming-in-scala&#34;&gt;The Red Book&lt;/a&gt;.  Got &lt;a href=&#34;https://scalameta.org/metals/&#34;&gt;Metals&lt;/a&gt; working nicely in Vim.  Maybe I&amp;rsquo;ll finally make my own damn website this year.  Who knows.&lt;/p&gt;
-&lt;h2 id=&#34;march-2020&#34;&gt;March 2020&lt;/h2&gt;
-&lt;h3 id=&#34;2020-03-27&#34;&gt;2020-03-27&lt;/h3&gt;
-&lt;p&gt;First update in ages.&lt;/p&gt;
-&lt;p&gt;My learning with Scala is going really well.  One of my biggest frustrations with the language so far has been the tooling.  Working in javascript has spoiled me.  Because of the languages extreme popularity the tooling is very good.  Metals is pretty damn solid, although still very beta.  But it has exposed me to Bloop.  Which is an alternative build tool for Scala.  Seems like it&amp;rsquo;s trying to do to &lt;code&gt;sbt&lt;/code&gt; what &lt;code&gt;yarn&lt;/code&gt; did for &lt;code&gt;npm&lt;/code&gt;.  It&amp;rsquo;s pretty good.&lt;/p&gt;
-&lt;p&gt;Upgraded our SBT version to 1.3.8 which vastly improved the speed of things because SBT 1.3.* uses Coursier under-the-hood.  I still barely know what it is though.  Need to learn.&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;m on chapter 5 of the Red Book.  I&amp;rsquo;ve unfortunately halted on progress with it and haven&amp;rsquo;t made much progress.  I think my focus should be that moving forward.&lt;/p&gt;
-&lt;p&gt;I also figured out how to put the weather in my tmux status bar which seemed silly at first and now is unironically my main source of weather info. 😂&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;WEATHER=&amp;#39;#(curl -s wttr.in\?format\=&amp;#34;%%c+%%t&amp;#34;)&amp;#39;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;2020-03-28&#34;&gt;2020-03-28&lt;/h3&gt;
-&lt;p&gt;Attempted to figure out how to do some Project Euler problems in Scala.  Given that Scala is built on Java doing basic scripting with it is not intuative.  It took an embarassing amount of time for me to figure out the best way to be able to just &lt;em&gt;run&lt;/em&gt; a &lt;code&gt;.scala&lt;/code&gt; file and see the output printed.  Turns out that latest version of Scala supports executing a &lt;code&gt;.scala&lt;/code&gt; file without any flags.  So added the Scala binary to my set of &lt;code&gt;asdf&lt;/code&gt; languages I install so I can run &lt;code&gt;scala 001/001.scala&lt;/code&gt; and see it print out the answer.  As of right now I&amp;rsquo;m unaware of a way to execute a Scala file other than this.  Bloop requires a Bloop server to be running and a Bloop server will only run if you&amp;rsquo;re in an actual Scala project with a build file.  SBT is the same story.  And I didn&amp;rsquo;t feel like adding the massive overhead of a default SBT project to my Project Eueler repo.&lt;/p&gt;
-&lt;p&gt;Also did a fair amount of cleanup of my dotfiles.  Manually porting over stuff from my workbranch that&amp;rsquo;s useful and non-work specific.&lt;/p&gt;
-&lt;p&gt;Spent some time watching an old Steve Losh stream where he&amp;rsquo;s building a game in Common Lisp.  Some day I&amp;rsquo;ll have the free time to dive into Common Lisp and really learn it.  Some day&amp;hellip;&lt;/p&gt;
-&lt;h3 id=&#34;2020-03-29&#34;&gt;2020-03-29&lt;/h3&gt;
-&lt;p&gt;A lot more cleanup of my dotfiles.  Specifically my &lt;code&gt;.vimrc&lt;/code&gt; and &lt;code&gt;.tmux.conf&lt;/code&gt;.  Decided having a separate theme file was not something I wanted to keep doing.  It was only 50 lines or so so I moved that right into my &lt;code&gt;.tmux.conf&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;I need to read up on Agile/Scrum best practices now that I&amp;rsquo;m the new Scrum Czar for my team.  I feel pretty confident in my skills in this regard, but most of my knowledge comes from actually doing Scrum/Agile for the past 10 years.  Not actually reading up what it is &lt;em&gt;supposed&lt;/em&gt; to be.  I should read a book or two so I don&amp;rsquo;t blindly cargo cult over bad practices.&lt;/p&gt;
-&lt;p&gt;I never thought I&amp;rsquo;d be reading books &amp;amp; articles on Agile but here we are.&lt;/p&gt;
-&lt;h3 id=&#34;2020-05-04&#34;&gt;2020-05-04&lt;/h3&gt;
-&lt;p&gt;Finally spent some time working on my website.  Settled on the Coder theme just to force myself to keep moving and not freeze on a decision.&lt;/p&gt;
-&lt;p&gt;Stealing the colorscheme from &lt;a href=&#34;https://martinagency.com/about&#34;&gt;Martin Agency&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;june-2020&#34;&gt;June 2020&lt;/h2&gt;
-&lt;h2 id=&#34;2020-06-08&#34;&gt;2020-06-08&lt;/h2&gt;
-&lt;p&gt;Starting reading &lt;a href=&#34;https://www.handsonscala.com/&#34;&gt;Hands-on Scala Programming&lt;/a&gt; by Li Haoyi.&lt;/p&gt;
-&lt;p&gt;Dinked a little more on website.  Almost done and ready to launch.&lt;/p&gt;
-</description>
+      <description>2020 .plan  Table of contents  January 2020  2020-01-02   March 2020  2020-03-27 2020-03-28 2020-03-29   May 2020  2020-05-04   June 2020  2020-06-08 2020-06-12   September 2020  09-06-2020    January 2020 2020-01-16 Wow. I hardly used this in 2019. Lets see if 2020&amp;rsquo;s different.
+Been learning a ton of Scala. Working my way through The Red Book. Got Metals working nicely in Vim.</description>
     </item>
     
     <item>
@@ -179,71 +46,7 @@
       <pubDate>Mon, 04 May 2020 11:41:32 -0700</pubDate>
       
       <guid>https://jsatk.us/about/</guid>
-      <description>
-&lt;h2&gt;Personal&lt;/h2&gt;
-
-&lt;p&gt;
-Hello, my name is Jesse Atkinson.  I write code for a living.  I currently work at &lt;a href=&#34;https://www.creditkarma.com&#34;&gt;Credit Karma&lt;/a&gt;.  These days I spend most of my day writing Scala.  For the past decade or so I&#39;ve worked as a full-stack web developer, but focused on the front-end.  I&#39;ve worked in just about every popular JS framework.  My &lt;a href=&#34;https://www.linkedin.com/in/jessesethatkinson/&#34;&gt;LinkedIn&lt;/a&gt; is the best place to go for more career info or you can grab my résumé &lt;a href=&#34;https://jsatk.us/jesse-atkinson-resume.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34; aria-describedby=&#34;new-tab&#34;&gt;here &lt;i aria-hidden=&#34;true&#34; class=&#34;fas fa-external-link-alt&#34;&gt;&lt;/i&gt;&lt;/a&gt;.
-&lt;/p&gt;
-
-&lt;figure class=&#34;article-img-right&#34;&gt;
-  &lt;img alt=&#34;Photo of my wife Lauren and me. Taken by Aubrey McCready.https://www.photographybyaubrey.com&#34; src=&#34;https://jsatk.us/images/me-and-lauren.jpg&#34;&gt;
-  &lt;figcaption&gt;
-    &lt;p&gt;
-    Me &amp;amp; Lauren. Taken by &lt;a href=&#34;https://www.photographybyaubrey.com&#34;&gt;Aubrey McCready&lt;/a&gt;.
-    &lt;/p&gt;
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;
-Outside of work &amp;amp; coding I&#39;m into video games, music, and film and often tweet about them.  You can find all my movie reviews on &lt;a href=&#34;https://letterboxd.com/jsatk/&#34;&gt;Letterboxd&lt;/a&gt; and book reviews on &lt;a href=&#34;https://www.goodreads.com/user/show/27234237-jesse&#34;&gt;Good Reads&lt;/a&gt;.  I&#39;ve also tracked all the music I listen to since 2009 on &lt;a href=&#34;https://www.last.fm/user/Jesseandlauren&#34;&gt;Last.fm&lt;/a&gt;.  As far as gaming goes &lt;a href=&#34;https://my.playstation.com/profile/jsatk_&#34;&gt;I&#39;m on PSN&lt;/a&gt; and play a lot of Destiny with the &lt;a href=&#34;https://randsinrepose.com/archives/a-destiny-public-service-announcement/&#34;&gt;Disco Technical clan&lt;/a&gt;, Monster Hunter World, and FFXIV.  I am married to &lt;a href=&#34;https://lettuceandlipgloss.com&#34;&gt;Lauren Atkinson&lt;/a&gt; who continually challenges me to be &lt;a href=&#34;http://www.merlinmann.com/better&#34;&gt;better&lt;/a&gt;.  And I have two ridiculous cats, &lt;a href=&#34;https://www.instagram.com/sprinklesandnutmeg/&#34;&gt;Sprinkles &amp;amp; Nutmeg&lt;/a&gt;.
-&lt;/p&gt;
-
-&lt;p&gt;
-In a past life I was a singer, songwriter, and guitarist.  I was in a band called The Jacets for many years.  We put out an EP &amp;amp; a &lt;a href=&#34;https://open.spotify.com/album/59mTxkzAdjyGFdqh9h5coH?si=9OfdNVJ1RNGMH_WdM9uocA&#34;&gt;record&lt;/a&gt;.  I was also featured on an episode of &lt;a href=&#34;https://www.youtube.com/watch?v=IaaLYu-Hknk&#34;&gt;It Might Get Personal&lt;/a&gt; and &lt;a href=&#34;http://esn.fm/systematic/221&#34;&gt;Systematic&lt;/a&gt; with &lt;a href=&#34;https://brettterpstra.com/&#34;&gt;Brett Terpstra&lt;/a&gt;.
-&lt;/p&gt;
-
-&lt;p&gt;
-I live in San Francisco and am originally from Detroit.
-&lt;/p&gt;
-
-&lt;h2&gt;This Website &amp;amp; Tooling&lt;/h2&gt;
-
-&lt;figure class=&#34;article-img-left&#34;&gt;
-  &lt;img alt=&#34;What my terminal usually looks like&#34; src=&#34;https://jsatk.us/images/terminal.png&#34;&gt;
-  &lt;figcaption&gt;
-    &lt;p&gt;
-    What I stare at most days.
-    &lt;/p&gt;
-  &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;
-This is my internet home.  I write mostly about technology, but I don&#39;t let this stop me from posting about the occasional off topic thing and occasionally write about non-technology things.  Mostly this website is my attempt at sharing things I&#39;ve found helpful or interesting that don&#39;t fit in a tweet.
-&lt;/p&gt;
-
-&lt;p&gt;
-This site uses &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt; with a heavily modified &lt;a href=&#34;https://themes.gohugo.io/theme/hugo-coder/&#34;&gt;Coder theme&lt;/a&gt;.  I opted to use a simple CMS &amp;amp; build upon an existing theme rather than write everything custom myself because I code for a living and don&#39;t want to do it in my free time as well.  This site is intentionally minimal with no javascript involved.  It was important to me to make this as simple and lightweight as possible so that I&#39;d (hopefully) fiddle with it less and write more.  It should also be fully accessible as it adheres to the &lt;a href=&#34;https://en.wikipedia.org/wiki/WAI-ARIA&#34;&gt;WAI-ARIA spec&lt;/a&gt;.  If you encounter any issues reading this site with assistance tools please let me know.
-&lt;/p&gt;
-
-&lt;p&gt;
-I write and code everything in &lt;a href=&#34;https://www.vim.org/&#34;&gt;Vim&lt;/a&gt;.  You can see my dotfiles &lt;a href=&#34;https://github.com/jsatk/dotfiles&#34;&gt;here&lt;/a&gt; if you&#39;re curious about how I do computers.
-&lt;/p&gt;
-
-&lt;h2&gt;Contact&lt;/h2&gt;
-
-&lt;p&gt;
-Email is best &amp;ndash; &lt;a href=&#34;mailto:jesse@jsatk.us&#34;&gt;jesse[at]jsatk[dot]us &lt;svg class=&#34;icon icon--new-window&#34; viewBox=&#34;0 0 24 24&#34; focusable=&#34;false&#34; aria-hidden=&#34;true&#34;&gt;&lt;use xlink:href=&#34;#new-window&#34;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/a&gt;.  DM on &lt;a href=&#34;https://twitter.com/jsatk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34; aria-label=&#34;Twitter&#34; aria-describedby=&#34;new-tab&#34;&gt;Twitter&lt;i class=&#34;fab fa-twitter&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt; &lt;/a&gt; is good too.  My public GPG key is over on &lt;a href=&#34;https://keybase.io/jsatk&#34;&gt;Keybase&lt;/a&gt;.  I also hang out on IRC (in the &lt;code&gt;&lt;a href=&#34;https://kiwiirc.com/nextclient/irc.freenode.net/scala&#34;&gt;#scala&lt;/a&gt;&lt;/code&gt; and &lt;code&gt;&lt;a href=&#34;https://kiwiirc.com/nextclient/irc.freenode.net/vim&#34;&gt;#vim&lt;/a&gt;&lt;/code&gt; channels mostly).  I&#39;m &lt;code&gt;jsatk&lt;/code&gt; on basically everything that requires me to have a username.
-&lt;/p&gt;
-
-&lt;p&gt;
-I love hearing from people (especially if it&#39;s to point out an error in something I wrote).
-&lt;/p&gt;
-
-&lt;div hidden&gt;
-  &lt;span id=&#34;new-tab&#34;&gt;Opens in a new tab&lt;/span&gt;
-&lt;/div&gt;
-</description>
+      <description>Personal  Hello, my name is Jesse Atkinson. I write code for a living. I currently work at Credit Karma. These days I spend most of my day writing Scala. For the past decade or so I&#39;ve worked as a full-stack web developer, but focused on the front-end. I&#39;ve worked in just about every popular JS framework. My LinkedIn is the best place to go for more career info or you can grab my résumé here .</description>
     </item>
     
     <item>
@@ -252,145 +55,9 @@ I love hearing from people (especially if it&#39;s to point out an error in some
       <pubDate>Wed, 17 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://jsatk.us/posts/three-tiny-lessons-from-functional-programming/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Originally published on the Earnest engineering blog &lt;a href=&#34;https://medium.com/earnest-engineering/three-tiny-lessons-from-functional-programming-d546092eb5d1&#34;&gt;here&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;In the past two years or so the term &amp;ldquo;Functional Programming&amp;rdquo; (FP for short) has cropped up everywhere. You can&amp;rsquo;t get away from it. Especially in javascript. It feels like every JS developer but me was invited to a cool FP party and all of a sudden traditional object-oriented programming (OO for short) was for dinosaurs.&lt;/p&gt;
-&lt;p&gt;Also in the past two years, more thinkpieces than I care to link to have been written stating why or why not FP is a good thing for the javascript community.&lt;/p&gt;
-&lt;p&gt;All this change and usage of new words like &amp;ldquo;monad&amp;rdquo; and &amp;ldquo;functor&amp;rdquo; can seem very daunting if you&amp;rsquo;re a more traditional (read &amp;ldquo;older&amp;rdquo;) javascript developer. The goal of this post is not to convenience you that FP is better than OO. It is not meant to persuade you one way or the other. Its goal is to introduce to you some of the smaller, simpler, and more powerful patterns that I&amp;rsquo;ve grown to love since studying and learning just exactly what FP in JS is. Even if you love OO or are stuck in a codebase that uses it, these principles apply there too. And ultimately I believe they will make your code more bulletproof.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;1. Don&amp;rsquo;t mutate an object unnecessarily&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Whenever possible avoid mutating an object. Notice I didn&amp;rsquo;t say &amp;ldquo;never&amp;rdquo; (and I&amp;rsquo;m sure there are some FP purists shaking their fists at me). Objects in javascript are passed by reference–meaning that if you pass around an object and various methods mutate that object it can have drastic and unwanted side-effects. I&amp;rsquo;ve created a trivial example of what I often see below:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;const&lt;/span&gt; transform = response =&amp;gt; {
-  &lt;span style=&#34;font-weight:bold&#34;&gt;if&lt;/span&gt; (response.verify) {
-    response.verificationRequired = &lt;span style=&#34;font-weight:bold&#34;&gt;true&lt;/span&gt;;
-  }
-
-  response.amount = response.amount * 100; &lt;span style=&#34;font-style:italic&#34;&gt;// I see this often for cents to dollars converion between APIs
-&lt;/span&gt;&lt;span style=&#34;font-style:italic&#34;&gt;&lt;/span&gt;  &lt;span style=&#34;font-weight:bold&#34;&gt;return&lt;/span&gt; response;
-};
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In the above we do some trivial checks and conversions. The reasons why aren&amp;rsquo;t important. What is important is that, in this context, we have no idea where that response object came from or who&amp;rsquo;s using it. Assuming it came from somewhere else in our codebase we can do the research and make sure it&amp;rsquo;s okay we modify this object. But a much safer way that causes less burden on any future developers that look at this code is to use &lt;code&gt;Object.assign&lt;/code&gt; (or if you&amp;rsquo;re on a newer version of node or only support newer browsers you can use the &lt;code&gt;…&lt;/code&gt; operator).&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;const&lt;/span&gt; transform = response =&amp;gt; {
-  &lt;span style=&#34;font-weight:bold&#34;&gt;return&lt;/span&gt; Object.assign({}, response, {
-    verificationRequired: Boolean(response.verify),
-    amount: response.amount * 100
-  });
-};
-
-&lt;span style=&#34;font-weight:bold&#34;&gt;const&lt;/span&gt; transform = response =&amp;gt; {
-  &lt;span style=&#34;font-weight:bold&#34;&gt;return&lt;/span&gt; {
-    ...response,
-    verificationRequired: Boolean(response.verify),
-    &lt;span style=&#34;font-style:italic&#34;&gt;// Since this comes *after* the original response the `amount` here will
-&lt;/span&gt;&lt;span style=&#34;font-style:italic&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;font-style:italic&#34;&gt;// overwrite the original `response.amount`.
-&lt;/span&gt;&lt;span style=&#34;font-style:italic&#34;&gt;&lt;/span&gt;    amount: response.amount * 100
-  });
-};
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In the latter example we return an entirely new object without modifying the original object. This is paramount for ensuring our code has as little footprint as possible, doesn&amp;rsquo;t cause side-effects, and is easier to understand for developers new to the codebase.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;2. Classes aren&amp;rsquo;t always the answer&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Often a class is overkill. Particularly if it&amp;rsquo;s for a one-time use situation. Yet, when it&amp;rsquo;s what you know it can be hard to wrap your head around not using it. One of the biggest and most common &amp;ldquo;gotcha&amp;quot;s with using classes is the &lt;code&gt;this&lt;/code&gt; keyword. The problems with &lt;code&gt;this&lt;/code&gt; are many and have been written about &lt;a href=&#34;https://www.i-programmer.info/programmer-puzzles/137-javascript/1922-the-this-problem.html&#34;&gt;elsewhere&lt;/a&gt; so I won&amp;rsquo;t elaborate on them here. But they are real and they are many.
-Lets take a look at the MDN example for classes.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;class&lt;/span&gt; Rectangle {
-  constructor(height, width) {
-    &lt;span style=&#34;font-weight:bold&#34;&gt;this&lt;/span&gt;.height = height;
-    &lt;span style=&#34;font-weight:bold&#34;&gt;this&lt;/span&gt;.width = width;
-  }
-
-  get area() {
-    &lt;span style=&#34;font-weight:bold&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;this&lt;/span&gt;.height * &lt;span style=&#34;font-weight:bold&#34;&gt;this&lt;/span&gt;.width;
-  }
-}
-
-&lt;span style=&#34;font-style:italic&#34;&gt;// Pre-ES6
-&lt;/span&gt;&lt;span style=&#34;font-style:italic&#34;&gt;&lt;/span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;function&lt;/span&gt; Rectangle(height, width) {
-  &lt;span style=&#34;font-weight:bold&#34;&gt;this&lt;/span&gt;.height = height;
-  &lt;span style=&#34;font-weight:bold&#34;&gt;this&lt;/span&gt;.width = width;
-}
-
-Rectangle.prototype.getArea = &lt;span style=&#34;font-weight:bold&#34;&gt;function&lt;/span&gt; () {
-  &lt;span style=&#34;font-weight:bold&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;font-weight:bold&#34;&gt;this&lt;/span&gt;.height * &lt;span style=&#34;font-weight:bold&#34;&gt;this&lt;/span&gt;.width;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This can be easily re-written as a simple function that returns an object.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;const&lt;/span&gt; rectangle = (height, width) =&amp;gt; ({
-  height,
-  width,
-  get area() {
-    &lt;span style=&#34;font-weight:bold&#34;&gt;return&lt;/span&gt; height * width;
-  }
-});
-
-&lt;span style=&#34;font-weight:bold&#34;&gt;const&lt;/span&gt; myRectangle = rectangle(10, 20);
-myRectangle.area &lt;span style=&#34;font-style:italic&#34;&gt;// =&amp;gt; 200
-&lt;/span&gt;&lt;span style=&#34;font-style:italic&#34;&gt;&lt;/span&gt;myRectangle.height &lt;span style=&#34;font-style:italic&#34;&gt;// =&amp;gt; 10
-&lt;/span&gt;&lt;span style=&#34;font-style:italic&#34;&gt;&lt;/span&gt;myRectangle.width &lt;span style=&#34;font-style:italic&#34;&gt;// =&amp;gt; 20
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The result of both examples is the same, but the wrapper pattern used in the latter example requires fewer lines, doesn&amp;rsquo;t require usage of (or understanding of) &lt;code&gt;this&lt;/code&gt;, and lastly doesn&amp;rsquo;t require the &lt;code&gt;new&lt;/code&gt; keyword to invoke. Overall there are fewer concepts to keep track of and understand.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;3. &lt;code&gt;Object.freeze&lt;/code&gt; is an informative little tool&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;For some reason it seems that everyone forgot about or never learned about &lt;code&gt;Object.freeze&lt;/code&gt;. I only started using it in the past year. But it has quickly become one of my favorite no-brainer tools. It does pretty much what it says on the tin. Any object you don&amp;rsquo;t need to mutate can be &amp;ldquo;frozen&amp;rdquo; by passing it into &lt;code&gt;Object.freeze&lt;/code&gt;. The &lt;code&gt;Object.freeze&lt;/code&gt; method returns a frozen copy of the object passed in.&lt;/p&gt;
-&lt;p&gt;There are two gotchas with using &lt;code&gt;Object.freeze&lt;/code&gt;.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;If you eventually pass a frozen object to third-party code it&amp;rsquo;s possible you&amp;rsquo;ll get an error because the third-party code may attempt to modify the object.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Object.freeze&lt;/code&gt; is shallow. Meaning that if your object contains properties that are also objects it will not freeze those objects. The concepts of deep vs. shallow when working with objects comes up a lot. &lt;code&gt;Object.freeze&lt;/code&gt; isn&amp;rsquo;t unique in this regard, but it is worth noting. So if you call &lt;code&gt;Object.freeze({foo: {bar: 10}})&lt;/code&gt; it will not freeze the value of foo (which is an object). See &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze&#34;&gt;here&lt;/a&gt; for more info.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;I&amp;rsquo;ve found this to be particularly useful in my test suite. It ensures I&amp;rsquo;m not making any false assumptions about what my code does or benefiting from any side-effects unknowingly.&lt;/p&gt;
-&lt;p&gt;For example:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;const&lt;/span&gt; options = {
-  async: &lt;span style=&#34;font-weight:bold&#34;&gt;true&lt;/span&gt;,
-  page: 4
-};
-
-&lt;span style=&#34;font-weight:bold&#34;&gt;const&lt;/span&gt; awesomeFunction = options =&amp;gt; {
-  &lt;span style=&#34;font-weight:bold&#34;&gt;if&lt;/span&gt; (!options.offset) {
-    options.offset = 10;
-  }
-
-  &lt;span style=&#34;font-style:italic&#34;&gt;// do stuff with options
-&lt;/span&gt;&lt;span style=&#34;font-style:italic&#34;&gt;&lt;/span&gt;};
-
-awesomeFunction(options);
-someOtherFunction(options);
-yetAnotherFunction(options);
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The above code modifies &lt;code&gt;options&lt;/code&gt; once it&amp;rsquo;s passed into &lt;code&gt;awesomeMethod&lt;/code&gt;. Let&amp;rsquo;s say &lt;code&gt;options&lt;/code&gt; is used for multiple methods all invoked at about the same time, depending on order of execution this can produce unwanted results since we are modifying the options object at the beginning of &lt;code&gt;awesomeMethod&lt;/code&gt;. If that object were frozen we&amp;rsquo;d have gotten a javascript error (in strict mode, you&amp;rsquo;re using strict mode right?!) letting us know we were attempting to modify a frozen object, which is super useful feedback for not only the original author but any new developers coming into the code.&lt;/p&gt;
-&lt;p&gt;Lets see what that would look like with &lt;code&gt;Object.freeze&lt;/code&gt;.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;const&lt;/span&gt; options = Object.freeze({
-  async: &lt;span style=&#34;font-weight:bold&#34;&gt;true&lt;/span&gt;,
-  page: 4
-});
-
-&lt;span style=&#34;font-weight:bold&#34;&gt;const&lt;/span&gt; awesomeFunction = options =&amp;gt; {
-  &lt;span style=&#34;font-weight:bold&#34;&gt;const&lt;/span&gt; updatedOptions = Object.assign({}, options, {
-    offset: options.offset || 10
-  });
-
-  &lt;span style=&#34;font-style:italic&#34;&gt;// do stuff with updatedOptions
-&lt;/span&gt;&lt;span style=&#34;font-style:italic&#34;&gt;&lt;/span&gt;};
-
-awesomeFunction(options);
-someOtherFunction(options);
-yetAnotherFunction(options);
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Here we&amp;rsquo;re combining things we learned in the first point with things we&amp;rsquo;re learning here. &lt;code&gt;Object.freeze&lt;/code&gt; causes JS to throw an error if we attempt to modify the object, so we then use &lt;code&gt;Object.assign&lt;/code&gt; (or &lt;code&gt;...&lt;/code&gt;) to create a new options object that&amp;rsquo;s local to the method thus preventing any timing issues. Concepts like this can be very useful even in OO programing.&lt;/p&gt;
-&lt;p&gt;Finally, lets combine all three of the above concepts. The example here is trivial, but it gives you an idea of the simplicity and power of working without classes (when appropriate) and not mutating objects.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;const&lt;/span&gt; config = Object.freeze({
-  async: &lt;span style=&#34;font-weight:bold&#34;&gt;true&lt;/span&gt;,
-  page: 4
-});
-
-&lt;span style=&#34;font-weight:bold&#34;&gt;const&lt;/span&gt; getThing = config =&amp;gt; {
-  &lt;span style=&#34;font-weight:bold&#34;&gt;const&lt;/span&gt; awesomeFunction = options =&amp;gt; {
-    &lt;span style=&#34;font-weight:bold&#34;&gt;const&lt;/span&gt; updatedOptions = Object.assign({}, options, {
-      offset: options.offset || 10
-    });
-
-    &lt;span style=&#34;font-style:italic&#34;&gt;// do stuff with updatedOptions
-&lt;/span&gt;&lt;span style=&#34;font-style:italic&#34;&gt;&lt;/span&gt;  };
-
-  &lt;span style=&#34;font-weight:bold&#34;&gt;return&lt;/span&gt; Object.freeze({
-    ...config,
-    awesomeFunction,
-    amount: config.amount * 100
-  });
-};
-
-&lt;span style=&#34;font-weight:bold&#34;&gt;const&lt;/span&gt; thing = getThing(config);
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Combining the deceptively simple concepts from the three points listed above can radically change how confident you are in your code. If you combine &lt;code&gt;Object.freeze&lt;/code&gt; with a function that returns an object (rather than a class) and &lt;code&gt;Object.assign&lt;/code&gt; you can ensure that you have a configured object that is immutable and that nothing along the way mutated it due to a side-effect.&lt;/p&gt;
-&lt;p&gt;These tiny concepts have saved me from shooting myself in the foot with vanilla JS and I hope you find them useful too.&lt;/p&gt;
-</description>
+      <description>Originally published on the Earnest engineering blog here.
+In the past two years or so the term &amp;ldquo;Functional Programming&amp;rdquo; (FP for short) has cropped up everywhere. You can&amp;rsquo;t get away from it. Especially in javascript. It feels like every JS developer but me was invited to a cool FP party and all of a sudden traditional object-oriented programming (OO for short) was for dinosaurs.
+Also in the past two years, more thinkpieces than I care to link to have been written stating why or why not FP is a good thing for the javascript community.</description>
     </item>
     
     <item>
@@ -399,8 +66,7 @@ yetAnotherFunction(options);
       <pubDate>Wed, 16 Aug 2017 00:00:00 +0000</pubDate>
       
       <guid>https://jsatk.us/posts/creating-a-validation-library-in-js-using-propositional-calculus/</guid>
-      <description>&lt;p&gt;Published on the Earnest engineering blog &lt;a href=&#34;https://medium.com/earnest-engineering/creating-a-validation-library-in-js-using-propositional-calculus-c913a6968b5c&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>Published on the Earnest engineering blog here.</description>
     </item>
     
     <item>
@@ -409,18 +75,8 @@ yetAnotherFunction(options);
       <pubDate>Tue, 24 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>https://jsatk.us/posts/how-i-code-alfred-and-dash/</guid>
-      <description>&lt;p&gt;This is the first post in a series I plan on doing. Practical tips and lessons learned that I apply to my work or use daily.&lt;/p&gt;
-&lt;p&gt;As a developer, one of my favorite things is when I am pairing with someone and all of a sudden they do something magical. They convert JSON to CSV with a keystroke. They run only the staged files for git commit through the linter. They run the test suite from inside their editor. Whatever example you want to think up - insert here. And it blows my mind. I burst out,&amp;ldquo;How did you do that? That&amp;rsquo;s so useful! I&amp;rsquo;d use that all the time!&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;I live for these moments. It&amp;rsquo;s partly why I love reading through people&amp;rsquo;s dotfiles and sharing my &lt;a href=&#34;https://github.com/jsatk/dotfiles&#34;&gt;dotfiles&lt;/a&gt; with others. Today I wanted to cover one such go-to timesaver/hack/whatever-you-wanna-call it.&lt;/p&gt;
-&lt;h2 id=&#34;alfred-dash&#34;&gt;Alfred + Dash&lt;/h2&gt;
-&lt;p&gt;One of the most beneficial things I&amp;rsquo;ve taught myself is how to go to the documentation first instead of &lt;a href=&#34;https://stackoverflow.com&#34;&gt;Stackoverflow&lt;/a&gt;. When I started out as a developer, anytime I ran into trouble or needed to look something up I&amp;rsquo;d Google it, which would almost always return a Stackoverflow post as the top result. This is incredibly convenient for finding a quick answer, but doesn&amp;rsquo;t teach you how to read and navigate documentation. This might sound silly, but reading &lt;code&gt;man&lt;/code&gt; files or API &amp;amp; library docs takes some getting used to. It&amp;rsquo;s a skill that you have to develop. Especially since API docs are so incredibly varied and unfortunately do not follow any sort of standard.&lt;/p&gt;
-&lt;p&gt;There is a wonderful app called &lt;a href=&#34;https://kapeli.com/dash&#34;&gt;Dash&lt;/a&gt; for macOS and iOS that will archive any library, language, or API for offline reading. And best of all it&amp;rsquo;s free (although you can purchase an upgrade license for $25). This is not only helpful for when you&amp;rsquo;re actually offline (on an airplane per say), but also for raw speed. I am a very easily distractable creature. I find it hard to focus on something if I have to wait during the process. I find my brain thinks,&amp;ldquo;While this loads let me check this real quick…&amp;quot;. Twenty-minutes later I find myself forgetting what I was working on and doing something else. Offline caching of API docs helps me to avoid this simply due to raw speed.&lt;/p&gt;
-&lt;p&gt;Now that we know what Dash is this brings us to &lt;a href=&#34;https://www.alfredapp.com/&#34;&gt;Alfred&lt;/a&gt;. Alfred is an amazing Spotlight replacement for macOS and it&amp;rsquo;s free. There are several out there (Quicksilver, etc…), but I&amp;rsquo;ve found Alfred to be the one that has seen the most active development and love from its contributors. I could spend an entire blogpost detailing why I like Alfred, but many others &lt;a href=&#34;https://birchtree.me/blog/alfred-3-review/&#34;&gt;have already done that&lt;/a&gt; so I won&amp;rsquo;t do that here. But I do have to tell you about how it integrates with Dash. To get Alfred to integrate with other apps you must purchase the &lt;a href=&#34;https://www.alfredapp.com/powerpack/&#34;&gt;Powerpack&lt;/a&gt;. It&amp;rsquo;s only £19 and well worth it. (Support indie devs, people.)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://jsatk.us/images/dash.png&#34; alt=&#34;The Preferences screen for Dash integrations&#34;&gt; There is a Dash &amp;ldquo;workflow&amp;rdquo; available for Alfred that pulls in the libraries you have in Dash. To add it to Alfred open up Dash&amp;rsquo;s preferences pane (⌘+,). Then click on &amp;ldquo;Integration&amp;rdquo;. And finally click on &amp;ldquo;Alfred&amp;rdquo;.&lt;/p&gt;
-&lt;p&gt;Then you can quickly query Alfred for what you are looking for and it will instantly pull it up and auto-suggest answers in Dash. And since Alfred can be invoked with a simple keyboard shortcut I find myself using this about 10+ times a day. Especially when I&amp;rsquo;m working with langauges or libraries I&amp;rsquo;m not deeply familiar with.&lt;/p&gt;
-&lt;p&gt;This is best understood through an example. For example, let&amp;rsquo;s say I can&amp;rsquo;t quite remember the name of javascripts new-ish &lt;code&gt;includes&lt;/code&gt; method. I know it&amp;rsquo;s probably either called &lt;code&gt;includes&lt;/code&gt; or &lt;code&gt;contains&lt;/code&gt;. I can type &lt;code&gt;⌘,javas⇥array.cont&lt;/code&gt; and see that no &lt;code&gt;contains&lt;/code&gt; method exists, backspace a bit and type &lt;code&gt;inc&lt;/code&gt; and see that &lt;code&gt;Array.prototype.includes&lt;/code&gt; exists. I press enter and Dash instantly takes me to the documentation for &lt;code&gt;Array.prototype.includes&lt;/code&gt;. No Googling necessary. No 4 year Stackoverflow posts with (potentially) out-of-date or incorrect information. Hell, no internet connection is even required. And best of all I&amp;rsquo;m reading the official documentation on the `includes method and not someone&amp;rsquo;s random opinion which is &lt;em&gt;huge&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;I can&amp;rsquo;t sing the praises of this seemingly tiny integration enough. It stops me from having to &lt;em&gt;unnecessarily&lt;/em&gt; dig through Google or Stackoverflow results and gets me in the habit of reading the offcial documentation for language features. The keyword there is &lt;em&gt;unnecessarily&lt;/em&gt;. I adore Stackoverflow and the various other blogs and wonderful sources of information the developer community provides. But they should be resources for stuff that&amp;rsquo;s not literally in the documentation. It should be used for solving complicated questions and fringe use cases.&lt;/p&gt;
-</description>
+      <description>This is the first post in a series I plan on doing. Practical tips and lessons learned that I apply to my work or use daily.
+As a developer, one of my favorite things is when I am pairing with someone and all of a sudden they do something magical. They convert JSON to CSV with a keystroke. They run only the staged files for git commit through the linter. They run the test suite from inside their editor.</description>
     </item>
     
     <item>
@@ -429,86 +85,7 @@ yetAnotherFunction(options);
       <pubDate>Wed, 19 Oct 2016 00:00:00 +0000</pubDate>
       
       <guid>https://jsatk.us/posts/testing-promise-rejections-with-chai-as-promised/</guid>
-      <description>&lt;p&gt;I was recently working on a new npm module for work which is a promise-based API. Testing promises in javascript is very do-able, but also very tricky. You can test promises and their results in many various ways. Unfortunately the JS community seems still somewhat divided on how to properly test promises.
-The biggest problem I faced was that I needed to mock a third-party API. I avoid stubbing as much as humanly possible, but it is often necessary when testing third party code. I&amp;rsquo;m a strong believer in that your unit tests should run in an isolated (read: offline) environment. I use &lt;a href=&#34;https://sinonjs.org/&#34;&gt;Sinon&lt;/a&gt; when I need to mock out dependency functionality.&lt;/p&gt;
-&lt;p&gt;I knew about the lovely &lt;a href=&#34;https://github.com/domenic/chai-as-promised&#34;&gt;chai-as-promised&lt;/a&gt;, but I stubbornly resisted adding another dependency to my &lt;code&gt;package.json&lt;/code&gt;. After creating a &lt;a href=&#34;https://en.wikipedia.org/wiki/Rube_Goldberg_machine&#34;&gt;Rube Goldberg machine&lt;/a&gt; to test my promises, I gave in and added chai-as-promised to my module. And for a brief moment I was happy.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;So I write a test and watch it fail (like the good TDD developer I am). Here&amp;rsquo;s a simplified psuedo example of what I was working on below.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;import&lt;/span&gt; thirdPartyClient from &lt;span style=&#34;font-style:italic&#34;&gt;&amp;#39;some-third-party-client&amp;#39;&lt;/span&gt;
-&lt;span style=&#34;font-weight:bold&#34;&gt;import&lt;/span&gt; myApi from &lt;span style=&#34;font-style:italic&#34;&gt;&amp;#39;../../src/my-api&amp;#39;&lt;/span&gt;
-
-describe(&lt;span style=&#34;font-style:italic&#34;&gt;&amp;#39;myApi&amp;#39;&lt;/span&gt;, () =&amp;gt; {
-  describe(&lt;span style=&#34;font-style:italic&#34;&gt;&amp;#39;Error handling&amp;#39;&lt;/span&gt;, () =&amp;gt; {
-    &lt;span style=&#34;font-weight:bold&#34;&gt;const&lt;/span&gt; myRejection = {
-      errorCode: 404,
-      errorMessage: &lt;span style=&#34;font-style:italic&#34;&gt;&amp;#39;You broke everything&amp;#39;&lt;/span&gt;,
-      errorUrl: &lt;span style=&#34;font-style:italic&#34;&gt;&amp;#39;http://coolapp.api.docs/error/404/&amp;#39;&lt;/span&gt;
-    }
-
-    beforeEach(() =&amp;gt; {
-      sinon.stub(thirdPartyClient.prototype, &lt;span style=&#34;font-style:italic&#34;&gt;&amp;#39;dingus&amp;#39;&lt;/span&gt;)
-         .returns(Promise.reject(myRejection)
-    })
-
-    afterEach(() =&amp;gt; thirdPartyClient.prototype.dingus.restore())
-
-    it(&lt;span style=&#34;font-style:italic&#34;&gt;&amp;#39;should be rejected with the correct error object&amp;#39;&lt;/span&gt;, () =&amp;gt; {
-      &lt;span style=&#34;font-weight:bold&#34;&gt;const&lt;/span&gt; expected = myRejection
-
-      &lt;span style=&#34;font-weight:bold&#34;&gt;return&lt;/span&gt; myApi.someMethod()
-        .then(() =&amp;gt; {
-          &lt;span style=&#34;font-weight:bold&#34;&gt;const&lt;/span&gt; actual = thirdPartyClient.prototype.dingus
-          &lt;span style=&#34;font-weight:bold&#34;&gt;return&lt;/span&gt; expect(actual).to.be.rejectedWith(expected)
-        })
-    })
-  })
-})
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I watch it fail.&lt;/p&gt;
-&lt;p&gt;I write the code.&lt;/p&gt;
-&lt;p&gt;I watch it pass.&lt;/p&gt;
-&lt;p&gt;Success, right?&lt;/p&gt;
-&lt;p&gt;Something didn&amp;rsquo;t feel right. So I decided I wanted to see this test fail again. I added a &lt;code&gt;not&lt;/code&gt; to the &lt;code&gt;expect&lt;/code&gt; statement on line 21 so that it read &lt;code&gt;return expect(actual).not.to.be.rejectedWith(expected)&lt;/code&gt;. Unfortunately this also passed.&lt;/p&gt;
-&lt;p&gt;I realized I wasn&amp;rsquo;t doing a deep comparison on the rejection. It was simply testing to see if it was indeed an object and passing if it was.
-So how do I test if a promise is rejected and also deeply test the rejection?&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;My coworker &lt;a href=&#34;https://medium.com/u/d41b471adec6?source=post_page-----c65c7c33f329----------------------&#34;&gt;Pete Hodgson&lt;/a&gt; mentioned that the latest version of chai-as-promised supports some very declarative syntax and gave me this example: &lt;code&gt;expect(foo).to.be.rejected.and.eventually.have.property(&#39;quxx&#39;)&lt;/code&gt;. I was overjoyed.&lt;/p&gt;
-&lt;p&gt;Now I had a way to both test if something was rejected but also what the rejection actually was.&lt;/p&gt;
-&lt;p&gt;I updated the above code to now read:&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;import&lt;/span&gt; thirdPartyClient from &lt;span style=&#34;font-style:italic&#34;&gt;&amp;#39;some-third-party-client&amp;#39;&lt;/span&gt;
-&lt;span style=&#34;font-weight:bold&#34;&gt;import&lt;/span&gt; myApi from &lt;span style=&#34;font-style:italic&#34;&gt;&amp;#39;../../src/my-api&amp;#39;&lt;/span&gt;
-
-describe(&lt;span style=&#34;font-style:italic&#34;&gt;&amp;#39;myApi&amp;#39;&lt;/span&gt;, () =&amp;gt; {
-  describe(&lt;span style=&#34;font-style:italic&#34;&gt;&amp;#39;Error handling&amp;#39;&lt;/span&gt;, () =&amp;gt; {
-    &lt;span style=&#34;font-weight:bold&#34;&gt;const&lt;/span&gt; myRejection = {
-      errorCode: 404,
-      errorMessage: &lt;span style=&#34;font-style:italic&#34;&gt;&amp;#39;You broke everything&amp;#39;&lt;/span&gt;,
-      errorUrl: &lt;span style=&#34;font-style:italic&#34;&gt;&amp;#39;http://coolapp.api.docs/error/404/&amp;#39;&lt;/span&gt;
-    }
-
-    beforeEach(() =&amp;gt; {
-      sinon.stub(thirdPartyClient.prototype, &lt;span style=&#34;font-style:italic&#34;&gt;&amp;#39;dingus&amp;#39;&lt;/span&gt;)
-         .returns(Promise.reject(myRejection)
-    })
-
-    afterEach(() =&amp;gt; thirdPartyClient.prototype.dingus.restore())
-
-    it(&lt;span style=&#34;font-style:italic&#34;&gt;&amp;#39;should be rejected with the correct error object&amp;#39;&lt;/span&gt;, () =&amp;gt; {
-      &lt;span style=&#34;font-weight:bold&#34;&gt;const&lt;/span&gt; expected = myRejection
-
-      &lt;span style=&#34;font-weight:bold&#34;&gt;return&lt;/span&gt; myApi.someMethod()
-        .then(() =&amp;gt; {
-          &lt;span style=&#34;font-weight:bold&#34;&gt;const&lt;/span&gt; actual = thirdPartyClient.prototype.dingus
-          &lt;span style=&#34;font-weight:bold&#34;&gt;return&lt;/span&gt; expect(actual).to.be.rejected
-            .and.to.eventually.deep.equal(expected)
-        })
-    })
-  })
-})
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This is not only much easier to read but allows for a deep equals comparison on the rejection.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;In summary, there is now a nice and declarative way to test promises and what they actually return using chai-as-promised. I avoid adding unnecessary dependencies, but I found the benefits here far outweighed the cost of having another dependency.&lt;/p&gt;
-&lt;p&gt;Thanks for reading and I hope this was helpful!&lt;/p&gt;
-</description>
+      <description>I was recently working on a new npm module for work which is a promise-based API. Testing promises in javascript is very do-able, but also very tricky. You can test promises and their results in many various ways. Unfortunately the JS community seems still somewhat divided on how to properly test promises. The biggest problem I faced was that I needed to mock a third-party API. I avoid stubbing as much as humanly possible, but it is often necessary when testing third party code.</description>
     </item>
     
     <item>
@@ -517,42 +94,8 @@ describe(&lt;span style=&#34;font-style:italic&#34;&gt;&amp;#39;myApi&amp;#39;&l
       <pubDate>Tue, 18 Oct 2016 22:00:00 +0000</pubDate>
       
       <guid>https://jsatk.us/posts/a-descent-into-madness-with-vim-tmux-and-italics/</guid>
-      <description>&lt;p&gt;It all started out innocently enough. &lt;a href=&#34;https://twitter.com/_ericelliott&#34;&gt;Eric Elliott&lt;/a&gt; retweeted this &lt;a href=&#34;https://twitter.com/mxstbr/status/778245230709571585&#34;&gt;tweet&lt;/a&gt; by &lt;a href=&#34;https://twitter.com/mxstbr&#34;&gt;Max Stoiber&lt;/a&gt;.  The tweet was meant to impart some great React knowledge upon me, however I couldn&amp;rsquo;t help, but be completely distracted by screen.  What was that typeface?  It&amp;rsquo;s absolutely beautiful.  And his comments are rendered in italics, but this monospaced italics is different, it has&amp;hellip; cursive characters?!  I must have this!&lt;/p&gt;
-&lt;p&gt;I quickly &lt;a href=&#34;https://twitter.com/jsatk/status/782308142608637952&#34;&gt;tweeted&lt;/a&gt; at him asking what font that was.  He informed me it was &lt;a href=&#34;http://www.typography.com/blog/introducing-operator&#34;&gt;Operator Mono&lt;/a&gt;.  The following is an account of my mental process for the next four hours.&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;A quick Google search tells me that Operator Mono was a new typeface from Hoefler &amp;amp; Co.  (As an aside, it still feels weird to write &amp;ldquo;Co&amp;rdquo; and not &amp;ldquo;Frere-jones&amp;rdquo;.)  It is both beautiful and expensive. Two-hundred United States of America dollars expensive.  95% of the software I use on a daily basis is free.  But hey, fonts are hard and I&amp;rsquo;ve never bought one before so&amp;hellip; lets do this.&lt;/p&gt;
-&lt;p&gt;Damnit!  This font won&amp;rsquo;t work with my current vim &amp;amp; tmux setup.  Both my vim &amp;amp; tmux themes make heavy use of &lt;a href=&#34;https://github.com/powerline/powerline&#34;&gt;Powerline&lt;/a&gt;, which requires some unique glyph characters to be in the font.  All the top free monospaced fonts have &lt;a href=&#34;https://github.com/powerline/fonts&#34;&gt;already been patched&lt;/a&gt; to include these glyphs.  I can&amp;rsquo;t go about my day with all these ugly � characters in my terminal instead of the normal arrow glyphs.  This will not do.&lt;/p&gt;
-&lt;p&gt;Not to worry though!  It&amp;rsquo;s easy to patch fonts that aren&amp;rsquo;t already patched!  Or so the internet says.  Powerline provides a &lt;a href=&#34;https://github.com/powerline/fontpatcher&#34;&gt;fontpatcher&lt;/a&gt; tool.  Awesome!  I&amp;rsquo;ll just download this and run it against my Operator Mono and all will be well in the world.&lt;/p&gt;
-&lt;p&gt;Oh, look at that.  The fontpatcher tool doesn&amp;rsquo;t work with Operator Mono.  Great.  Oh well, I&amp;rsquo;m sure &lt;em&gt;someone&lt;/em&gt; has figured this out already.  Back to Google&amp;hellip;&lt;/p&gt;
-&lt;p&gt;So apparently, according to &lt;a href=&#34;https://apw-bash-settings.readthedocs.io/en/latest/fontpatching.html&#34;&gt;these instructions&lt;/a&gt;, I need to install this other thing called &lt;a href=&#34;https://fontforge.github.io/en-US/&#34;&gt;Fontforge&lt;/a&gt;.  I&amp;rsquo;ve heard the name before, but I have idea what it does.  But I can install it with &lt;a href=&#34;http://brew.sh/index.html&#34;&gt;homebrew&lt;/a&gt; which means I can uninstall it after.  So this is &lt;a href=&#34;http://i.imgur.com/c4jt321.png&#34;&gt;fine&lt;/a&gt;.  Lets do this.&lt;/p&gt;
-&lt;p&gt;Shit.  So after installing fontforge and following these new instructions It&amp;rsquo;s still throwing and error when I try to patch Operator Mono.  I wonder if anyone&amp;rsquo;s tried to patch this specific font?  Let me see&amp;hellip; Oh &lt;a href=&#34;https://github.com/powerline/fonts/issues/154&#34;&gt;look&lt;/a&gt;, apparently other people have tried.  Looks like someone has an &lt;a href=&#34;https://github.com/powerline/fontpatcher/pull/13&#34;&gt;unmerged PR&lt;/a&gt; out for this exact fix.  Sweet.  I&amp;rsquo;ll just update my local fontpatcher script with this PR&amp;rsquo;s diff and everything will work and I&amp;rsquo;ll have Operator Mono with Powerline glyphs and the hole in my heart will be full.&lt;/p&gt;
-&lt;p&gt;And&amp;hellip; it&amp;rsquo;s still not working.  Shit&amp;hellip; And here we go.  Another &lt;a href=&#34;http://fareesh.com/operator-mono-powerline/&#34;&gt;lead&lt;/a&gt; on patching this.  Let me try this&amp;hellip;&lt;/p&gt;
-&lt;p&gt;Oh my god!  It worked!  🎉  Yes!  Okay let me just patch all of these different weights and we&amp;rsquo;re good to go.&lt;/p&gt;
-&lt;p&gt;Awesome.  Now that that&amp;rsquo;s done&amp;hellip; wait why was I doing this again?  What was I doing?  Oh yeah, I wanted to use this new font and have my comments in italics like in that screenshot that dude on Twitter posted.  Sweet.  Now to enable italics&amp;hellip;&lt;/p&gt;
-&lt;p&gt;Okay so I&amp;rsquo;ll just tell my vimrc to highlight all &lt;code&gt;Comments&lt;/code&gt; with italics by throwing &lt;code&gt; highlight Comment cterm=italic&lt;/code&gt; in there.  Wait&amp;hellip; that didn&amp;rsquo;t do what I wanted it to do.  It gave all comments light gray background and it&amp;rsquo;s not italicized.  How do I tell if my terminal supports italics?  I really hope it does.  The internet says if I run &lt;code&gt;echo -e &amp;quot;\e[3mfoo\e[23m&amp;quot;]]&amp;quot;&lt;/code&gt; in my terminal I should see &amp;ldquo;foo&amp;rdquo; printed in italics.  Whelp.  It&amp;rsquo;s definitely not in italics.  Maybe if I exit tmux and try it in just iTerm.  Oh&amp;hellip; Oh wow.  It works.  So the problem is tmux.  It&amp;rsquo;s gotta be.&lt;/p&gt;
-&lt;p&gt;Lets regroup here.  So far I&amp;rsquo;ve got the new font I wanted and I&amp;rsquo;ve patched it to include Powerline glyphs so my themes can remain looking gorgeous.  And I&amp;rsquo;ve concluded that vanilla iTerm renders italics just fine but tmux doesn&amp;rsquo;t.  Okay, get tmux to render italics.  This should be easy.&lt;/p&gt;
-&lt;p&gt;Wow&amp;hellip; I sure have spent a lot of time on this.  What?  Two-hours have already passed?  This is ridiculous.  All I wanted was a new font and italicized comments.  Oh well, I&amp;rsquo;m so close I can&amp;rsquo;t stop now.&lt;/p&gt;
-&lt;p&gt;Okay so apparently the &lt;code&gt;$TERM&lt;/code&gt; I&amp;rsquo;m using in tmux, screen-256color, doesn&amp;rsquo;t have support for italics, but the &lt;code&gt;$TERM&lt;/code&gt; used by iTerm when not in tmux is &lt;code&gt;xterm-256color&lt;/code&gt; which does support it.  Okay, so I&amp;rsquo;ll just set tmux to use &lt;code&gt;xterm-256color&lt;/code&gt; for the terminal.  Oh, apparently I&amp;rsquo;m not supposed to do that.  That&amp;rsquo;s a tmux no-no or something.&lt;/p&gt;
-&lt;p&gt;Hmmm&amp;hellip; Looks like the best option is to create my own terminal and just add the support for italics.  Okay I&amp;rsquo;ll &lt;code&gt;infocmp | pbcopy&lt;/code&gt; and then add support for italics by adding &lt;code&gt;ritm=\E[23m, rmso=\E[27m, sitm=\E[3m, smso=\E[7m, Ms@,]]]]&lt;/code&gt; in there.&lt;/p&gt;
-&lt;p&gt;Still not working.  This isn&amp;rsquo;t working.  It&amp;rsquo;s been three hours now.  This is stupid.  Why do I always have to fiddle with my settings?  Why do I care about my development environment being pretty?  Well, I do spend 6-8 hours a day staring at this so that makes sense.  Yeah, this makes sense.  I &lt;em&gt;should&lt;/em&gt; care what it looks like.  This is no time to give up, Jesse.&lt;/p&gt;
-&lt;p&gt;(30 minutes of more Googling and trying shit and failing pass&amp;hellip;)&lt;/p&gt;
-&lt;p&gt;Oh &lt;a href=&#34;https://www.reddit.com/r/vim/comments/24g8r8/italics_in_terminal_vim_and_tmux/&#34;&gt;look&lt;/a&gt;, someone on reddit tried to do this exact same thing and succeeded.  I&amp;rsquo;ll follow these instructions.&lt;/p&gt;
-&lt;p&gt;Apparently you have to modify your .vimrc to support italics because&amp;hellip; because computers are terrible.  That&amp;rsquo;s why.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;set t_ZH=^[[3m
-set t_ZR=^[[23m
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;And I also need to invoke tmux with an environment variable setting &lt;code&gt;$TERM&lt;/code&gt; to the terminal I want.  Why can&amp;rsquo;t I just set it in my &lt;code&gt;.tmux.conf&lt;/code&gt;?  Apparently that didn&amp;rsquo;t work for this guy either.  Okay, I&amp;rsquo;ll just create a Fish function called &lt;code&gt;tmux&lt;/code&gt; that really passes the environment variable to tmux but allows tmux to still run with &lt;code&gt;scree-256color&lt;/code&gt; as it&amp;rsquo;s terminal.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-fish&#34; data-lang=&#34;fish&#34;&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;function&lt;/span&gt; tmux --description Run&lt;span style=&#34;font-weight:bold;font-style:italic&#34;&gt;\ &lt;/span&gt;tmux&lt;span style=&#34;font-weight:bold;font-style:italic&#34;&gt;\ &lt;/span&gt;with&lt;span style=&#34;font-weight:bold;font-style:italic&#34;&gt;\ &lt;/span&gt;support&lt;span style=&#34;font-weight:bold;font-style:italic&#34;&gt;\ &lt;/span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;for&lt;/span&gt;&lt;span style=&#34;font-weight:bold;font-style:italic&#34;&gt;\ &lt;/span&gt;italics
-        env TERM=myterm-it tmux -2 $argv
-&lt;span style=&#34;font-weight:bold&#34;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;HOLY SHIT!  IT&amp;rsquo;S WORKING! IT&amp;rsquo;S REALLY WORKING!  CELEBRATE!!!&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;That was an incredibly stupid use of my time, but holy hell was it satisfying to solve.  And throughout the process I learned a ton about unix, how patching fonts works, and what &lt;code&gt;infocmp&lt;/code&gt; and &lt;code&gt;tic&lt;/code&gt; are.   And hey, having this new pretty font and comments in italics makes me happy, so maybe it wasn&amp;rsquo;t a stupid use of time after all?&lt;/p&gt;
-&lt;p&gt;Well, that all depends on who you are and what you care about.  I view my development environment like I view my apartment.  It&amp;rsquo;s my home.  It&amp;rsquo;s where I live and spend a lot of time.  It should be a place that makes me happy and feels tailored to me.  Not only that, but I should know and understand all of it (or as much of it as I feasibly can).  Not having a solid graps on all the development tools you use or the multiple layers to your development stack is a bit like not knowing what&amp;rsquo;s in the closets and drawers in your house.  So for me it wasn&amp;rsquo;t a stupid use of my time at all.  I ended up getting what I wanted and learned a ridiculous amount about Unix tools in the process.&lt;/p&gt;
-&lt;p&gt;With that said, I think it&amp;rsquo;s very important to keep context in mind.  My pal and coworker &lt;a href=&#34;https://twitter.com/ph1&#34;&gt;Pete Hodgson&lt;/a&gt; likes to use the term &amp;ldquo;wearing different hats&amp;rdquo;.  This has stuck with me and I love it.  Do not, under any circumstances, do the kind of stuff I just wrote about while you&amp;rsquo;re on the clock trying to hit a deadline.  While doing this I was wearing the &amp;ldquo;homemaker hat&amp;rdquo;.  I was beautifying my environment because it brings me joy, not because it is a core part of being productive.  Always be concious of what &amp;ldquo;hat&amp;rdquo; you&amp;rsquo;re currently wearing.  Focus on the right thing.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://twitter.com/mpjme&#34;&gt;MPJ&lt;/a&gt; has a wonderful &lt;a href=&#34;https://youtu.be/dIjKJjzRX_E&#34;&gt;video&lt;/a&gt; about meta-work and false productivity and it is well worth your time.  Again, make sure that what you are focusing on is indeed the correct thing to focus on.  For me this was a perfectly appropriate thing to focus on on a Sunday afternoon.  And it brings me joy every time I open a file and see the comments in lovely cursive monospaced font.&lt;/p&gt;
-&lt;p&gt;After all that this is what it looks like: &lt;img alt=&#34;Screenshot of how the end result&#34; src=&#34;https://jsatk.us/images/vim-tmux-italics.png&#34; class=&#34;article-img-right&#34;&gt;&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;m gonna go lie down now.&lt;/p&gt;
-</description>
+      <description>It all started out innocently enough. Eric Elliott retweeted this tweet by Max Stoiber. The tweet was meant to impart some great React knowledge upon me, however I couldn&amp;rsquo;t help, but be completely distracted by screen. What was that typeface? It&amp;rsquo;s absolutely beautiful. And his comments are rendered in italics, but this monospaced italics is different, it has&amp;hellip; cursive characters?! I must have this!
+I quickly tweeted at him asking what font that was.</description>
     </item>
     
     <item>
@@ -561,121 +104,8 @@ set t_ZR=^[[23m
       <pubDate>Sun, 27 Dec 2015 00:00:00 +0000</pubDate>
       
       <guid>https://jsatk.us/posts/aeropress-brew-methods/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#tonx&#34;&gt;Tonx&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#heart-roastershttpwwwheartroasterscomabout-heartbrew-recipesaeropresshtml&#34;&gt;Heart Roasters&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#stump-townhttpstumptowncoffeecombrew-guidesaeropress&#34;&gt;Stump Town&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#gridwriterhttpgridwritercom20130111office-coffee&#34;&gt;Gridwriter&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;tonx&#34;&gt;Tonx&lt;/h2&gt;
-&lt;p&gt;You will need:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Tonx coffee (because it’s always fresh roasted)&lt;/li&gt;
-&lt;li&gt;Near-boiling, filtered water&lt;/li&gt;
-&lt;li&gt;Burr grinder&lt;/li&gt;
-&lt;li&gt;Aeropress, with filters&lt;/li&gt;
-&lt;li&gt;Spoon, or other agitating utensil&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol&gt;
-&lt;li&gt;Measure out &lt;strong&gt;14 grams&lt;/strong&gt; of Tonx beans or one provided Aeropress scoop.&lt;/li&gt;
-&lt;li&gt;Grind coffee a little finer than you would for a drip coffee maker or similar to coarseness of table salt.&lt;/li&gt;
-&lt;li&gt;Place paper filter in filter holder and rinse — place handily off to side.&lt;/li&gt;
-&lt;li&gt;Assemble the two Aeropress cylinders together so that rubber plunger is at &lt;strong&gt;4&lt;/strong&gt; mark.&lt;/li&gt;
-&lt;li&gt;Invert Aeropress so that brew chamber points up.
-&lt;ol&gt;
-&lt;li&gt;Add coffee to brew chamber.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;Add near-boiling water to the brew chamber, filling it all the way. Immediately stir water and coffee for &lt;strong&gt;3–5&lt;/strong&gt; seconds to ensure even saturation.
-&lt;ol&gt;
-&lt;li&gt;After &lt;strong&gt;1:30&lt;/strong&gt; stir again. Top off with water to the top. Total water will be about 225 grams.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;Screw the filter holder (with rinsed filter) onto the Aeropress.&lt;/li&gt;
-&lt;li&gt;Flip Aeropress (un-invert) and place onto your favorite and sturdy, mug and gently press down, forcing brewed coffee extraction out. You should be done pressing around 2 minutes.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;If the coffee tastes bitter, adjust your grind a little coarser.
-If the coffee tastes sour, adjust your grinder a little finer.&lt;/p&gt;
-&lt;p&gt;Want stronger coffee? Use a little less water. Want it weaker? Dilute finished brew.&lt;/p&gt;
-&lt;h2 id=&#34;heart-roastershttpwwwheartroasterscomabout-heartbrew-recipesaeropresshtml&#34;&gt;&lt;a href=&#34;http://www.heartroasters.com/about-heart/brew-recipes/aeropress.html&#34;&gt;Heart Roasters&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;WHAT YOU WILL NEED&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;An aeropress&lt;/li&gt;
-&lt;li&gt;A paper Aeropress filter&lt;/li&gt;
-&lt;li&gt;A burr grinder&lt;/li&gt;
-&lt;li&gt;A scale&lt;/li&gt;
-&lt;li&gt;A timer&lt;/li&gt;
-&lt;li&gt;Filtered water&lt;/li&gt;
-&lt;li&gt;A stirring device&lt;/li&gt;
-&lt;li&gt;A mug or decanter&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;INSTRUCTIONS&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Bring your filtered water to a boil&lt;/li&gt;
-&lt;li&gt;Thoroughly rinse your paper filter to get rid of paper flavor&lt;/li&gt;
-&lt;li&gt;Weigh out 19 grams of whole bean coffee&lt;/li&gt;
-&lt;li&gt;Grind the coffee a bit finer than filter drip (or use a grind that suits best for flavor and extraction)&lt;/li&gt;
-&lt;li&gt;Use provided funnel to transfer grinds to the Aeropress&lt;/li&gt;
-&lt;li&gt;Pull water off of the boil, and wait 45 seconds to a minute, or until the water is 200-205 degrees Fahrenheit&lt;/li&gt;
-&lt;li&gt;Start your timer, and quickly pour the water into the Aeropress until it reaches 270 grams of water (near the top). Place plunger in just enough to seal the top, and keep coffee from dripping through.&lt;/li&gt;
-&lt;li&gt;At one minute and 30 seconds, remove the plunger, and stir for five seconds.&lt;/li&gt;
-&lt;li&gt;Replace the plunger and slowly push down for about 30 seconds until you hear a hissing sound, don’t push all the way down. There should be moderate resistance while you push down. If it is very difficult to push down, your grind is too fine, if it is very easy, your grind is too coarse&lt;/li&gt;
-&lt;li&gt;Open the cap, and push out your filter and grounds for clean-up, and enjoy!&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;stump-townhttpstumptowncoffeecombrew-guidesaeropress&#34;&gt;&lt;a href=&#34;http://stumptowncoffee.com/brew-guides/aeropress/&#34;&gt;Stump Town&lt;/a&gt;&lt;/h2&gt;
-&lt;h3 id=&#34;step-one&#34;&gt;STEP ONE&lt;/h3&gt;
-&lt;p&gt;Grind Coffee
-It is important that the coffee be ground to a medium particulate size using a quality burr (rather than blade) grinder. By grinding the coffee this way, you are allowing for a more even extraction resulting in a fuller bodied and more nuanced cup. Blade grinders chop the coffee rather than grinding it, resulting in uneven and unpredictable particle size. This results in uneven extraction, leading to a brew with increased bitterness that is less true to the flavor profile of the coffee. In addition, the lack of uniformity in particle size results in inconsistent results from cup to cup.&lt;/p&gt;
-&lt;h3 id=&#34;step-two&#34;&gt;STEP TWO&lt;/h3&gt;
-&lt;p&gt;Assemble the Brewer
-Place the plunger inside the brewing tube with the black rubber part touching the bottom of the number 4 circle. (The numbers should be upside down, bottom meaning closer to the table)&lt;/p&gt;
-&lt;h3 id=&#34;step-three&#34;&gt;STEP THREE&lt;/h3&gt;
-&lt;p&gt;Rinse the Filter and Preheat the Brewer
-Place the AeroPress filter inside the black filter cap and run hot water through the filter to rinse out any residual paper flavor. Fill the brewer with hot water to preheat it and carefully pour it out.&lt;/p&gt;
-&lt;h3 id=&#34;step-four&#34;&gt;STEP FOUR&lt;/h3&gt;
-&lt;p&gt;Add coffee
-We recommend 17 grams or one rounded AeroPress scoop of fresh ground coffee per brew.&lt;/p&gt;
-&lt;h3 id=&#34;step-five&#34;&gt;STEP FIVE&lt;/h3&gt;
-&lt;p&gt;Initial Pour
-You should bring the water just to a boil (electric kettles are great at this) and then let it cool for about 45 seconds. Starting your timer (set to one minute), pour just enough water into the brewer to saturate the grounds and bring the level up to about the top of the 3 circle. This should be about 50ml or 1/4 cup.&lt;/p&gt;
-&lt;h3 id=&#34;step-six&#34;&gt;STEP SIX&lt;/h3&gt;
-&lt;p&gt;Stir
-Use the paddle to quickly stir the grounds into the water making sure there are no dry spots.&lt;/p&gt;
-&lt;h3 id=&#34;step-seven&#34;&gt;STEP SEVEN&lt;/h3&gt;
-&lt;p&gt;Final Pour
-As soon as you are done stirring, pour enough water to bring the total level to just above the 2 circle. This should be another 50ml or 1/4 cup bringing your total water volume to 100ml or about 1/2 cup.&lt;/p&gt;
-&lt;h3 id=&#34;step-eight&#34;&gt;STEP EIGHT&lt;/h3&gt;
-&lt;p&gt;Attach the Filter
-Place the rinsed filter assembly on top of the brewer and screw it tight.&lt;/p&gt;
-&lt;h3 id=&#34;step-nine&#34;&gt;STEP NINE&lt;/h3&gt;
-&lt;p&gt;Spin the Brewer
-When the timer goes off, carefully tip the brewer to a 45° angle and gently spin it for 10 seconds in order to softly stir the coffee.&lt;/p&gt;
-&lt;h3 id=&#34;step-ten&#34;&gt;STEP TEN&lt;/h3&gt;
-&lt;p&gt;Plunge the Coffee
-Quickly and carefully flip the brewer onto the top of your mug and begin the plunge. Use steady gentle pressure, allowing 15 to 25 seconds to finish, and stop as soon as you hear the first hiss of air escaping.&lt;/p&gt;
-&lt;h3 id=&#34;step-eleven&#34;&gt;STEP ELEVEN&lt;/h3&gt;
-&lt;p&gt;Dilute and Enjoy
-Carefully flip the brewer upright and dilute the brew to taste with hot water (we recommend starting with 50/50).
-Back to top&lt;/p&gt;
-&lt;h2 id=&#34;gridwriterhttpgridwritercom20130111office-coffee&#34;&gt;&lt;a href=&#34;http://gridwriter.com/2013/01/11/office-coffee/&#34;&gt;Gridwriter&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Parameters&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Water: 250 ml&lt;/li&gt;
-&lt;li&gt;Dosage: 16.7 g of coffee&lt;/li&gt;
-&lt;li&gt;Grind: Similar to table salt&lt;/li&gt;
-&lt;li&gt;Method: Non-inverted&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Steps&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Heat up bottled water (via immersion/steaming pitcher or kettle, more than 250 ml)&lt;/li&gt;
-&lt;li&gt;Grind the coffee directly into the Aeropress with the filter attached (remember, we&amp;rsquo;re going non-inverted here)&lt;/li&gt;
-&lt;li&gt;After water boils, wait for water to cool down. Immersion: ~10-15 secs. Kettle: ~20-30 secs&lt;/li&gt;
-&lt;li&gt;With non-inverted Aeropress on cup, pour ~40 mL of water to bloom coffee. Stir using mini-whisk. 20 secs total bloom time.&lt;/li&gt;
-&lt;li&gt;Pour the rest of the water until you hit 250 ml. Quick stir to submerge all coffee grounds.&lt;/li&gt;
-&lt;li&gt;Insert Aeropress piston at top to seal heat and stop drips. Brew for 1 minute.&lt;/li&gt;
-&lt;li&gt;Press for roughly 25-30 secs. Stop before hiss.&lt;/li&gt;
-&lt;/ol&gt;
-</description>
+      <description>Tonx Heart Roasters Stump Town Gridwriter  Tonx You will need:
+ Tonx coffee (because it’s always fresh roasted) Near-boiling, filtered water Burr grinder Aeropress, with filters Spoon, or other agitating utensil   Measure out 14 grams of Tonx beans or one provided Aeropress scoop. Grind coffee a little finer than you would for a drip coffee maker or similar to coarseness of table salt. Place paper filter in filter holder and rinse — place handily off to side.</description>
     </item>
     
     <item>
@@ -684,296 +114,7 @@ Back to top&lt;/p&gt;
       <pubDate>Tue, 13 Oct 2015 00:00:00 +0000</pubDate>
       
       <guid>https://jsatk.us/posts/intermediate-git/</guid>
-      <description>&lt;h2 id=&#34;what-this-post-is&#34;&gt;What this post is&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;It is a tutorial of beginner to intermediate to maybe a light dusting of advanced git topics and practices.&lt;/li&gt;
-&lt;li&gt;It is practical.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;what-this-post-is-not&#34;&gt;What this post is not&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;It is not philosophy or theory. (I will not be discussing the pros and cons of merge and rebase. Y&amp;rsquo;all can fight that battle elsewhere.)&lt;/li&gt;
-&lt;li&gt;It is not &lt;em&gt;super&lt;/em&gt; complex or overly archaic.&lt;/li&gt;
-&lt;li&gt;It is not preachy (See first point).&lt;/li&gt;
-&lt;li&gt;It is not in any way exhaustive. This is a list of git commands, tips, tricks, and tools I personally find super useful and use nearly every day.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;This is a series of things I often discover people struggle with, don’t know how to do, or have bizarre work arounds to get this information. You may know some or all of these already. But I figured I’d write this up and hopefully get a conversation going around git. I hope you find something useful in here and I hope it saves you time. NOTE: I personally use Fish Shell. I’ve conveted any Fish Shell specific syntax to Bash as 90% of you reading this probably use Bash.&lt;/p&gt;
-&lt;h2 id=&#34;shortcut-for-creating-a-new-branch-and-switching-to-it&#34;&gt;Shortcut for creating a new branch and switching to it&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;$ git branch foo &amp;amp;&amp;amp; git checkout foo
-$ git checkout -b foo # same as above command
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;change-your-editor-for-commit-messages&#34;&gt;Change your editor for commit messages&lt;/h2&gt;
-&lt;p&gt;Assuming you have &lt;a href=&#34;https://www.sublimetext.com/docs/2/osx_command_line.html&#34;&gt;Sublime&lt;/a&gt; or &lt;a href=&#34;https://manual.macromates.com/en/using_textmate_from_terminal.html&#34;&gt;TextMate&lt;/a&gt;&amp;lsquo;s command line tool installed.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ git config --global core.editor &#39;subl -w&#39; # Sublime
-$ git config --global core.editor &#39;mate -w&#39; # TextMate
-$ git config --global core.editor emacs     # Insanity
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;diff-between-remote-and-local&#34;&gt;Diff between remote and local&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;$ git status
-On branch test_branch
-Your branch is ahead of &#39;origin/test_branch&#39; by 1 commit.
-(use &amp;quot;git push&amp;quot; to publish your local commits)
-
-nothing to commit, working directory clean
-
-$ git diff # returns nothing because there is nothing different between our locals
-
-$ git diff git-talk # same exact thing as above. git-talk here refers to your local
-
-$ git diff jsatk/git-talk # diffs between remote and current local branch
-diff --git a/foo.txt b/foo.txt
-index 257cc56..5716ca5 100644
---- a/foo.txt
-+++ b/foo.txt
-@@ -1 +1 @@
--foo
-+bar
-
-$ git diff jsatk/git-talk git-talk # diffs between remote and specified local branch
-diff --git a/foo.txt b/foo.txt
-index 257cc56..5716ca5 100644
---- a/foo.txt
-+++ b/foo.txt
-@@ -1 +1 @@
--foo
-+bar
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;“But Jesse—this seems unnecessary. I can clearly see in git status that I have a commit that’s not pushed yet.” You’re correct. This isn’t the world’s greatest use-case example. However, I use this most often when I need to see what changes might be incoming or to diff between my branch and master. If I’ve been on a feature branch for a few days and want to see a diff between my feature branch and master doing &lt;code&gt;git diff master feature_branch&lt;/code&gt; will only &lt;code&gt;diff&lt;/code&gt; between my local copy of &lt;code&gt;master&lt;/code&gt; and my &lt;code&gt;feature_branch&lt;/code&gt;. What I do in these situations is this &lt;code&gt;git fetch origin &amp;amp;&amp;amp; git diff origin/master feature_branch&lt;/code&gt;. The &lt;code&gt;fetch&lt;/code&gt; here is important. (Note: If you’re unclear on the difference between &lt;code&gt;fetch&lt;/code&gt; and &lt;code&gt;pull&lt;/code&gt; I highly suggest you take 15 minutes to &lt;a href=&#34;http://stackoverflow.com/questions/292357/what-are-the-differences-between-git-pull-and-git-fetch&#34;&gt;read up on it&lt;/a&gt;.)&lt;/p&gt;
-&lt;h2 id=&#34;how-to-check-out-a-file-from-one-branch-into-another&#34;&gt;How to check out a file from one branch into another&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;$ git checkout -b baroness
-Switched to a new branch &#39;baroness&#39;
-
-$ echo &#39;red album&#39; &amp;gt; albums.txt
-
-$ cat albums.txt
-red album
-
-$ git add --all &amp;amp;&amp;amp; git commit -m &#39;Added albums.txt&#39;
-[baroness 728f16f] Added albums.txt
-1 file changed, 1 insertion(+)
-create mode 100644 albums.txt
-
-$ git checkout -b mastodon
-Switched to a new branch &#39;mastodon&#39;
-
-$ echo &#39;once more round the sun&#39; &amp;gt; albums.txt
-
-$ cat albums.txt
-once more round the sun
-
-$ git add --all&amp;amp;&amp;amp; git commit -m &#39;Added albums.txt&#39;
-[mastodon 6fea3ec] Added albums.txt
-1 file changed, 1 insertion(+), 1 deletion(-)
-
-$ git show baroness:albums.txt # Prints the contents of albums.txt from branch baroness
-red album
-
-$ git checkout baroness -- albums.txt # Checks out baroness&#39; version of albums.txt to branch mastodon
-# This is a perfect example of the insanity of git. You use : to show between branches but -- to checkout.
-$ cat albums.txt # now this branch&#39;s albums.txt is the same as baroness&#39;
-red album
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This comes up surprisingly a lot for me. I tend to use the show feature a lot more. A use case might be if I know a co-worker and I are working on the same file. He’s merged his branch into &lt;code&gt;master&lt;/code&gt;, I’m on a &lt;code&gt;feature_branch&lt;/code&gt;. I will then do a &lt;code&gt;git fetch &amp;amp;&amp;amp; git show origin/master:file/coworker/and/i/are/working/on.js&lt;/code&gt;. This then lets me easily see if his new work then affects my current work and if lets me know if I need to course correct.&lt;/p&gt;
-&lt;h2 id=&#34;you-can-combine-multiple-shorthand-flags-into-one&#34;&gt;You can combine multiple shorthand flags into one&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;$ git commit -n -m &#39;This is a commit message.&#39;
-$ git commit --no-verify --mesage=&#39;This is a commit message.&#39;
-$ git commit -nm &#39;This is a commit message.&#39; # This is the same as the above two!
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;you-can-combine-paragraphs-from-the-commandline-with-your-git-commit-message&#34;&gt;You can combine paragraphs from the commandline with your git commit message!&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;$ git commit -m Hello -m is -m it -m me -m you\&#39;re -m looking -m for\?
-$ git log -1 # Using -Number limits the log to that number of commits.
-commit facbbb49d88182b50d8383323acae6696e33ff63
-Author: Jesse Atkinson &amp;lt;jesse.atkinson@me.com&amp;gt;
-Date:   Tue Apr 21 19:12:44 2015 -0700
-
-    Hello
-
-    is
-
-    it
-
-    me
-
-    you&#39;re
-
-    looking
-
-    for?
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Also, notice you don&amp;rsquo;t have to use a string for your commit message if you escape? Not really useful, just fun to point out.&lt;/p&gt;
-&lt;h2 id=&#34;stashing-with-a-message-and-stashing-untracked-files&#34;&gt;Stashing with a message and stashing untracked files&lt;/h2&gt;
-&lt;p&gt;At the beginning of this I said I wasn&amp;rsquo;t going to preach. I lied. Always &lt;code&gt;stash&lt;/code&gt; with a message. Just do it. No. No. No. Hush. Do it.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ git checkout -b pikachu
-Switched to a new branch &#39;pikachu&#39;
-
-$ echo &#39;lightning bolt&#39; &amp;gt; attacks.txt
-
-$ git status --short
-?? attacks.txt
-
-$ git stash save --include-untracked &#39;Creating attacks file for Pikachu.&#39; # Shorthand for --include-untracked is -u
-Saved working directory and index state On pikachu: Creating attacks file for Pikachu.
-HEAD is now at 33b6d46 Bug fix for ad scrapers. Have to specify placement when inserting iPad and iPhone into iOS product.
-
-$ git checkout master
-Switched to branch &#39;master&#39;
-Your branch is up-to-date with &#39;origin/master&#39;.
-
-$ git stash list
-stash@{0}: On pikachu: Creating attacks file for Pikachu.
-
-$ git stash show # In general this command isn&#39;t very useful. Just show&#39;s a diff of lines changed. But it&#39;s particularlly useless at this point. It doesn&#39;t show anything because attacks.txt isn&#39;t tracked by git. Git can only tell you information about things it has been told to track.
-
-$ git stash pop &amp;amp;&amp;amp; git add --all &amp;amp;&amp;amp; git commit -m &#39;Initial commit of attacks.txt for Pikachu.&#39;
-
-$ echo &#39;shock&#39; &amp;gt;&amp;gt; attacks.txt
-$ git diff
-diff --git a/attacks.txt b/attacks.txt
-index e8eb403..4642b97 100644
---- a/attacks.txt
-+++ b/attacks.txt
-@@ -1 +1,2 @@
-lightning bolt
-+shock
-
-$ git stash save &#39;added shock to the list of attacks&#39;
-Saved working directory and index state On pikachu: added shock to the list of attacks
-HEAD is now at 97921a2 Initial commit of attacks.txt for Pikachu.
-
-$ git stash show &#39;stash@{0}&#39; -p # NOTE: the -p argument is short for --patch
-diff --git a/attacks.txt b/attacks.txt
-index e8eb403..4642b97 100644
---- a/attacks.txt
-+++ b/attacks.txt
-@@ -1 +1,2 @@
-lightning bolt
-+shock
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;By default git stash does not stash untracked files. Throw a &lt;code&gt;-u&lt;/code&gt; on the end. Also, &lt;code&gt;git stash list&lt;/code&gt; shows you your stashes, however the default message it saves with it is the message of the latest commit and the branch you stashed it on. This is… super unhelpful. Make sure to add &lt;code&gt;save&lt;/code&gt; to your &lt;code&gt;git stash&lt;/code&gt; command and follow it with a message. You’re really smart. You’re also busy and you will totally forget what the hell is in your stashes if more than say 15 minutes pass. I promise you. Then when you come in the next day and run &lt;code&gt;git stash list&lt;/code&gt; and see a list of stashes with commit messages that have nothing to do with the work in the stash you’ll want to scream.&lt;/p&gt;
-&lt;h2 id=&#34;getting-your-stashed-stuff&#34;&gt;Getting your stashed stuff!&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;git stash apply stash@{3}&lt;/code&gt; will apply fourth (it’s zero-indexed) stash’s content to your current branch and the stash will remain in the stash list. However, &lt;code&gt;git stash pop stash@{3}&lt;/code&gt; will remove the fourth stash from the list moving all stashes after it up one on the index. &lt;code&gt;pop&lt;/code&gt; is probably what you most often want, but it’s also more dangerous for obvious reasons. If you would rather use &lt;code&gt;apply&lt;/code&gt; you can saftely run &lt;code&gt;git stash drop stash@{3}&lt;/code&gt; after you’re cool with getting rid of that stash.&lt;/p&gt;
-&lt;h2 id=&#34;dont-shoot-yourself-in-the-foot-with-git-stash&#34;&gt;Don&amp;rsquo;t shoot yourself in the foot with &lt;code&gt;git stash&lt;/code&gt;&lt;/h2&gt;
-&lt;p&gt;With git stash list the stashes reindex after you remove a stash. Let’s say you have three stashes. If you try to do something like this &lt;code&gt;git stash drop stash@{1} &amp;amp;&amp;amp; git drop stash@{2}&lt;/code&gt; this will fail because the stash at index 2 is now at index 1 after having dropped the stash at index 1. When removing multiple stashes remove from the highest numbered index on down or… just be really really careful.&lt;/p&gt;
-&lt;h2 id=&#34;clean-up-after-yourself-with-git-rebase---interactive&#34;&gt;Clean up after yourself with &lt;code&gt;git rebase --interactive&lt;/code&gt;&lt;/h2&gt;
-&lt;p&gt;I like to commit a lot and often. At the end of a feature branch I have a ton of shitty commits. It&amp;rsquo;s just the way I work. Those aren&amp;rsquo;t going to be helpful to anyone once this is merged to master. And some day if they find a bug and have to do a &lt;code&gt;git blame&lt;/code&gt; and see that Jesse commited this code six months ago with the commit message &amp;ldquo;WIP. Fixed shit.&amp;rdquo; they are going to (rightfully) curse my name. Lets not be that person. Lets use interactive rebase.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ git rebase --interactive branch_you_want_to_rebase_against_typically_master # That&#39;s it! You can also use the shorthand -i flag.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This is a very, well, interactive mode. Git really holds your hand and gives you lots of nice messages. When you run that git will open your text editor and have a list of all of the commits on your branch that are not on the branch you&amp;rsquo;re rebasing against.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;# Rebase c4758c3..c4758c3 onto c4758c3 (1 command(s))
-#
-# Commands:
-# p, pick = use commit
-# r, reword = use commit, but edit the commit message
-# e, edit = use commit, but stop for amending
-# s, squash = use commit, but meld into previous commit
-# f, fixup = like &amp;quot;squash&amp;quot;, but discard this commit&#39;s log message
-# x, exec = run command (the rest of the line) using shell
-#
-# These lines can be re-ordered; they are executed from top to bottom.
-#
-# If you remove a line here THAT COMMIT WILL BE LOST.
-#
-# However, if you remove everything, the rebase will be aborted.
-#
-# Note that empty commits are commented out
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;See all that lovely help from git? There&amp;rsquo;s not much more I can add here. You literally just follow along and git tells you what to do. I bring this up entirely because people seem to rarely use it.&lt;/p&gt;
-&lt;h2 id=&#34;interactively-add-your-changes-to-the-commit-stage&#34;&gt;Interactively add your changes to the commit stage&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;$ git add --patch
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Note &amp;ndash; this only works with files that are already being tracked by git. It does not work with untracked files.
-Split is super powerful and conveinent. If it gets &lt;em&gt;really&lt;/em&gt; hairy you can use e to manually edit the hunk.&lt;/p&gt;
-&lt;p&gt;From the help:&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Stage this hunk [y,n,q,a,d,/,e,?]?
-y - stage this hunk
-n - do not stage this hunk
-q - quit; do not stage this hunk or any of the remaining ones
-a - stage this hunk and all later hunks in the file
-d - do not stage this hunk or any of the later hunks in the file
-g - select a hunk to go to
-/ - search for a hunk matching the given regex
-j - leave this hunk undecided, see next undecided hunk
-J - leave this hunk undecided, see next hunk
-k - leave this hunk undecided, see previous undecided hunk
-K - leave this hunk undecided, see previous hunk
-s - split the current hunk into smaller hunks
-e - manually edit the current hunk
-? - print help&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;when-doing-a-comparison-make-sure-youre-comparing-against-the-latest-remote-version-with-fetch&#34;&gt;When doing a comparison make sure you&amp;rsquo;re comparing against the latest remote version with fetch&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;$ git diff master # diffs current branch against your local copy of master
-$ git diff SocialCodeInc/master # will probably do the same thing as above in *most* scenarios.
-$ git fetch SocialCodeInc &amp;amp;&amp;amp; git diff SocialCodeInc/master
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;squash-your-commit-if-the-branch-is-truly-a-mess&#34;&gt;Squash your commit if the branch is truly a mess&lt;/h2&gt;
-&lt;p&gt;If your branch&amp;rsquo;s commit history is a complete mess but you know you want what is there currently another branch (most likely master) &lt;code&gt;--squash&lt;/code&gt; is your friend.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ git commit -m &#39;ugh&#39;
-[new_branch bacb008] ugh
-1 file changed, 10 insertions(+), 2 deletions(-)
-
-$ git checkout master
-Switched to branch &#39;master&#39;
-
-$ git merge new_branch --squash
-Updating 051c56b..bacb008
-Fast-forward
-Squash commit -- not updating HEAD
-README.md           | 20 ++++++++++++++++++--
-awesometextfile.txt |  3 +++
-2 files changed, 21 insertions(+), 2 deletions(-)
-
-$ git branch --merged # To list local branches that have not been merged run --no-merged
-* master
-
-$ git branch -d new_branch
-error: The branch &#39;new_branch&#39; is not fully merged.
-If you are sure you want to delete it, run &#39;git branch -D new_branch&#39;.
-
-$ git branch -D new_branch
-Deleted branch new_branch (was bacb008).
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;what-if-i-want-just-a-single-commit-from-one-branch-into-another-branch&#34;&gt;What if I want just a single commit from one branch into another branch?&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;$ git checkout branch_you_want_to_move_commit_to &amp;amp;&amp;amp; git cherry-pick 240982d # You don&#39;t need the full sha, just enough that git understands it.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Can be a tad dangerous. Specifically—git will assign a new sha to the cherry-picked commit. Which means git will now have record of two sha&amp;rsquo;s with the same exact changes. Proceed with caution.&lt;/p&gt;
-&lt;h2 id=&#34;jesse-what-if-i-want-to-figure-what-commit-broke-my-favorite-feature&#34;&gt;Jesse, what if I want to figure what commit broke my favorite feature?!&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;http://git-scm.com/docs/git-bisect&#34;&gt;Bisect&lt;/a&gt; is your friend! (Seriously the docs are super worth reading.)&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ git bisect start
-$ git bisect bad # without passing a SHA it uses HEAD
-$ git bisect good SHAofLastGoodKnownCommit
-# At this point git takes over and tells you how many rivisions to test. Through a series of good and bad confirmations it will then tell you the bad commit.
-# Shoot off an email or slack message to the author with the commit sha or fix yourself if you&#39;re confident of the intended change in the commit or if you&#39;re the author
-$ git bisect reset # DO NOT FORGET TO DO THIS PLEASE. IF YOU FORGET YOU WILL BE VERY ANGRY LATER.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;more-diffing&#34;&gt;More diffing!&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;$ git diff ref1:path/to/file1 ref2:path/to/file2 #
-$ git diff origin/master -- [path/to/file] # Much simpler if you&#39;re diffing the same file at the same path.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;reset-can-be-gentle-too-ya-know&#34;&gt;Reset can be gentle too, ya know&lt;/h2&gt;
-&lt;p&gt;If there is a commit you just flat out don&amp;rsquo;t want to have and want to fix it and it &lt;em&gt;has not&lt;/em&gt; been pushed to the remote branch yet use &lt;code&gt;reset --soft&lt;/code&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$ git reset --soft HEAD~1
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;finally&#34;&gt;Finally&lt;/h2&gt;
-&lt;p&gt;Git is a tool. It is a means to an end. Not the end. Mastering your tools is essential in becoming a better and more efficient programmer. However, use whatever you feel more comfortable with. If you are happy with your GUI git app of choice then use it. Occassionally though these apps cause problems and you gotta jump into the commandline and get your hands dirty.&lt;/p&gt;
-&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://git-scm.com/book/en/v2&#34;&gt;http://git-scm.com/book/en/v2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://training.github.com/&#34;&gt;https://training.github.com/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://nicercode.github.io/git/setup.html&#34;&gt;http://nicercode.github.io/git/setup.html&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gitref.org/&#34;&gt;http://gitref.org/&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://nuclearsquid.com/writings/git-add/&#34;&gt;http://nuclearsquid.com/writings/git-add/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>What this post is  It is a tutorial of beginner to intermediate to maybe a light dusting of advanced git topics and practices. It is practical.  What this post is not  It is not philosophy or theory. (I will not be discussing the pros and cons of merge and rebase. Y&amp;rsquo;all can fight that battle elsewhere.) It is not super complex or overly archaic. It is not preachy (See first point).</description>
     </item>
     
     <item>
@@ -982,50 +123,9 @@ $ git diff origin/master -- [path/to/file] # Much simpler if you&#39;re diffing 
       <pubDate>Mon, 01 Jun 2015 00:00:00 +0000</pubDate>
       
       <guid>https://jsatk.us/posts/top-ten-hip-hop-albums/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Note: I&amp;rsquo;ve since lost when I originally wrote this so the publication date is an estimation by me from when I ported all my writings over to this website in 2020.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;I love making lists like this. &lt;a href=&#34;https://twitter.com/aguycalledDon&#34;&gt;Don Woods&lt;/a&gt; did this so I had to too.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/The_College_Dropout&#34;&gt;&amp;ldquo;College Dropout&amp;rdquo; by Kanye West&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Hell_Hath_No_Fury_(Clipse_album)&#34;&gt;&amp;ldquo;Hell Hath No Fury&amp;rdquo; by Clipse&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Late_Registration&#34;&gt;&amp;ldquo;Late Registration&amp;rdquo; by Kanye West&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Hello_Nasty&#34;&gt;&amp;ldquo;Hello Nasty&amp;rdquo; by Beastie Boys&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/The_Slim_Shady_LP&#34;&gt;&amp;ldquo;The Slim Shady LP&amp;rdquo; by Eminem&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/The_Black_Album_(Jay-Z_album)&#34;&gt;&amp;ldquo;The Black Album&amp;rdquo; by Jay-Z&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/2001_(Dr._Dre_album)&#34;&gt;&amp;ldquo;2001&amp;rdquo; by Dr. Dre&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Ready_to_Die&#34;&gt;&amp;ldquo;Ready To Die&amp;rdquo; by The Notorious B.I.G.&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Fishscale&#34;&gt;&amp;ldquo;Fishscale&amp;rdquo; by Ghostface Killer&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Good_Kid,_M.A.A.D_City&#34;&gt;&amp;ldquo;Good Kid, m.A.A.d City&amp;rdquo; by Kendrick Lamar&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;Honorable Mentions&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Stankonia&#34;&gt;&amp;ldquo;Stankonia&amp;rdquo; by Outkast&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Get_Rich_or_Die_Tryin&#39;_(album)&#34;&gt;&amp;ldquo;Get Rich or Die Tryin&amp;rsquo;&amp;rdquo; by 50 Cent&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/The_Miseducation_of_Lauryn_Hill&#34;&gt;&amp;ldquo;The Miseducation of Lauryn Hill&amp;rdquo; by Lauryn Hill&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Tha_Carter_III&#34;&gt;&amp;ldquo;The Carter III&amp;rdquo; by Lil&amp;rsquo; Wayne&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;img src=&#34;https://jsatk.us/s/college-dropout.jpg&#34; alt=&#34;College Dropout&#34;&gt;&lt;/p&gt;
-&lt;p&gt;What can I say? I was into hip-hop before I heard this, but so much of the 90s was gangster rap or &amp;ldquo;money, cash, hoes&amp;rdquo; rap. This record blew my mind then and continues to. I could talk at length about various things I love about it, but I&amp;rsquo;ll just touch on one. The comedy. This record is hilarious. Kanye does sarcasm and wit so well and it cracks me up every time.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://jsatk.us/s/hell-hath-no-fury.jpg&#34; alt=&#34;Hell Hath No Fury&#34;&gt;&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;d heard &amp;ldquo;Grindin&amp;rsquo;&amp;rdquo; but most of what I loved about it was Pharrell&amp;rsquo;s beat. The lyrics and flow didn&amp;rsquo;t strike me. When this record calm out Pitchfork gave it a fantastic review so I checked it out. I remember being so put off by this album at first. It&amp;rsquo;s noisey, Pusha T&amp;rsquo;s snorting is weird, their were no hits, etc. And yet I kept going back to it. Once I got past the initial barriers to this record I fell in love with it. There is probably no rap record I quote as often as this one. It&amp;rsquo;s amazing start to finish.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://jsatk.us/s/late-registration.jpg&#34; alt=&#34;Late Registration&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Yes. Kanye again. This was the first hip-hop album I bought the day it came out. We&amp;rsquo;re talking drive to Best Buy as soon as I got off work to buy it. This album would be perfect if it wasn&amp;rsquo;t for that terrible &amp;ldquo;Bring Me Down&amp;rdquo; song with Mandy. Again, Kanye is talking about things that resonated with me. Going to college, struggling to afford the life, and the frustration of realizing how truly useless college can be (for some). And man, if &amp;ldquo;Hey Mama&amp;rdquo; doesn&amp;rsquo;t make you cry you&amp;rsquo;re dead inside.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://jsatk.us/s/hello-nasty.jpg&#34; alt=&#34;Hello Nasty&#34;&gt;&lt;/p&gt;
-&lt;p&gt;&amp;ldquo;Hello Nasty&amp;rdquo; by Beastie Boys
-This was the first hip-hop album I ever got into that wasn&amp;rsquo;t DC Talk or other christian fare. I had to sneak it cause my parents were strict. I thought the Beastie Boys were weird, but I was in 7th grade and I liked weird. Hell, I liked anything. I remember staying up late and begging my dad to let me watch the world premier of the &amp;ldquo;Intergalactic&amp;rdquo; music video. He let me. I think he enjoyed the Beastie Boys nods to Japanese monster flicks and camp. The Beastie Boys taught me that hip-hop doesn&amp;rsquo;t need to be about money, cash, hoes, or drugs. Sometimes it&amp;rsquo;s just fun, goofy and smart. I adore everything they&amp;rsquo;ve put out, but this was my first and so its my favorite.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://jsatk.us/s/the-slim-shady-lp.jpg&#34; alt=&#34;The Slim Shady Lp&#34;&gt;&lt;/p&gt;
-&lt;p&gt;There are events in our lives that stick with us where you remember exactly where you were when it happened—typically tragedies or deaths. But sometimes they are songs. I will never forget being in 7th grade and Robert Ditzler walking up to me and saying, &amp;ldquo;Dude! Have you heard this rapper Eminem?&amp;rdquo; &amp;ldquo;M&amp;amp;M?&amp;rdquo; &amp;ldquo;Yeah, but it&amp;rsquo;s spelled funny. Like written out. You gotta hear it!&amp;rdquo; &amp;ldquo;Eh&amp;hellip; rap? Really?&amp;rdquo; &amp;ldquo;Yeah! But he&amp;rsquo;s not like those other guys!&amp;rdquo; When I got home from school I turned on MTV and they played the video for &amp;ldquo;My Name Is&amp;hellip;&amp;quot;. Holy shit. I could wax poetic about Eminem and what he did for our culture, for rap, and for me, but I don&amp;rsquo;t have the time. So I&amp;rsquo;ll just say this—when you&amp;rsquo;re an angry 7th grader who hates everything seeing someone that looks like you take shots at all the other cultural icons you hate was huge. Unlike a lot of things I liked in 7th grade this record is amazing and holds up.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://jsatk.us/s/the-black-album.jpg&#34; alt=&#34;The Black Album&#34;&gt;&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;d gotten into my &amp;ldquo;intelligent rapper&amp;rdquo; phase. I didn&amp;rsquo;t want to hear anything mainstream. To be honest I hadn&amp;rsquo;t given Jay-Z a fair shot before this, but it didn&amp;rsquo;t matter. I only wanted to hear rap in the vein of Tribe Called Quest, Talib Kweli, and Mos Def. I can&amp;rsquo;t remember how I got my hands on this record, but someone burned it for me. I remember sitting it my car and tearing up the first time I heard &amp;ldquo;December 4th&amp;rdquo; (which is still my favorite Jay-Z song to this day). This album had it all and was just solid. But it was (at the time) his farewell album. I knew Jay-Z was big and important. So hearing his last album as my first Jay-Z album made me go back and dig through his whole catalogue. I&amp;rsquo;ve been a fan ever since.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://jsatk.us/s/2001.jpg&#34; alt=&#34;2001&#34;&gt;&lt;/p&gt;
-&lt;p&gt;I never forgot about Dre because I&amp;rsquo;d never listened to Dre 1994 to 1999 is only a 5 year span, but that is a huge amount of time for the still young genre of hip-hop. I was 9 in 1994. I remember hearing the older kids sing the chorus of &amp;ldquo;Nuthin&amp;rsquo; but a &amp;ldquo;G&amp;rdquo; Thang&amp;rdquo;, but I didn&amp;rsquo;t even know who it was at the time. I remember seeing the older kids wear the &amp;ldquo;Doggystyle&amp;rdquo; t-shirt with the album art on it. I knew it was something foreign, dangerous, and I wanted to hear it. But I was 9. So when the lead-off single from a guy who the older kids liked featured my favorite (and every white kid&amp;rsquo;s favorite) rapper I had to hear more. It took me a few years before I got my hands on this record (again, strict parents) and heard more than the singles. And they were strict for good reason, this record is filthy. But damn is it ever good. This album is in my opinion the best sounding album I&amp;rsquo;ve ever heard. Dre may not be able to write his own rhymes but we forgive him because his flow is excellent and no one makes beats this good.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://jsatk.us/s/ready-to-die.jpg&#34; alt=&#34;Ready To Die&#34;&gt;&lt;/p&gt;
-&lt;p&gt;I didn&amp;rsquo;t listen to this album until probably 2007. I hated Biggie&amp;rsquo;s voice growing up. But because I&amp;rsquo;m a student and I hate having gaps in my knowledge at some point I decided it was time I give this a fair listen. Holy hell. It blew me away. I&amp;rsquo;d never heard &amp;ldquo;Juicy&amp;rdquo; (shut up). I heard it for the first time while listening to this album straight through. It genuinely and deeply moved me. That song still sends chills down my spine. The whole album is just so good. So air tight. It also lacked the annoying Puff Daddy with his &amp;ldquo;Yeah yeah&amp;quot;s through out the whole damn album (god I can&amp;rsquo;t stand&amp;hellip; whatever his name is now-a-days). This album is a classic and for a good reason. I don&amp;rsquo;t know if I&amp;rsquo;d have been open to had it not been for Clipse a year earlier.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://jsatk.us/s/fishscale.jpg&#34; alt=&#34;Fishscale&#34;&gt;&lt;/p&gt;
-&lt;p&gt;I LOVE GHOSTFACE! Seriously though. There is no one more entertaining in hip-hop… scratch that… there is no one more entertaining in music than Ghostface Killer. This album is a blast from beginning to end. The beats are great, but what hooked me is his flow and his lyrics. He&amp;rsquo;s just having a ball and doesn&amp;rsquo;t care if you get it or not. Even the skits on this record make me laugh (which is a rarity). And Ghostface tells stories. He tells tales. He&amp;rsquo;s not just doing the annoying trend of #hashtag rap. He&amp;rsquo;s not just naming expensive brands. He&amp;rsquo;s telling stories. God I wish more rappers would tell stories. I don&amp;rsquo;t care about your watch unless the story of you acquiring it (or the cash to buy it) is somehow interesting. Now I wanna go listen to Ghostface…&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://jsatk.us/s/good-kid-maad-city.jpg&#34; alt=&#34;Good Kid Maad City&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Aw&amp;hellip; Look at the baby on the list! Yes, this record is still wet from birth and Kendrick is a youngan, but there is a reason that it&amp;rsquo;s held up alongside &amp;ldquo;Illmatic&amp;rdquo; and &amp;ldquo;Ready To Die&amp;rdquo; almost overnight. Kendrick is incredibly good. And he has something that you&amp;rsquo;ll see I&amp;rsquo;ve praised repeatedly in other records on this list—he tells stories. While Kendrick and I had different childhoods the stories he tells are universal and resonate with me. &amp;ldquo;The Art of Peer Pressure&amp;rdquo; is one of those songs that takes me back to my own life situations where things could&amp;rsquo;ve gone a different way and make me thankful that they didn&amp;rsquo;t. This album also does something that most albums don&amp;rsquo;t. The songs stand on their own and are almost all hits, but the album also tells and over-arching story. Shyne is wrong, this album is an instant classic.&lt;/p&gt;
-</description>
+      <description>Note: I&amp;rsquo;ve since lost when I originally wrote this so the publication date is an estimation by me from when I ported all my writings over to this website in 2020.
+I love making lists like this. Don Woods did this so I had to too.
+ &amp;ldquo;College Dropout&amp;rdquo; by Kanye West &amp;ldquo;Hell Hath No Fury&amp;rdquo; by Clipse &amp;ldquo;Late Registration&amp;rdquo; by Kanye West &amp;ldquo;Hello Nasty&amp;rdquo; by Beastie Boys &amp;ldquo;The Slim Shady LP&amp;rdquo; by Eminem &amp;ldquo;The Black Album&amp;rdquo; by Jay-Z &amp;ldquo;2001&amp;rdquo; by Dr.</description>
     </item>
     
     <item>
@@ -1034,61 +134,7 @@ This was the first hip-hop album I ever got into that wasn&amp;rsquo;t DC Talk o
       <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
       
       <guid>https://jsatk.us/posts/on-text-editors/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Note: I&amp;rsquo;ve since lost when I originally wrote this so the publication date is an estimation by me from when I ported all my writings over to this website in 2020.  Also this was originally broken up into six parts and published in six separate entries.  I&amp;rsquo;ve since decided to combine them all into one here.  Lastly, as of this writing, May 16, 2020, I probably disagree with some of this now and would tell you to just use Vim or Code.&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;I&amp;rsquo;ve been a web developer for roughly nine years now. Four years as a student and five years as my career. In that time I&amp;rsquo;ve tried nearly every popular text editor and IDE out there. This is a detailed history of my journey and how I ended up using TextMate 2 as my text editor of choice. This article will not tell you to use TextMate 2. It will tell you my personal experience and journey. I ended up deciding that TextMate 2 is currently (as of December 15, 2014) the best text editor for me. You may end up choosing differently. I hope that this article helps expose you to some IDEs or text editors you haven&amp;rsquo;t used (or at least haven&amp;rsquo;t used in a while) and makes you curious about what&amp;rsquo;s out there.&lt;/p&gt;
-&lt;h2 id=&#34;the-dreamweaver-phase&#34;&gt;The Dreamweaver Phase&lt;/h2&gt;
-&lt;p&gt;When I first started out in 2006, the choice was simple — if you wanted to make websites you used an [integrated development environment][ide] (IDE for short) and the IDE you chose was [Dreamweaver][dw]. Whatever your opinion of Dreamweaver may be today, in 2006, it was easily the best. Dreamweaver made starting projects incredibly easy and it provided you with a lot of nice boilerplate templates. To a new web developer, this was a dream come true. The other tools available to web developers (specifically front-end devs) were barbaric.&lt;/p&gt;
-&lt;p&gt;So Dreamweaver it was.&lt;/p&gt;
-&lt;h2 id=&#34;the-coda-phase&#34;&gt;The Coda Phase&lt;/h2&gt;
-&lt;p&gt;That is until [Coda][coda] came along. In late 2009, I graduated from college with a computer science degree and in early 2010, I got my first professional job as a web developer. My peers and the internet seemed to agree that Dreamweaver was only for beginners (hint: it&amp;rsquo;s not) and that I should move to a &amp;ldquo;better&amp;rdquo; code editor. The two options I heard over and over were Coda and [TextMate][textmate]. I downloaded the demos for both. Coda was gorgeous, elegant, incredibly well designed, and had everything I needed built right into it. TextMate was&amp;hellip; a text editor. I remember staring blankly at TextMate wondering why anyone in their right mind would choose to use TextMate over Coda. I just didn&amp;rsquo;t get it.&lt;/p&gt;
-&lt;p&gt;Coda suited me very well for that job. I was one of two web developers at the company. We had no version control. We updated the website via FTP. The server-side language was PHP, which Coda was built to work with very well. All was going swimmingly. Why would I ever leave? I still maintain that if you&amp;rsquo;re doing websites as a freelancer or at a small agency for clients and your back-end is PHP, Coda is the best tool for the job.&lt;/p&gt;
-&lt;h2 id=&#34;the-eclipse-and-aptana-phase&#34;&gt;The Eclipse and Aptana Phase&lt;/h2&gt;
-&lt;p&gt;After a year at a crappy job with terrible pay cutting my teeth in web development, I got wise and applied at [MRM][mrm]. MRM is the digital agency for [McCann-Erickson][mccan]. I had a friend-of-a-friend who worked there and applied. I couldn&amp;rsquo;t even fathom working at a place that prestigious. I got the gig and quickly learned how big, powerful ad agencies worked (mostly terribly when it comes to web dev). It quickly became clear that Coda was completely ill-suited for the job. MRM was the digital agency of record for General Motors. Their site&amp;rsquo;s server-side language was all Java and our templating was all in JavaServer Pages (JSP). So naturally, I had to move to [Eclipse][eclipse]. There was just simply no way around it. Everyone had to use it. I flipped between Eclipse and [Aptana][aptana] (a more front-end-focused fork of Eclipse) for those five months I worked there.&lt;/p&gt;
-&lt;p&gt;Five months may sound like a short time, but it was the richest learning experience I&amp;rsquo;ve ever had. Those five months working there are very vivid in my memory because I learned a ton. Namely, I learned that I hated having to work in Eclipse and couldn&amp;rsquo;t wait to get back to Coda.&lt;/p&gt;
-&lt;p&gt;I got a call from a recruiter for a rival company four months in. I wasn&amp;rsquo;t looking to leave, but I knew I was underpaid. I didn&amp;rsquo;t mind too much because I enjoyed my job and I was learning. Also, it was the first job that made me feel like a professional. Still, my salary wouldn&amp;rsquo;t exactly cut it for too long. So I took the interview, got the job, and asked for 80% more money than I was making at MRM — a salary I thought was surely absurd. No way would they say &amp;ldquo;yes&amp;rdquo; to that. They said &amp;ldquo;yes&amp;rdquo; without blinking. So off to [Team Detroit][tdi] I went.&lt;/p&gt;
-&lt;p&gt;Team Detroit (TDI) was Ford&amp;rsquo;s digital agency of record (now you can see why MRM and TDI were rivals). Turns out, Ford&amp;rsquo;s website had a very similar set up as GM&amp;rsquo;s, and I was still stuck in Eclipse.&lt;/p&gt;
-&lt;h2 id=&#34;the-vim-phase&#34;&gt;The VIM Phase&lt;/h2&gt;
-&lt;p&gt;I stayed at [Team Detroit][tdi] as long as I could. The problem was Ford thought we were all too expensive (remember that salary I got?). They decided to outsource all of their web development to Buenos Aires, Argentina. And this is when I learned a super-valuable lesson — make your boss like you.&lt;/p&gt;
-&lt;p&gt;My boss and I got along great. He pulled me aside one day and told me that I was going to be laid off soon. We all were. He didn&amp;rsquo;t know when exactly, but I probably had three months at best. One of my favorite project managers from MRM was working at [ePrize][eprize] (now known as Hello World). I didn&amp;rsquo;t really want to leave Team Detroit, but I had friends at ePrize and I knew I was getting laid off soon and didn&amp;rsquo;t feel like job hunting, so I applied and got the gig.&lt;/p&gt;
-&lt;p&gt;One of the things that made me incredibly happy about the new job was this was the first job where I got a MacBook Pro. Previously, I was stuck on Windows machines: XP at MRM and 7 at TDI. Naturally, I was excited to get back to using my code editor of  choice, Coda, rather than being forced to use Eclipse. In my absence of being able to code on a Mac for my day job, TextMate 2 alpha had been released into the wild. However, the new kid on the block that everyone was telling me to use was [Sublime Text 2][sublimetext].&lt;/p&gt;
-&lt;p&gt;Excited, I began this new gig using Sublime Text 2. I read every article on all the tips and tricks I could find. The problem came when I realized ePrize had an incredibly asinine way of managing their codebase. Their codebase was remote and only remote. There was no pushing and pulling from your computer to a remote server. You had to connect to the remote server and work directly on it. Yes, I&amp;rsquo;m dead serious. Yes, I asked a lot of &amp;ldquo;Why is this this way?&amp;quot;, but received no satisfactory answers. It was what it was. Most of my co-workers used a system of mounting the server as a drive and editing the files using Coda or Sublime Text 2. The problem was anytime two of us had to work on the same branch, we&amp;rsquo;d end up overwriting each other&amp;rsquo;s work. You see, when you mount a drive and open a file on it your computer downloads and caches that file. When you save, it uploads the change. Next time you open the file it doesn&amp;rsquo;t re-download it. It simply opens up the local copy it has. This is a problem if two people edit the same file. They will never realize that the other person has modified it.&lt;/p&gt;
-&lt;p&gt;The only sure way to avoid this is to actually work on the server. The cleanest, easiest, and most hassle-free way to accomplish this was with [VIM][vim]. I&amp;rsquo;d never used VIM except to write commit messages. I knew very little. Since I refused to follow this asinine and reckless workflow, my co-workers and boss insisted on using, I had to double-down on learning VIM. And boy did I ever. Again, I read everything I could about VIM. I learned that tool inside and out, backwards and forwards. I became an evangelist for VIM. Singing its praises and looking down my nose at other, lesser developers who had to have fancy things like a UI in their text editor. Man, did it ever feel good to be superior!&lt;/p&gt;
-&lt;p&gt;And I was superior in one way:I was the only developer who never accidentally overwrote his co-workers code. This sort of thing was rare, but it still happened every few weeks. Someone would inevitably overwrite another developer’s code. They never did learn (I think you can see why I didn&amp;rsquo;t stay there long).&lt;/p&gt;
-&lt;p&gt;However, I was not superior in many other ways. In that VIM is not actually better than Coda or Sublime Text or TextMate or any other editor. It&amp;rsquo;s just extremely different. After a year of working at ePrize, I quit. I hated the job and decided to leave even without another job lined up.&lt;/p&gt;
-&lt;h2 id=&#34;the-sublime-text-phase&#34;&gt;The Sublime Text Phase&lt;/h2&gt;
-&lt;p&gt;After a month of interviewing and job hunting, I ended up at TuneIn. This meant moving from Detroit to the Bay area. I started off in [VIM][vim], but was eventually convinced by a friend to try [Sublime Text][sublimetext] again. The beta for 3 had just come out and was pretty stable. So, I checked it out. I was surprised by how much I liked it. After a day of using it, I didn&amp;rsquo;t see any reason not to keep using it. So I did. Once again, I poured myself into the app learning everything I could about it. In fact, I even wrote a starter guide for it that I would give to friends who code or new employees who were unfamiliar with Sublime Text that has been unfortunately lost to time.&lt;/p&gt;
-&lt;p&gt;Sublime Text (particularly Sublime Text 3 beta) felt like the culmination of years-long frustration at the lack of updates to TextMate and the lack of sensible choices for devs who didn&amp;rsquo;t want to use a fully-fledged IDE. I&amp;rsquo;d used Sublime Text on and off, but I was never able to use it full-time, day-in-day-out due to how my previous job was.&lt;/p&gt;
-&lt;p&gt;Sublime Text is, as of this writing, still probably the most versatile and potentially best text editor out there. It&amp;rsquo;s incredibly customizable. It&amp;rsquo;s cross-platform. It&amp;rsquo;s lightning fast. And, it&amp;rsquo;s&amp;hellip; ugly.&lt;/p&gt;
-&lt;p&gt;It&amp;rsquo;s that final point — an intangible one — that most devs seem not to  care about. You can customize the hell out of Sublime Text&amp;rsquo;s look and feel with themes. No matter how much I fiddled with it, it felt like putting lipstick on a pig. A very abandoned pig, I might add.&lt;/p&gt;
-&lt;p&gt;Still, Sublime Text was the best tool for the job. It worked really, really well. It was just not very polished. Then, along came the OS X Yosemite beta.&lt;/p&gt;
-&lt;h2 id=&#34;the-textmate-phase&#34;&gt;The TextMate Phase&lt;/h2&gt;
-&lt;p&gt;Once the Yosemite beta came out in summer 2014, and I&amp;rsquo;d heard from trusted friends and co-workers it was actually pretty stable, I did something stupid and installed it on my work machine. I figured I&amp;rsquo;d be able to identify what parts of our app wouldn&amp;rsquo;t work on Yosemite and potentially contribute to some RubyGems to get them ready for Yosemite.&lt;/p&gt;
-&lt;p&gt;Sublime Text ran awful for me on Yosemite. Mostly because one of the billion packages I had installed on it kept crashing it. In frustration one day I just switched to [TextMate][textmate]. Fully assuming I&amp;rsquo;d move back to Sublime Text once the packages for it got updated to run on Yosemite.&lt;/p&gt;
-&lt;p&gt;And then a funny thing happened. I never switched back. In the two or so years since the 2 alpha was released for free and open-sourced, TextMate got really fast, really good, and, dammit, it was pretty. This is an OS X-only app that was clearly made by someone with taste. Someone who is an OS X user, who knows what those of us who live and work on OS X want in an app, both from utility as well as design standpoints.&lt;/p&gt;
-&lt;p&gt;I enjoyed having an actual preferences pane. I enjoyed installing bundles with a GUI. Wait &amp;hellip; why didn&amp;rsquo;t I start using this earlier? Oh yeah, because there were little things about it that drove me nuts. But turns out after a quick Google search, I found out how to enable and disable various bundles. The main thing Sublime Text still had that TextMate didn&amp;rsquo;t have (at least not out of the box) was autosuggest when typing in a method name. However, I quickly learned that ⎋(esc) would autocomplete, and it did a pretty damn good job of guessing what I wanted it to autocomplete to.&lt;/p&gt;
-&lt;p&gt;Another huge benefit of TextMate was how damn good the multi-cursor support is. Sublime Text has it, but not like this. TextMate (as of this writing) feels like one of those apps that was made specifically with nerds like me in mind. It has all the things I care about in spades and the things it doesn&amp;rsquo;t have I don&amp;rsquo;t mind so much. I&amp;rsquo;ve been using TextMate 2, which has now gone into &amp;ldquo;beta&amp;rdquo; (it&amp;rsquo;s stable, don&amp;rsquo;t fear) for the past six months and haven&amp;rsquo;t once felt the desire to switch back to Sublime Text.&lt;/p&gt;
-&lt;p&gt;textmate: &lt;a href=&#34;http://macromates.com&#34;&gt;http://macromates.com&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;what-about-atom-and-bb-edit&#34;&gt;What about Atom and BB Edit?&lt;/h2&gt;
-&lt;p&gt;One you&amp;rsquo;ll notice that I&amp;rsquo;ve completely skipped over [Atom][atom] and [BB Edit][bb]. Atom, if you don&amp;rsquo;t know, is essentially Github taking Sublime Text, making it work entirely in a browser, and putting a little bit of their own stamp on it. It&amp;rsquo;s a great text editor and a novel approach, but it is embarassingly slow and even more embarassingly a shameless ripoff of Sublime Text. Github, like many, are frustrated by the state of text editors and how each owner of them seems to abandon them. At least the owner of TextMate had the good sense to open source it and release it into the wild. If you like the look and feel of Sublime Text I&amp;rsquo;d say give Atom a shot. However, last I tried it out (roughly two months ago) it was a slow and sluggish beast.&lt;/p&gt;
-&lt;p&gt;BB Edit is absolutely fantastic. It&amp;rsquo;s an incredible app with a long history of development and support. It&amp;rsquo;s really well done. I recommend it whole heartily. However it veers sharply into the IDE territory which is not what I&amp;rsquo;m looking for. It&amp;rsquo;s just not for me.&lt;/p&gt;
-&lt;p&gt;atom: &lt;a href=&#34;https://atom.io&#34;&gt;https://atom.io&lt;/a&gt;
-bb: &lt;a href=&#34;http://www.barebones.com/products/bbedit/&#34;&gt;http://www.barebones.com/products/bbedit/&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;TextMate is, in my opinion, the most mature text editor out there. The fact that it is open source and free just speaks to how absolutely insane this industry, as well as the state of the tools we use to build it. is. I can wholeheartedly recommend Coda, VIM, Sublime Text, or TextMate to anyone. I think they&amp;rsquo;re all excellent choices, but for me (at least for now) the choice is clearly TextMate.&lt;/p&gt;
-&lt;p&gt;vim: &lt;a href=&#34;http://www.vim.org&#34;&gt;http://www.vim.org&lt;/a&gt;
-aptana: &lt;a href=&#34;http://www.aptana.com&#34;&gt;http://www.aptana.com&lt;/a&gt;
-coda: &lt;a href=&#34;https://panic.com/coda/&#34;&gt;https://panic.com/coda/&lt;/a&gt;
-dw: &lt;a href=&#34;http://www.adobe.com/products/dreamweaver.html&#34;&gt;http://www.adobe.com/products/dreamweaver.html&lt;/a&gt;
-eclipse: &lt;a href=&#34;https://eclipse.org&#34;&gt;https://eclipse.org&lt;/a&gt;
-eprize: &lt;a href=&#34;http://www.helloworld.com&#34;&gt;http://www.helloworld.com&lt;/a&gt;
-ide: &lt;a href=&#34;http://en.wikipedia.org/wiki/Integrated_development_environment&#34;&gt;http://en.wikipedia.org/wiki/Integrated_development_environment&lt;/a&gt;
-mccan: &lt;a href=&#34;http://mccann.com&#34;&gt;http://mccann.com&lt;/a&gt;
-mrm: &lt;a href=&#34;http://mrm-mccann.com/en/index.html&#34;&gt;http://mrm-mccann.com/en/index.html&lt;/a&gt;
-sublimetext: &lt;a href=&#34;http://www.sublimetext.com&#34;&gt;http://www.sublimetext.com&lt;/a&gt;
-tdi: &lt;a href=&#34;http://teamdetroit.com&#34;&gt;http://teamdetroit.com&lt;/a&gt;
-textmate: &lt;a href=&#34;http://macromates.com&#34;&gt;http://macromates.com&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>Note: I&amp;rsquo;ve since lost when I originally wrote this so the publication date is an estimation by me from when I ported all my writings over to this website in 2020. Also this was originally broken up into six parts and published in six separate entries. I&amp;rsquo;ve since decided to combine them all into one here. Lastly, as of this writing, May 16, 2020, I probably disagree with some of this now and would tell you to just use Vim or Code.</description>
     </item>
     
   </channel>

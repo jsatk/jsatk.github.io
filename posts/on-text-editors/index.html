@@ -4,10 +4,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Language" content="en">
 
     <meta name="author" content="Jesse Atkinson">
-    <meta name="description" content="Note: I&rsquo;ve since lost when I originally wrote this so the publication date is an estimation by me from when I ported all my writings over to this website in 2020. Also this was originally broken up into six parts and published in six separate entries. I&rsquo;ve since decided to combine them all into one here. Lastly, as of this writing, May 16, 2020, I probably disagree with some of this now and would tell you to just use Vim or Code.">
+    <meta name="description" content="Jesse Atkinson&#39;s personal website">
     <meta name="keywords" content="blog,developer,personal">
 
     <meta name="twitter:card" content="summary"/>
@@ -34,13 +33,13 @@
     
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
 
     
       
       
-      <link rel="stylesheet" href="https://jsatk.us/css/coder.min.a4f332213a21ce8eb521670c614470c58923aaaf385e2a73982c31dd7642decb.css" integrity="sha256-pPMyITohzo61IWcMYURwxYkjqq84XipzmCwx3XZC3ss=" crossorigin="anonymous" media="screen" />
+      <link rel="stylesheet" href="https://jsatk.us/css/coder.min.7cc85e60b4951b780d02f5d0f799d711f805b3e6042a95f61d1fa840a2f5ce6d.css" integrity="sha256-fMheYLSVG3gNAvXQ95nXEfgFs&#43;YEKpX2HR&#43;oQKL1zm0=" crossorigin="anonymous" media="screen" />
     
 
     
@@ -53,10 +52,12 @@
 
     
 
+    
+
     <link rel="icon" type="image/png" href="https://jsatk.us/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://jsatk.us/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.69.2" />
+    <meta name="generator" content="Hugo 0.74.3" />
   </head>
 
   
@@ -140,7 +141,7 @@
 <p>I stayed at [Team Detroit][tdi] as long as I could. The problem was Ford thought we were all too expensive (remember that salary I got?). They decided to outsource all of their web development to Buenos Aires, Argentina. And this is when I learned a super-valuable lesson — make your boss like you.</p>
 <p>My boss and I got along great. He pulled me aside one day and told me that I was going to be laid off soon. We all were. He didn&rsquo;t know when exactly, but I probably had three months at best. One of my favorite project managers from MRM was working at [ePrize][eprize] (now known as Hello World). I didn&rsquo;t really want to leave Team Detroit, but I had friends at ePrize and I knew I was getting laid off soon and didn&rsquo;t feel like job hunting, so I applied and got the gig.</p>
 <p>One of the things that made me incredibly happy about the new job was this was the first job where I got a MacBook Pro. Previously, I was stuck on Windows machines: XP at MRM and 7 at TDI. Naturally, I was excited to get back to using my code editor of  choice, Coda, rather than being forced to use Eclipse. In my absence of being able to code on a Mac for my day job, TextMate 2 alpha had been released into the wild. However, the new kid on the block that everyone was telling me to use was [Sublime Text 2][sublimetext].</p>
-<p>Excited, I began this new gig using Sublime Text 2. I read every article on all the tips and tricks I could find. The problem came when I realized ePrize had an incredibly asinine way of managing their codebase. Their codebase was remote and only remote. There was no pushing and pulling from your computer to a remote server. You had to connect to the remote server and work directly on it. Yes, I&rsquo;m dead serious. Yes, I asked a lot of &ldquo;Why is this this way?&quot;, but received no satisfactory answers. It was what it was. Most of my co-workers used a system of mounting the server as a drive and editing the files using Coda or Sublime Text 2. The problem was anytime two of us had to work on the same branch, we&rsquo;d end up overwriting each other&rsquo;s work. You see, when you mount a drive and open a file on it your computer downloads and caches that file. When you save, it uploads the change. Next time you open the file it doesn&rsquo;t re-download it. It simply opens up the local copy it has. This is a problem if two people edit the same file. They will never realize that the other person has modified it.</p>
+<p>Excited, I began this new gig using Sublime Text 2. I read every article on all the tips and tricks I could find. The problem came when I realized ePrize had an incredibly asinine way of managing their codebase. Their codebase was remote and only remote. There was no pushing and pulling from your computer to a remote server. You had to connect to the remote server and work directly on it. Yes, I&rsquo;m dead serious. Yes, I asked a lot of &ldquo;Why is this this way?&rdquo;, but received no satisfactory answers. It was what it was. Most of my co-workers used a system of mounting the server as a drive and editing the files using Coda or Sublime Text 2. The problem was anytime two of us had to work on the same branch, we&rsquo;d end up overwriting each other&rsquo;s work. You see, when you mount a drive and open a file on it your computer downloads and caches that file. When you save, it uploads the change. Next time you open the file it doesn&rsquo;t re-download it. It simply opens up the local copy it has. This is a problem if two people edit the same file. They will never realize that the other person has modified it.</p>
 <p>The only sure way to avoid this is to actually work on the server. The cleanest, easiest, and most hassle-free way to accomplish this was with [VIM][vim]. I&rsquo;d never used VIM except to write commit messages. I knew very little. Since I refused to follow this asinine and reckless workflow, my co-workers and boss insisted on using, I had to double-down on learning VIM. And boy did I ever. Again, I read everything I could about VIM. I learned that tool inside and out, backwards and forwards. I became an evangelist for VIM. Singing its praises and looking down my nose at other, lesser developers who had to have fancy things like a UI in their text editor. Man, did it ever feel good to be superior!</p>
 <p>And I was superior in one way:I was the only developer who never accidentally overwrote his co-workers code. This sort of thing was rare, but it still happened every few weeks. Someone would inevitably overwrite another developer’s code. They never did learn (I think you can see why I didn&rsquo;t stay there long).</p>
 <p>However, I was not superior in many other ways. In that VIM is not actually better than Coda or Sublime Text or TextMate or any other editor. It&rsquo;s just extremely different. After a year of working at ePrize, I quit. I hated the job and decided to leave even without another job lined up.</p>
@@ -211,26 +212,23 @@ textmate: <a href="http://macromates.com">http://macromates.com</a></p>
 
       </div>
 
+      <footer class="footer">
+  <section class="container">
+    
+      <p>🥃</p>
+    
+    
       
-  <footer class="footer">
-    <section class="container">
+        © 2020
       
-        <p>🥃</p>
-      
-      
-        ©
-        
-        2020
-         Jesse Atkinson 
-      
-      
-      
-    </section>
-  </footer>
+       Jesse Atkinson 
+    
+    
+    
+  </section>
+</footer>
 
     </main>
-
-    
 
     
 
