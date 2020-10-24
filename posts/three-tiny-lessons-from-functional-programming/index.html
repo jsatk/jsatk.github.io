@@ -61,7 +61,7 @@ Also in the past two years, more thinkpieces than I care to link to have been wr
     <link rel="icon" type="image/png" href="https://jsatk.us/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://jsatk.us/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.75.1" />
+    <meta name="generator" content="Hugo 0.76.5" />
   </head>
 
   
@@ -206,7 +206,7 @@ myRectangle.area <span style="font-style:italic">// =&gt; 200
 <p>I&rsquo;ve found this to be particularly useful in my test suite. It ensures I&rsquo;m not making any false assumptions about what my code does or benefiting from any side-effects unknowingly.</p>
 <p>For example:</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="font-weight:bold">const</span> options = {
-  async: <span style="font-weight:bold">true</span>,
+  <span style="font-weight:bold">async</span>: <span style="font-weight:bold">true</span>,
   page: 4
 };
 
@@ -224,7 +224,7 @@ yetAnotherFunction(options);
 </code></pre></div><p>The above code modifies <code>options</code> once it&rsquo;s passed into <code>awesomeMethod</code>. Let&rsquo;s say <code>options</code> is used for multiple methods all invoked at about the same time, depending on order of execution this can produce unwanted results since we are modifying the options object at the beginning of <code>awesomeMethod</code>. If that object were frozen we&rsquo;d have gotten a javascript error (in strict mode, you&rsquo;re using strict mode right?!) letting us know we were attempting to modify a frozen object, which is super useful feedback for not only the original author but any new developers coming into the code.</p>
 <p>Lets see what that would look like with <code>Object.freeze</code>.</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="font-weight:bold">const</span> options = Object.freeze({
-  async: <span style="font-weight:bold">true</span>,
+  <span style="font-weight:bold">async</span>: <span style="font-weight:bold">true</span>,
   page: 4
 });
 
@@ -242,7 +242,7 @@ yetAnotherFunction(options);
 </code></pre></div><p>Here we&rsquo;re combining things we learned in the first point with things we&rsquo;re learning here. <code>Object.freeze</code> causes JS to throw an error if we attempt to modify the object, so we then use <code>Object.assign</code> (or <code>...</code>) to create a new options object that&rsquo;s local to the method thus preventing any timing issues. Concepts like this can be very useful even in OO programing.</p>
 <p>Finally, lets combine all three of the above concepts. The example here is trivial, but it gives you an idea of the simplicity and power of working without classes (when appropriate) and not mutating objects.</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="font-weight:bold">const</span> config = Object.freeze({
-  async: <span style="font-weight:bold">true</span>,
+  <span style="font-weight:bold">async</span>: <span style="font-weight:bold">true</span>,
   page: 4
 });
 

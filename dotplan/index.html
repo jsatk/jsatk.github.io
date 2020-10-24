@@ -11,11 +11,11 @@
 
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=".plan"/>
-<meta name="twitter:description" content="2020 .plan  Table of contents  January 2020  2020-01-02   March 2020  2020-03-27 2020-03-28 2020-03-29   May 2020  2020-05-04   June 2020  2020-06-08 2020-06-12   September 2020  09-06-2020 09-07-2020 09-09-2020 09-15-2020   October 2020  10-05-2020    January 2020 2020-01-16 Wow. I hardly used this in 2019. Lets see if 2020&rsquo;s different.
+<meta name="twitter:description" content="2020 .plan  Table of contents  January 2020  2020-01-02   March 2020  2020-03-27 2020-03-28 2020-03-29   May 2020  2020-05-04   June 2020  2020-06-08 2020-06-12   September 2020  09-06-2020 09-07-2020 09-09-2020 09-15-2020   October 2020  10-05-2020 10-24-2020    January 2020 2020-01-16 Wow. I hardly used this in 2019. Lets see if 2020&rsquo;s different.
 Been learning a ton of Scala."/>
 
     <meta property="og:title" content=".plan" />
-<meta property="og:description" content="2020 .plan  Table of contents  January 2020  2020-01-02   March 2020  2020-03-27 2020-03-28 2020-03-29   May 2020  2020-05-04   June 2020  2020-06-08 2020-06-12   September 2020  09-06-2020 09-07-2020 09-09-2020 09-15-2020   October 2020  10-05-2020    January 2020 2020-01-16 Wow. I hardly used this in 2019. Lets see if 2020&rsquo;s different.
+<meta property="og:description" content="2020 .plan  Table of contents  January 2020  2020-01-02   March 2020  2020-03-27 2020-03-28 2020-03-29   May 2020  2020-05-04   June 2020  2020-06-08 2020-06-12   September 2020  09-06-2020 09-07-2020 09-09-2020 09-15-2020   October 2020  10-05-2020 10-24-2020    January 2020 2020-01-16 Wow. I hardly used this in 2019. Lets see if 2020&rsquo;s different.
 Been learning a ton of Scala." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://jsatk.us/dotplan/" />
@@ -59,7 +59,7 @@ Been learning a ton of Scala." />
     <link rel="icon" type="image/png" href="https://jsatk.us/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://jsatk.us/img/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.75.1" />
+    <meta name="generator" content="Hugo 0.76.5" />
   </head>
 
   
@@ -143,6 +143,7 @@ Been learning a ton of Scala." />
 <li><a href="#october-2020">October 2020</a>
 <ul>
 <li><a href="#10-05-2020">10-05-2020</a></li>
+<li><a href="#10-24-2020">10-24-2020</a></li>
 </ul>
 </li>
 </ul>
@@ -218,9 +219,16 @@ or skip this operation and proceed to the next section.</p>
 <p>Finally sat down and attempted to unfuck YNAB today.  The system works if you diligently stick to it, but if you fall off at all it&rsquo;s a shitshow.  I fixed our budgets for the past three years starting at January 2018, which is when we last declared budget bankruptcy and started over.</p>
 <p>Where our money went for the past three years is mildly inaccurate on there now (i.e. transactions might be labeled incorrectly), but how much we actually have and our current month&rsquo;s budget is spot on.  Budgeting is an anxiety inducing hell for me but it needs to be done and glad I did it.</p>
 <p>I also spent time figuring out why I keep getting this warning when I run <code>make</code> in my dotfiles repo.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">Makefile:107: warning: overriding commands for target `/Users/jsatk/.asdf/shims/neovim&#39;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-make" data-lang="make">Makefile:107: warning: overriding commands for target `/Users/jsatk/.asdf/shims/neovim&#39;
 Makefile:98: warning: ignoring old commands for target `/Users/jsatk/.asdf/shims/neovim&#39;
 </code></pre></div><p>Neovim wants me to have a plugin called &ldquo;neovim&rdquo; from both <code>npm</code> and <code>gem</code>.  The issue is that using <code>asdf</code> to manage both causes the <code>target</code> in the <code>Makefile</code> to end up being literally identical for both.  <code>asdf</code> is smart enough to handle this naming collision and appends extra info to the end (i.e. <code>neovim-node-host</code> &amp; <code>neovim-ruby-host</code>), but <code>make</code> understandably panics when it sees two targets named the same thing.  This took a bit to figure out why I was getting these warnings until I realized all my variables and string concatenation I do at the top of the <code>Makefile</code> resulted in the same <code>target</code> for both.</p>
+<h3 id="10-24-2020">10-24-2020</h3>
+<p>More budgeting.  Almost a month of consistently doing it.  I hate money but
+forcing myself to grow up and get serious about it.</p>
+<p>Ported over some more dotfile changes from my work branch.  Maintaining a
+personal &amp; work branch is getting quite annoying.  But it&rsquo;s one of those things
+that I&rsquo;ll be glad I kept my personal up-to-date whenever I get back to actually
+coding on this machine and/or writing on my blog again.</p>
 
   </article>
 </section>
