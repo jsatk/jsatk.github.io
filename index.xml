@@ -6,7 +6,17 @@
     <description>Recent content on Jesse Atkinson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Jun 2020 23:22:35 -0700</lastBuildDate><atom:link href="https://jsatk.us/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 21 Mar 2021 15:53:15 -0700</lastBuildDate><atom:link href="https://jsatk.us/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Working With Thrift Unions in Scala</title>
+      <link>https://jsatk.us/posts/working-with-thrift-unions-in-scala/</link>
+      <pubDate>Sun, 21 Mar 2021 15:53:15 -0700</pubDate>
+      
+      <guid>https://jsatk.us/posts/working-with-thrift-unions-in-scala/</guid>
+      <description>Lately I&amp;rsquo;ve been working a lot with Unions in Scala and have found it to be mildly confusing. It&amp;rsquo;s easy to get tripped up so I wanted to write down a guide of sorts on how to work with them, particularly in Scala.
+A brief primer First lets go over what we&amp;rsquo;re dealing with here when we&amp;rsquo;re dealing with an IDL in Scala. IDL stands for [Interactive Data Language (IDL)](https://en.wikipedia.org/wiki/IDL_(programming_language). The codebase I primarily work in in my day-to-day we write our IDLs in Thrift.</description>
+    </item>
+    
     <item>
       <title>Whelp.  Let&#39;s try this again...</title>
       <link>https://jsatk.us/posts/new-website-launch/</link>
