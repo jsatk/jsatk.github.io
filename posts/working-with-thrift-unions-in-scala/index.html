@@ -167,9 +167,9 @@ in Scala.  IDL stands for <a href="https://en.wikipedia.org/wiki/IDL_(programmin
 <span style="font-weight:bold">import</span> <span style="font-weight:bold">com.foo.datalogging.DataRecord.</span>{ <span style="font-weight:bold">UnknownUnionField</span>, V1, V2 }
 
 <span style="font-weight:bold">class</span> <span style="font-weight:bold">Foo</span> {
-  <span style="font-weight:bold">def</span> apply(record<span style="font-weight:bold">:</span> <span style="">DataRecord</span>)<span style="font-weight:bold">:</span> <span style="">Option</span>[<span style="">Record</span>] <span style="font-weight:bold">=</span>
+  <span style="font-weight:bold">def</span> apply(dataRecord<span style="font-weight:bold">:</span> <span style="">DataRecord</span>)<span style="font-weight:bold">:</span> <span style="">Option</span>[<span style="">Record</span>] <span style="font-weight:bold">=</span>
     <span style="font-style:italic">// First we need to `map` because `record` is an [[Option]].
-</span><span style="font-style:italic"></span>    record.prophecyAO.flatMap(p <span style="font-weight:bold">=&gt;</span>
+</span><span style="font-style:italic"></span>    dataRecord.record.flatMap(p <span style="font-weight:bold">=&gt;</span>
       <span style="font-style:italic">// Here we cannot do `p.v1.request`.   Again, we need to figure out what type we&#39;re dealing with.
 </span><span style="font-style:italic"></span>      p <span style="font-weight:bold">match</span> {
         <span style="font-weight:bold">case</span> V1(v1) <span style="font-weight:bold">=&gt;</span> <span style="font-weight:bold">Some</span>(v1) <span style="font-style:italic">// 👈 Inside this case we now know that `v1` is a subtype [[Record]] and can treat it as such.
@@ -185,8 +185,8 @@ in Scala.  IDL stands for <a href="https://en.wikipedia.org/wiki/IDL_(programmin
 <span style="font-weight:bold">import</span> <span style="font-weight:bold">com.foo.datalogging.DataRecord.</span>{ <span style="font-weight:bold">UnknownUnionField</span>, V1, V2 }
 
 <span style="font-weight:bold">class</span> <span style="font-weight:bold">Foo</span> {
-  <span style="font-weight:bold">def</span> apply(record<span style="font-weight:bold">:</span> <span style="">RecommenderRecord</span>)<span style="font-weight:bold">:</span> <span style="">Option</span>[<span style="">Record</span>] <span style="font-weight:bold">=</span>
-    record.prophecyAO.flatMap(
+  <span style="font-weight:bold">def</span> apply(dataRecord<span style="font-weight:bold">:</span> <span style="">DataRecord</span>)<span style="font-weight:bold">:</span> <span style="">Option</span>[<span style="">Record</span>] <span style="font-weight:bold">=</span>
+    dataRecord.record.flatMap(p <span style="font-weight:bold">=&gt;</span>
       <span style="font-weight:bold">case</span> V1(v1) <span style="font-weight:bold">=&gt;</span> <span style="font-weight:bold">Some</span>(v1)
       <span style="font-weight:bold">case</span> V2(v2) <span style="font-weight:bold">=&gt;</span> <span style="font-weight:bold">Some</span>(v2)
       <span style="font-weight:bold">case</span> <span style="font-weight:bold">UnknownUnionField</span>(<span style="font-weight:bold">_</span>) <span style="font-weight:bold">=&gt;</span> <span style="font-weight:bold">None</span>
@@ -201,7 +201,7 @@ in Scala.  IDL stands for <a href="https://en.wikipedia.org/wiki/IDL_(programmin
 <span style="font-weight:bold">import</span> <span style="font-weight:bold">com.foo.datalogging.DataRecord.V2</span>
 
 <span style="font-weight:bold">class</span> <span style="font-weight:bold">Foo</span> {
-  <span style="font-weight:bold">def</span> apply(request<span style="font-weight:bold">:</span> <span style="">RequestB</span>, response<span style="font-weight:bold">:</span> <span style="">ResponseB</span>)<span style="font-weight:bold">:</span> <span style="">RecommenderRecord</span> =
+  <span style="font-weight:bold">def</span> apply(request<span style="font-weight:bold">:</span> <span style="">RequestB</span>, response<span style="font-weight:bold">:</span> <span style="">ResponseB</span>)<span style="font-weight:bold">:</span> <span style="">DataRecord</span> =
     <span style="font-weight:bold">DataRecord</span>(
       <span style="font-weight:bold">Some</span>( <span style="font-style:italic">// Because we&#39;re dealing with an [[Option]].
 </span><span style="font-style:italic"></span>        V2( <span style="font-style:italic">// The name of the property on [[Record]] we&#39;re setting.
@@ -221,8 +221,8 @@ in Scala.  IDL stands for <a href="https://en.wikipedia.org/wiki/IDL_(programmin
 <span style="font-weight:bold">import</span> <span style="font-weight:bold">com.softwaremill.quicklens._</span>
 
 <span style="font-weight:bold">class</span> <span style="font-weight:bold">Foo</span> {
-  <span style="font-weight:bold">def</span> apply(record<span style="font-weight:bold">:</span> <span style="">DataRecord</span>)<span style="font-weight:bold">:</span> <span style="">Option</span>[<span style="">Record</span>] <span style="font-weight:bold">=</span>
-    record.modify(<span style="font-weight:bold">_</span>.prophecyAO.each.when[<span style="">V1</span>].v1.response.each).setTo(???)
+  <span style="font-weight:bold">def</span> apply(dataRecord<span style="font-weight:bold">:</span> <span style="">DataRecord</span>)<span style="font-weight:bold">:</span> <span style="">Option</span>[<span style="">DataRecord</span>] <span style="font-weight:bold">=</span>
+    dataRecord.modify(<span style="font-weight:bold">_</span>.record.each.when[<span style="">V1</span>].v1.response.each).setTo(???)
 }
 </code></pre></div><h2 id="conclusion">Conclusion</h2>
 <p>Scrooge has really great docs on Unions <a href="https://twitter.github.io/scrooge/GeneratedCodeUsage.html">here</a> if you want a more thorough explanation.  However I found these to be a tad confusing and didn&rsquo;t spell out the real world examples I was encountering.</p>
