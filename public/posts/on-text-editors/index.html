@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+  On Text Editors · Jesse Atkinson
+</title>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Jesse Atkinson">
+<meta name="description" content="Note: I&rsquo;ve since lost when I originally wrote this so the publication date is an estimation by me from when I ported all my writings over to this website in 2020. Also this was originally broken up into six parts and published in six separate entries. I&rsquo;ve since decided to combine them all into one here. Lastly, as of this writing, May 16, 2020, I probably disagree with some of this now and would tell you to just use Vim or Code.">
+<meta name="keywords" content="blog,developer,personal">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="On Text Editors"/>
+<meta name="twitter:description" content="Note: I&rsquo;ve since lost when I originally wrote this so the publication date is an estimation by me from when I ported all my writings over to this website in 2020. Also this was originally broken up into six parts and published in six separate entries. I&rsquo;ve since decided to combine them all into one here. Lastly, as of this writing, May 16, 2020, I probably disagree with some of this now and would tell you to just use Vim or Code."/>
+
+<meta property="og:title" content="On Text Editors" />
+<meta property="og:description" content="Note: I&rsquo;ve since lost when I originally wrote this so the publication date is an estimation by me from when I ported all my writings over to this website in 2020. Also this was originally broken up into six parts and published in six separate entries. I&rsquo;ve since decided to combine them all into one here. Lastly, as of this writing, May 16, 2020, I probably disagree with some of this now and would tell you to just use Vim or Code." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jsatk.us/posts/on-text-editors/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2014-01-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2014-01-01T00:00:00+00:00" />
+
+
+
+
+<link rel="canonical" href="https://jsatk.us/posts/on-text-editors/">
+
+
+<link rel="preload" href="https://jsatk.us/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="https://jsatk.us/css/coder.min.0fa2dc75ed1b76894ac0e062b10a6c4730daa745096fa120114b290ed8a48788.css" integrity="sha256-D6Lcde0bdolKwOBisQpsRzDap0UJb6EgEUspDtikh4g=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/png" href="https://jsatk.us/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://jsatk.us/img/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="https://jsatk.us/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://jsatk.us/images/apple-touch-icon.png">
+
+<link rel="manifest" href="https://jsatk.us/site.webmanifest">
+<link rel="mask-icon" href="https://jsatk.us/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+<meta name="generator" content="Hugo 0.110.0">
+
+
+
+
+
+  </head>
+
+
+
+
+<body class="preload-transitions colorscheme-light">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://jsatk.us/">
+      Jesse Atkinson
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://jsatk.us/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://jsatk.us/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://jsatk.us/et-cetera/">Et Cetera</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://jsatk.us/posts/on-text-editors/">
+              On Text Editors
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2014-01-01T00:00:00Z">
+                January 1, 2014
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              13-minute read
+            </span>
+          </div>
+          
+          
+          
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <p><strong>Note: I&rsquo;ve since lost when I originally wrote this so the publication date is an estimation by me from when I ported all my writings over to this website in 2020.  Also this was originally broken up into six parts and published in six separate entries.  I&rsquo;ve since decided to combine them all into one here.  Lastly, as of this writing, May 16, 2020, I probably disagree with some of this now and would tell you to just use Vim or Code.</strong></p>
+<h2 id="introduction">
+  Introduction
+  <a class="heading-link" href="#introduction">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>I&rsquo;ve been a web developer for roughly nine years now. Four years as a student and five years as my career. In that time I&rsquo;ve tried nearly every popular text editor and IDE out there. This is a detailed history of my journey and how I ended up using TextMate 2 as my text editor of choice. This article will not tell you to use TextMate 2. It will tell you my personal experience and journey. I ended up deciding that TextMate 2 is currently (as of December 15, 2014) the best text editor for me. You may end up choosing differently. I hope that this article helps expose you to some IDEs or text editors you haven&rsquo;t used (or at least haven&rsquo;t used in a while) and makes you curious about what&rsquo;s out there.</p>
+<h2 id="the-dreamweaver-phase">
+  The Dreamweaver Phase
+  <a class="heading-link" href="#the-dreamweaver-phase">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>When I first started out in 2006, the choice was simple — if you wanted to make websites you used an [integrated development environment][ide] (IDE for short) and the IDE you chose was [Dreamweaver][dw]. Whatever your opinion of Dreamweaver may be today, in 2006, it was easily the best. Dreamweaver made starting projects incredibly easy and it provided you with a lot of nice boilerplate templates. To a new web developer, this was a dream come true. The other tools available to web developers (specifically front-end devs) were barbaric.</p>
+<p>So Dreamweaver it was.</p>
+<h2 id="the-coda-phase">
+  The Coda Phase
+  <a class="heading-link" href="#the-coda-phase">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>That is until [Coda][coda] came along. In late 2009, I graduated from college with a computer science degree and in early 2010, I got my first professional job as a web developer. My peers and the internet seemed to agree that Dreamweaver was only for beginners (hint: it&rsquo;s not) and that I should move to a &ldquo;better&rdquo; code editor. The two options I heard over and over were Coda and [TextMate][textmate]. I downloaded the demos for both. Coda was gorgeous, elegant, incredibly well designed, and had everything I needed built right into it. TextMate was&hellip; a text editor. I remember staring blankly at TextMate wondering why anyone in their right mind would choose to use TextMate over Coda. I just didn&rsquo;t get it.</p>
+<p>Coda suited me very well for that job. I was one of two web developers at the company. We had no version control. We updated the website via FTP. The server-side language was PHP, which Coda was built to work with very well. All was going swimmingly. Why would I ever leave? I still maintain that if you&rsquo;re doing websites as a freelancer or at a small agency for clients and your back-end is PHP, Coda is the best tool for the job.</p>
+<h2 id="the-eclipse-and-aptana-phase">
+  The Eclipse and Aptana Phase
+  <a class="heading-link" href="#the-eclipse-and-aptana-phase">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>After a year at a crappy job with terrible pay cutting my teeth in web development, I got wise and applied at [MRM][mrm]. MRM is the digital agency for [McCann-Erickson][mccan]. I had a friend-of-a-friend who worked there and applied. I couldn&rsquo;t even fathom working at a place that prestigious. I got the gig and quickly learned how big, powerful ad agencies worked (mostly terribly when it comes to web dev). It quickly became clear that Coda was completely ill-suited for the job. MRM was the digital agency of record for General Motors. Their site&rsquo;s server-side language was all Java and our templating was all in JavaServer Pages (JSP). So naturally, I had to move to [Eclipse][eclipse]. There was just simply no way around it. Everyone had to use it. I flipped between Eclipse and [Aptana][aptana] (a more front-end-focused fork of Eclipse) for those five months I worked there.</p>
+<p>Five months may sound like a short time, but it was the richest learning experience I&rsquo;ve ever had. Those five months working there are very vivid in my memory because I learned a ton. Namely, I learned that I hated having to work in Eclipse and couldn&rsquo;t wait to get back to Coda.</p>
+<p>I got a call from a recruiter for a rival company four months in. I wasn&rsquo;t looking to leave, but I knew I was underpaid. I didn&rsquo;t mind too much because I enjoyed my job and I was learning. Also, it was the first job that made me feel like a professional. Still, my salary wouldn&rsquo;t exactly cut it for too long. So I took the interview, got the job, and asked for 80% more money than I was making at MRM — a salary I thought was surely absurd. No way would they say &ldquo;yes&rdquo; to that. They said &ldquo;yes&rdquo; without blinking. So off to [Team Detroit][tdi] I went.</p>
+<p>Team Detroit (TDI) was Ford&rsquo;s digital agency of record (now you can see why MRM and TDI were rivals). Turns out, Ford&rsquo;s website had a very similar set up as GM&rsquo;s, and I was still stuck in Eclipse.</p>
+<h2 id="the-vim-phase">
+  The VIM Phase
+  <a class="heading-link" href="#the-vim-phase">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>I stayed at [Team Detroit][tdi] as long as I could. The problem was Ford thought we were all too expensive (remember that salary I got?). They decided to outsource all of their web development to Buenos Aires, Argentina. And this is when I learned a super-valuable lesson — make your boss like you.</p>
+<p>My boss and I got along great. He pulled me aside one day and told me that I was going to be laid off soon. We all were. He didn&rsquo;t know when exactly, but I probably had three months at best. One of my favorite project managers from MRM was working at [ePrize][eprize] (now known as Hello World). I didn&rsquo;t really want to leave Team Detroit, but I had friends at ePrize and I knew I was getting laid off soon and didn&rsquo;t feel like job hunting, so I applied and got the gig.</p>
+<p>One of the things that made me incredibly happy about the new job was this was the first job where I got a MacBook Pro. Previously, I was stuck on Windows machines: XP at MRM and 7 at TDI. Naturally, I was excited to get back to using my code editor of  choice, Coda, rather than being forced to use Eclipse. In my absence of being able to code on a Mac for my day job, TextMate 2 alpha had been released into the wild. However, the new kid on the block that everyone was telling me to use was [Sublime Text 2][sublimetext].</p>
+<p>Excited, I began this new gig using Sublime Text 2. I read every article on all the tips and tricks I could find. The problem came when I realized ePrize had an incredibly asinine way of managing their codebase. Their codebase was remote and only remote. There was no pushing and pulling from your computer to a remote server. You had to connect to the remote server and work directly on it. Yes, I&rsquo;m dead serious. Yes, I asked a lot of &ldquo;Why is this this way?&rdquo;, but received no satisfactory answers. It was what it was. Most of my co-workers used a system of mounting the server as a drive and editing the files using Coda or Sublime Text 2. The problem was anytime two of us had to work on the same branch, we&rsquo;d end up overwriting each other&rsquo;s work. You see, when you mount a drive and open a file on it your computer downloads and caches that file. When you save, it uploads the change. Next time you open the file it doesn&rsquo;t re-download it. It simply opens up the local copy it has. This is a problem if two people edit the same file. They will never realize that the other person has modified it.</p>
+<p>The only sure way to avoid this is to actually work on the server. The cleanest, easiest, and most hassle-free way to accomplish this was with [VIM][vim]. I&rsquo;d never used VIM except to write commit messages. I knew very little. Since I refused to follow this asinine and reckless workflow, my co-workers and boss insisted on using, I had to double-down on learning VIM. And boy did I ever. Again, I read everything I could about VIM. I learned that tool inside and out, backwards and forwards. I became an evangelist for VIM. Singing its praises and looking down my nose at other, lesser developers who had to have fancy things like a UI in their text editor. Man, did it ever feel good to be superior!</p>
+<p>And I was superior in one way:I was the only developer who never accidentally overwrote his co-workers code. This sort of thing was rare, but it still happened every few weeks. Someone would inevitably overwrite another developer’s code. They never did learn (I think you can see why I didn&rsquo;t stay there long).</p>
+<p>However, I was not superior in many other ways. In that VIM is not actually better than Coda or Sublime Text or TextMate or any other editor. It&rsquo;s just extremely different. After a year of working at ePrize, I quit. I hated the job and decided to leave even without another job lined up.</p>
+<h2 id="the-sublime-text-phase">
+  The Sublime Text Phase
+  <a class="heading-link" href="#the-sublime-text-phase">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>After a month of interviewing and job hunting, I ended up at TuneIn. This meant moving from Detroit to the Bay area. I started off in [VIM][vim], but was eventually convinced by a friend to try [Sublime Text][sublimetext] again. The beta for 3 had just come out and was pretty stable. So, I checked it out. I was surprised by how much I liked it. After a day of using it, I didn&rsquo;t see any reason not to keep using it. So I did. Once again, I poured myself into the app learning everything I could about it. In fact, I even wrote a starter guide for it that I would give to friends who code or new employees who were unfamiliar with Sublime Text that has been unfortunately lost to time.</p>
+<p>Sublime Text (particularly Sublime Text 3 beta) felt like the culmination of years-long frustration at the lack of updates to TextMate and the lack of sensible choices for devs who didn&rsquo;t want to use a fully-fledged IDE. I&rsquo;d used Sublime Text on and off, but I was never able to use it full-time, day-in-day-out due to how my previous job was.</p>
+<p>Sublime Text is, as of this writing, still probably the most versatile and potentially best text editor out there. It&rsquo;s incredibly customizable. It&rsquo;s cross-platform. It&rsquo;s lightning fast. And, it&rsquo;s&hellip; ugly.</p>
+<p>It&rsquo;s that final point — an intangible one — that most devs seem not to  care about. You can customize the hell out of Sublime Text&rsquo;s look and feel with themes. No matter how much I fiddled with it, it felt like putting lipstick on a pig. A very abandoned pig, I might add.</p>
+<p>Still, Sublime Text was the best tool for the job. It worked really, really well. It was just not very polished. Then, along came the OS X Yosemite beta.</p>
+<h2 id="the-textmate-phase">
+  The TextMate Phase
+  <a class="heading-link" href="#the-textmate-phase">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Once the Yosemite beta came out in summer 2014, and I&rsquo;d heard from trusted friends and co-workers it was actually pretty stable, I did something stupid and installed it on my work machine. I figured I&rsquo;d be able to identify what parts of our app wouldn&rsquo;t work on Yosemite and potentially contribute to some RubyGems to get them ready for Yosemite.</p>
+<p>Sublime Text ran awful for me on Yosemite. Mostly because one of the billion packages I had installed on it kept crashing it. In frustration one day I just switched to [TextMate][textmate]. Fully assuming I&rsquo;d move back to Sublime Text once the packages for it got updated to run on Yosemite.</p>
+<p>And then a funny thing happened. I never switched back. In the two or so years since the 2 alpha was released for free and open-sourced, TextMate got really fast, really good, and, dammit, it was pretty. This is an OS X-only app that was clearly made by someone with taste. Someone who is an OS X user, who knows what those of us who live and work on OS X want in an app, both from utility as well as design standpoints.</p>
+<p>I enjoyed having an actual preferences pane. I enjoyed installing bundles with a GUI. Wait &hellip; why didn&rsquo;t I start using this earlier? Oh yeah, because there were little things about it that drove me nuts. But turns out after a quick Google search, I found out how to enable and disable various bundles. The main thing Sublime Text still had that TextMate didn&rsquo;t have (at least not out of the box) was autosuggest when typing in a method name. However, I quickly learned that ⎋(esc) would autocomplete, and it did a pretty damn good job of guessing what I wanted it to autocomplete to.</p>
+<p>Another huge benefit of TextMate was how damn good the multi-cursor support is. Sublime Text has it, but not like this. TextMate (as of this writing) feels like one of those apps that was made specifically with nerds like me in mind. It has all the things I care about in spades and the things it doesn&rsquo;t have I don&rsquo;t mind so much. I&rsquo;ve been using TextMate 2, which has now gone into &ldquo;beta&rdquo; (it&rsquo;s stable, don&rsquo;t fear) for the past six months and haven&rsquo;t once felt the desire to switch back to Sublime Text.</p>
+<p>textmate: <a href="http://macromates.com">http://macromates.com</a></p>
+<h2 id="what-about-atom-and-bb-edit">
+  What about Atom and BB Edit?
+  <a class="heading-link" href="#what-about-atom-and-bb-edit">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>One you&rsquo;ll notice that I&rsquo;ve completely skipped over [Atom][atom] and [BB Edit][bb]. Atom, if you don&rsquo;t know, is essentially Github taking Sublime Text, making it work entirely in a browser, and putting a little bit of their own stamp on it. It&rsquo;s a great text editor and a novel approach, but it is embarassingly slow and even more embarassingly a shameless ripoff of Sublime Text. Github, like many, are frustrated by the state of text editors and how each owner of them seems to abandon them. At least the owner of TextMate had the good sense to open source it and release it into the wild. If you like the look and feel of Sublime Text I&rsquo;d say give Atom a shot. However, last I tried it out (roughly two months ago) it was a slow and sluggish beast.</p>
+<p>BB Edit is absolutely fantastic. It&rsquo;s an incredible app with a long history of development and support. It&rsquo;s really well done. I recommend it whole heartily. However it veers sharply into the IDE territory which is not what I&rsquo;m looking for. It&rsquo;s just not for me.</p>
+<p>atom: <a href="https://atom.io">https://atom.io</a>
+bb: <a href="http://www.barebones.com/products/bbedit/">http://www.barebones.com/products/bbedit/</a></p>
+<h2 id="conclusion">
+  Conclusion
+  <a class="heading-link" href="#conclusion">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>TextMate is, in my opinion, the most mature text editor out there. The fact that it is open source and free just speaks to how absolutely insane this industry, as well as the state of the tools we use to build it. is. I can wholeheartedly recommend Coda, VIM, Sublime Text, or TextMate to anyone. I think they&rsquo;re all excellent choices, but for me (at least for now) the choice is clearly TextMate.</p>
+<p>vim: <a href="http://www.vim.org">http://www.vim.org</a>
+aptana: <a href="http://www.aptana.com">http://www.aptana.com</a>
+coda: <a href="https://panic.com/coda/">https://panic.com/coda/</a>
+dw: <a href="http://www.adobe.com/products/dreamweaver.html">http://www.adobe.com/products/dreamweaver.html</a>
+eclipse: <a href="https://eclipse.org">https://eclipse.org</a>
+eprize: <a href="http://www.helloworld.com">http://www.helloworld.com</a>
+ide: <a href="http://en.wikipedia.org/wiki/Integrated_development_environment">http://en.wikipedia.org/wiki/Integrated_development_environment</a>
+mccan: <a href="http://mccann.com">http://mccann.com</a>
+mrm: <a href="http://mrm-mccann.com/en/index.html">http://mrm-mccann.com/en/index.html</a>
+sublimetext: <a href="http://www.sublimetext.com">http://www.sublimetext.com</a>
+tdi: <a href="http://teamdetroit.com">http://teamdetroit.com</a>
+textmate: <a href="http://macromates.com">http://macromates.com</a></p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+    integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+    integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+    integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,
+      {
+        delimiters: [
+          {left: '$$', right: '$$', display:true},
+          {left: '$', right: '$', display:false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ]
+      }
+    );"></script>
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2023
+     Jesse Atkinson 
+    ·
+    
+    Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="https://jsatk.us/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

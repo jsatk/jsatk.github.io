@@ -1,4 +1,14 @@
-# jsatk.github.io
-The fully rendered version of jsatk.us for Github pages.
+# jsatk.us
 
-This is a submodule of https://github.com/jsatk/jsatk.us.
+Source code for [https://jsatk.us][jsatk].
+
+## To Deploy
+
+```
+./deploy.sh
+```
+
+Built on [Hugo][hugo].
+
+[jsatk]: https://jsatk.us
+[hugo]: https://gohugo.io
