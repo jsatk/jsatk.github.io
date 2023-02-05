@@ -26,13 +26,8 @@ pygmentscodefencesguesssyntax = true
     hidecredits = true
     hidecopyright = false
 
-    rtl = false
-    # Specify light/dark colorscheme
-    # Supported values:
-    # "auto" (use preference set by browser)
-    # "dark" (dark background, light foreground)
-    # "light" (light background, dark foreground) (default)
-    colorscheme = "light"
+    colorScheme = "auto"
+    hideColorSchemeToggle = false
 
     math = true
     custom_css = ["css/custom.css"]
@@ -40,31 +35,31 @@ pygmentscodefencesguesssyntax = true
 # Social links
 [[params.social]]
     name = "Github"
-    icon = "fab fa-github fa-2x"
+    icon = "fa fa-github fa-2x"
     weight = 1
     url = "https://github.com/jsatk/"
 [[params.social]]
+    name = "Mastodon"
+    icon = "fa fa-mastodon fa-2x"
+    weight = 6
+    url = "https://sfba.social/@jsatk"
+[[params.social]]
     name = "Twitter"
-    icon = "fab fa-twitter fa-2x"
+    icon = "fa fa-twitter fa-2x"
     weight = 2
     url = "https://twitter.com/jsatk/"
 [[params.social]]
     name = "LinkedIn"
-    icon = "fab fa-linkedin"
+    icon = "fa fa-linkedin fa-2x"
     weight = 4
     url = "https://www.linkedin.com/in/jessesethatkinson/"
 [[params.social]]
     name = "RSS"
-    icon = "fas fa-rss fa-2x"
+    icon = "fa fa-rss fa-2x"
     weight = 5
     url = "/posts/index.xml"
     rel = "alternate"
     type = "application/rss+xml"
-[[params.social]]
-    name = ".plan"
-    icon = "fas fa-file-signature fa-2x"
-    weight = 6
-    url = "/dotplan/"
 
 # Menu links
 [[menu.main]]
