@@ -85,11 +85,11 @@ import com.foo.datalogging.DataRecord.{ UnknownUnionField, V1, V2 }
 
 class Foo {
   def apply(dataRecord: DataRecord): Option[Record] =
-    dataRecord.record.flatMap(p =>
+    dataRecord.record.flatMap({
       case V1(v1) => Some(v1)
       case V2(v2) => Some(v2)
       case UnknownUnionField(_) => None
-    )
+    })
 }
 ```
 
