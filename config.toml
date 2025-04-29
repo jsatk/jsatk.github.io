@@ -45,11 +45,6 @@ icon = "fa fa-mastodon fa-2x"
 weight = 6
 url = "https://sfba.social/@jsatk"
 [[params.social]]
-name = "Twitter"
-icon = "fa fa-twitter fa-2x"
-weight = 2
-url = "https://twitter.com/jsatk/"
-[[params.social]]
 name = "LinkedIn"
 icon = "fa fa-linkedin fa-2x"
 weight = 4
