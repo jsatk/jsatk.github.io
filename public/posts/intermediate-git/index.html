@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>
+
+<head>
+  <title>
   Intermediate Git · Jesse Atkinson
 </title>
-    <meta charset="utf-8">
+  <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="light dark">
 
@@ -12,19 +13,48 @@
 
 
 <meta name="author" content="Jesse Atkinson">
-<meta name="description" content="What this post is Link to heading It is a tutorial of beginner to intermediate to maybe a light dusting of advanced git topics and practices. It is practical. What this post is not Link to heading It is not philosophy or theory. (I will not be discussing the pros and cons of merge and rebase. Y&rsquo;all can fight that battle elsewhere.) It is not super complex or overly archaic.">
+<meta name="description" content="
+  What this post is
+  
+    
+    Link to heading
+  
+
+
+It is a tutorial of beginner to intermediate to maybe a light dusting of advanced git topics and practices.
+It is practical.
+
+
+  What this post is not
+  
+    
+    Link to heading
+  
+
+
+It is not philosophy or theory. (I will not be discussing the pros and cons of merge and rebase. Y&rsquo;all can fight that battle elsewhere.)
+It is not super complex or overly archaic.
+It is not preachy (See first point).
+It is not in any way exhaustive. This is a list of git commands, tips, tricks, and tools I personally find super useful and use nearly every day.
+
+This is a series of things I often discover people struggle with, don’t know how to do, or have bizarre work arounds to get this information. You may know some or all of these already. But I figured I’d write this up and hopefully get a conversation going around git. I hope you find something useful in here and I hope it saves you time. NOTE: I personally use Fish Shell. I’ve conveted any Fish Shell specific syntax to Bash as 90% of you reading this probably use Bash.">
 <meta name="keywords" content="blog,developer,personal">
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Intermediate Git"/>
-<meta name="twitter:description" content="What this post is Link to heading It is a tutorial of beginner to intermediate to maybe a light dusting of advanced git topics and practices. It is practical. What this post is not Link to heading It is not philosophy or theory. (I will not be discussing the pros and cons of merge and rebase. Y&rsquo;all can fight that battle elsewhere.) It is not super complex or overly archaic."/>
 
-<meta property="og:title" content="Intermediate Git" />
-<meta property="og:description" content="What this post is Link to heading It is a tutorial of beginner to intermediate to maybe a light dusting of advanced git topics and practices. It is practical. What this post is not Link to heading It is not philosophy or theory. (I will not be discussing the pros and cons of merge and rebase. Y&rsquo;all can fight that battle elsewhere.) It is not super complex or overly archaic." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://jsatk.us/posts/intermediate-git/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2015-10-13T00:00:00+00:00" />
-<meta property="article:modified_time" content="2015-10-13T00:00:00+00:00" />
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Intermediate Git">
+  <meta name="twitter:description" content="What this post is Link to heading It is a tutorial of beginner to intermediate to maybe a light dusting of advanced git topics and practices. It is practical. What this post is not Link to heading It is not philosophy or theory. (I will not be discussing the pros and cons of merge and rebase. Y’all can fight that battle elsewhere.) It is not super complex or overly archaic. It is not preachy (See first point). It is not in any way exhaustive. This is a list of git commands, tips, tricks, and tools I personally find super useful and use nearly every day. This is a series of things I often discover people struggle with, don’t know how to do, or have bizarre work arounds to get this information. You may know some or all of these already. But I figured I’d write this up and hopefully get a conversation going around git. I hope you find something useful in here and I hope it saves you time. NOTE: I personally use Fish Shell. I’ve conveted any Fish Shell specific syntax to Bash as 90% of you reading this probably use Bash.">
+
+<meta property="og:url" content="https://jsatk.us/posts/intermediate-git/">
+  <meta property="og:site_name" content="Jesse Atkinson">
+  <meta property="og:title" content="Intermediate Git">
+  <meta property="og:description" content="What this post is Link to heading It is a tutorial of beginner to intermediate to maybe a light dusting of advanced git topics and practices. It is practical. What this post is not Link to heading It is not philosophy or theory. (I will not be discussing the pros and cons of merge and rebase. Y’all can fight that battle elsewhere.) It is not super complex or overly archaic. It is not preachy (See first point). It is not in any way exhaustive. This is a list of git commands, tips, tricks, and tools I personally find super useful and use nearly every day. This is a series of things I often discover people struggle with, don’t know how to do, or have bizarre work arounds to get this information. You may know some or all of these already. But I figured I’d write this up and hopefully get a conversation going around git. I hope you find something useful in here and I hope it saves you time. NOTE: I personally use Fish Shell. I’ve conveted any Fish Shell specific syntax to Bash as 90% of you reading this probably use Bash.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2015-10-13T00:00:00+00:00">
+    <meta property="article:modified_time" content="2015-10-13T00:00:00+00:00">
 
 
 
@@ -32,12 +62,14 @@
 <link rel="canonical" href="https://jsatk.us/posts/intermediate-git/">
 
 
-<link rel="preload" href="https://jsatk.us/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
 
 
   
   
-  <link rel="stylesheet" href="https://jsatk.us/css/coder.min.0fa2dc75ed1b76894ac0e062b10a6c4730daa745096fa120114b290ed8a48788.css" integrity="sha256-D6Lcde0bdolKwOBisQpsRzDap0UJb6EgEUspDtikh4g=" crossorigin="anonymous" media="screen" />
+  <link rel="stylesheet" href="/css/coder.min.7763f8bc6341ecf82378e867c285e1549abb063a899be313ccd25dbfcd24fa7d.css" integrity="sha256-d2P4vGNB7PgjeOhnwoXhVJq7BjqJm&#43;MTzNJdv80k&#43;n0=" crossorigin="anonymous" media="screen" />
 
 
 
@@ -47,7 +79,7 @@
   
     
     
-    <link rel="stylesheet" href="https://jsatk.us/css/coder-dark.min.593028e7f7ac55c003b79c230d1cd411bb4ca53b31556c3abb7f027170e646e9.css" integrity="sha256-WTAo5/esVcADt5wjDRzUEbtMpTsxVWw6u38CcXDmRuk=" crossorigin="anonymous" media="screen" />
+    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
   
 
 
@@ -57,25 +89,25 @@
 
 
 
-<link rel="icon" type="image/png" href="https://jsatk.us/img/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="https://jsatk.us/img/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
 
-<link rel="apple-touch-icon" href="https://jsatk.us/images/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="180x180" href="https://jsatk.us/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
-<link rel="manifest" href="https://jsatk.us/site.webmanifest">
-<link rel="mask-icon" href="https://jsatk.us/images/safari-pinned-tab.svg" color="#5bbad5">
-
-
-
-
-<meta name="generator" content="Hugo 0.110.0">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
 
 
 
 
 
-  </head>
+
+
+
+
+</head>
 
 
 
@@ -86,7 +118,7 @@
   
 <div class="float-container">
     <a id="dark-mode-toggle" class="colorscheme-toggle">
-        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
     </a>
 </div>
 
@@ -94,27 +126,29 @@
   <main class="wrapper">
     <nav class="navigation">
   <section class="container">
+    
     <a class="navigation-title" href="https://jsatk.us/">
       Jesse Atkinson
     </a>
     
+    
       <input type="checkbox" id="menu-toggle" />
       <label class="menu-button float-right" for="menu-toggle">
-        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
       </label>
       <ul class="navigation-list">
         
           
             <li class="navigation-item">
-              <a class="navigation-link" href="https://jsatk.us/posts/">Blog</a>
+              <a class="navigation-link " href="/posts/">Blog</a>
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link" href="https://jsatk.us/about/">About</a>
+              <a class="navigation-link " href="/about/">About</a>
             </li>
           
             <li class="navigation-item">
-              <a class="navigation-link" href="https://jsatk.us/et-cetera/">Et Cetera</a>
+              <a class="navigation-link " href="/et-cetera/">Et Cetera</a>
             </li>
           
         
@@ -140,13 +174,13 @@
         <div class="post-meta">
           <div class="date">
             <span class="posted-on">
-              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
               <time datetime="2015-10-13T00:00:00Z">
                 October 13, 2015
               </time>
             </span>
             <span class="reading-time">
-              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
               13-minute read
             </span>
           </div>
@@ -161,7 +195,7 @@
         <h2 id="what-this-post-is">
   What this post is
   <a class="heading-link" href="#what-this-post-is">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
@@ -172,7 +206,7 @@
 <h2 id="what-this-post-is-not">
   What this post is not
   <a class="heading-link" href="#what-this-post-is-not">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
@@ -186,7 +220,7 @@
 <h2 id="shortcut-for-creating-a-new-branch-and-switching-to-it">
   Shortcut for creating a new branch and switching to it
   <a class="heading-link" href="#shortcut-for-creating-a-new-branch-and-switching-to-it">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
@@ -196,11 +230,11 @@ $ git checkout -b foo # same as above command
 <h2 id="change-your-editor-for-commit-messages">
   Change your editor for commit messages
   <a class="heading-link" href="#change-your-editor-for-commit-messages">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
-<p>Assuming you have <a href="https://www.sublimetext.com/docs/2/osx_command_line.html">Sublime</a> or <a href="https://manual.macromates.com/en/using_textmate_from_terminal.html">TextMate</a>&rsquo;s command line tool installed.</p>
+<p>Assuming you have <a href="https://www.sublimetext.com/docs/2/osx_command_line.html"  class="external-link" target="_blank" rel="noopener">Sublime</a> or <a href="https://manual.macromates.com/en/using_textmate_from_terminal.html"  class="external-link" target="_blank" rel="noopener">TextMate</a>&rsquo;s command line tool installed.</p>
 <pre><code>$ git config --global core.editor 'subl -w' # Sublime
 $ git config --global core.editor 'mate -w' # TextMate
 $ git config --global core.editor emacs     # Insanity
@@ -208,7 +242,7 @@ $ git config --global core.editor emacs     # Insanity
 <h2 id="diff-between-remote-and-local">
   Diff between remote and local
   <a class="heading-link" href="#diff-between-remote-and-local">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
@@ -241,11 +275,11 @@ index 257cc56..5716ca5 100644
 -foo
 +bar
 </code></pre>
-<p>“But Jesse—this seems unnecessary. I can clearly see in git status that I have a commit that’s not pushed yet.” You’re correct. This isn’t the world’s greatest use-case example. However, I use this most often when I need to see what changes might be incoming or to diff between my branch and master. If I’ve been on a feature branch for a few days and want to see a diff between my feature branch and master doing <code>git diff master feature_branch</code> will only <code>diff</code> between my local copy of <code>master</code> and my <code>feature_branch</code>. What I do in these situations is this <code>git fetch origin &amp;&amp; git diff origin/master feature_branch</code>. The <code>fetch</code> here is important. (Note: If you’re unclear on the difference between <code>fetch</code> and <code>pull</code> I highly suggest you take 15 minutes to <a href="http://stackoverflow.com/questions/292357/what-are-the-differences-between-git-pull-and-git-fetch">read up on it</a>.)</p>
+<p>“But Jesse—this seems unnecessary. I can clearly see in git status that I have a commit that’s not pushed yet.” You’re correct. This isn’t the world’s greatest use-case example. However, I use this most often when I need to see what changes might be incoming or to diff between my branch and master. If I’ve been on a feature branch for a few days and want to see a diff between my feature branch and master doing <code>git diff master feature_branch</code> will only <code>diff</code> between my local copy of <code>master</code> and my <code>feature_branch</code>. What I do in these situations is this <code>git fetch origin &amp;&amp; git diff origin/master feature_branch</code>. The <code>fetch</code> here is important. (Note: If you’re unclear on the difference between <code>fetch</code> and <code>pull</code> I highly suggest you take 15 minutes to <a href="http://stackoverflow.com/questions/292357/what-are-the-differences-between-git-pull-and-git-fetch"  class="external-link" target="_blank" rel="noopener">read up on it</a>.)</p>
 <h2 id="how-to-check-out-a-file-from-one-branch-into-another">
   How to check out a file from one branch into another
   <a class="heading-link" href="#how-to-check-out-a-file-from-one-branch-into-another">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
@@ -286,7 +320,7 @@ red album
 <h2 id="you-can-combine-multiple-shorthand-flags-into-one">
   You can combine multiple shorthand flags into one
   <a class="heading-link" href="#you-can-combine-multiple-shorthand-flags-into-one">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
@@ -297,7 +331,7 @@ $ git commit -nm 'This is a commit message.' # This is the same as the above two
 <h2 id="you-can-combine-paragraphs-from-the-commandline-with-your-git-commit-message">
   You can combine paragraphs from the commandline with your git commit message!
   <a class="heading-link" href="#you-can-combine-paragraphs-from-the-commandline-with-your-git-commit-message">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
@@ -325,7 +359,7 @@ Date:   Tue Apr 21 19:12:44 2015 -0700
 <h2 id="stashing-with-a-message-and-stashing-untracked-files">
   Stashing with a message and stashing untracked files
   <a class="heading-link" href="#stashing-with-a-message-and-stashing-untracked-files">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
@@ -380,7 +414,7 @@ lightning bolt
 <h2 id="getting-your-stashed-stuff">
   Getting your stashed stuff!
   <a class="heading-link" href="#getting-your-stashed-stuff">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
@@ -388,7 +422,7 @@ lightning bolt
 <h2 id="dont-shoot-yourself-in-the-foot-with-git-stash">
   Don&rsquo;t shoot yourself in the foot with <code>git stash</code>
   <a class="heading-link" href="#dont-shoot-yourself-in-the-foot-with-git-stash">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
@@ -396,7 +430,7 @@ lightning bolt
 <h2 id="clean-up-after-yourself-with-git-rebase---interactive">
   Clean up after yourself with <code>git rebase --interactive</code>
   <a class="heading-link" href="#clean-up-after-yourself-with-git-rebase---interactive">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
@@ -426,7 +460,7 @@ lightning bolt
 <h2 id="interactively-add-your-changes-to-the-commit-stage">
   Interactively add your changes to the commit stage
   <a class="heading-link" href="#interactively-add-your-changes-to-the-commit-stage">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
@@ -438,9 +472,7 @@ Split is super powerful and conveinent. If it gets <em>really</em> hairy you can
 <blockquote>
 <blockquote>
 <blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
+</blockquote></blockquote></blockquote>
 <p>Stage this hunk [y,n,q,a,d,/,e,?]?
 y - stage this hunk
 n - do not stage this hunk
@@ -459,13 +491,11 @@ e - manually edit the current hunk
 <blockquote>
 <blockquote>
 <blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
+</blockquote></blockquote></blockquote>
 <h2 id="when-doing-a-comparison-make-sure-youre-comparing-against-the-latest-remote-version-with-fetch">
   When doing a comparison make sure you&rsquo;re comparing against the latest remote version with fetch
   <a class="heading-link" href="#when-doing-a-comparison-make-sure-youre-comparing-against-the-latest-remote-version-with-fetch">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
@@ -476,7 +506,7 @@ $ git fetch SocialCodeInc &amp;&amp; git diff SocialCodeInc/master
 <h2 id="squash-your-commit-if-the-branch-is-truly-a-mess">
   Squash your commit if the branch is truly a mess
   <a class="heading-link" href="#squash-your-commit-if-the-branch-is-truly-a-mess">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
@@ -509,7 +539,7 @@ Deleted branch new_branch (was bacb008).
 <h2 id="what-if-i-want-just-a-single-commit-from-one-branch-into-another-branch">
   What if I want just a single commit from one branch into another branch?
   <a class="heading-link" href="#what-if-i-want-just-a-single-commit-from-one-branch-into-another-branch">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
@@ -519,11 +549,11 @@ Deleted branch new_branch (was bacb008).
 <h2 id="jesse-what-if-i-want-to-figure-what-commit-broke-my-favorite-feature">
   Jesse, what if I want to figure what commit broke my favorite feature?!
   <a class="heading-link" href="#jesse-what-if-i-want-to-figure-what-commit-broke-my-favorite-feature">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
-<p><a href="http://git-scm.com/docs/git-bisect">Bisect</a> is your friend! (Seriously the docs are super worth reading.)</p>
+<p><a href="http://git-scm.com/docs/git-bisect"  class="external-link" target="_blank" rel="noopener">Bisect</a> is your friend! (Seriously the docs are super worth reading.)</p>
 <pre><code>$ git bisect start
 $ git bisect bad # without passing a SHA it uses HEAD
 $ git bisect good SHAofLastGoodKnownCommit
@@ -534,7 +564,7 @@ $ git bisect reset # DO NOT FORGET TO DO THIS PLEASE. IF YOU FORGET YOU WILL BE 
 <h2 id="more-diffing">
   More diffing!
   <a class="heading-link" href="#more-diffing">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
@@ -544,7 +574,7 @@ $ git diff origin/master -- [path/to/file] # Much simpler if you're diffing the 
 <h2 id="reset-can-be-gentle-too-ya-know">
   Reset can be gentle too, ya know
   <a class="heading-link" href="#reset-can-be-gentle-too-ya-know">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
@@ -554,7 +584,7 @@ $ git diff origin/master -- [path/to/file] # Much simpler if you're diffing the 
 <h2 id="finally">
   Finally
   <a class="heading-link" href="#finally">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
@@ -562,16 +592,16 @@ $ git diff origin/master -- [path/to/file] # Much simpler if you're diffing the 
 <h2 id="references">
   References
   <a class="heading-link" href="#references">
-    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h2>
 <ul>
-<li><a href="http://git-scm.com/book/en/v2">http://git-scm.com/book/en/v2</a></li>
-<li><a href="https://training.github.com/">https://training.github.com/</a></li>
-<li><a href="http://nicercode.github.io/git/setup.html">http://nicercode.github.io/git/setup.html</a></li>
-<li><a href="http://gitref.org/">http://gitref.org/</a></li>
-<li><a href="http://nuclearsquid.com/writings/git-add/">http://nuclearsquid.com/writings/git-add/</a></li>
+<li><a href="http://git-scm.com/book/en/v2"  class="external-link" target="_blank" rel="noopener">http://git-scm.com/book/en/v2</a></li>
+<li><a href="https://training.github.com/"  class="external-link" target="_blank" rel="noopener">https://training.github.com/</a></li>
+<li><a href="http://nicercode.github.io/git/setup.html"  class="external-link" target="_blank" rel="noopener">http://nicercode.github.io/git/setup.html</a></li>
+<li><a href="http://gitref.org/"  class="external-link" target="_blank" rel="noopener">http://gitref.org/</a></li>
+<li><a href="http://nuclearsquid.com/writings/git-add/"  class="external-link" target="_blank" rel="noopener">http://nuclearsquid.com/writings/git-add/</a></li>
 </ul>
 
       </div>
@@ -581,6 +611,9 @@ $ git diff origin/master -- [path/to/file] # Much simpler if you're diffing the 
         
 
 
+        
+        
+        
         
         
         
@@ -613,11 +646,11 @@ $ git diff origin/master -- [path/to/file] # Much simpler if you're diffing the 
   <section class="container">
     ©
     
-    2023
+    2025
      Jesse Atkinson 
     ·
     
-    Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
     
   </section>
 </footer>
@@ -628,13 +661,27 @@ $ git diff origin/master -- [path/to/file] # Much simpler if you're diffing the 
 
   
   
-  <script src="https://jsatk.us/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
   
 
   
 
   
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -656,5 +703,4 @@ $ git diff origin/master -- [path/to/file] # Much simpler if you're diffing the 
 
   
 </body>
-
 </html>

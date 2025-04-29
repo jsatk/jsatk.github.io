@@ -4,7 +4,11 @@ theme = "hugo-coder"
 languageCode = "en-us"
 defaultcontentlanguage = "en"
 
-paginate = 20
+[pagination]
+disableAliases = false
+pagerSize = 10
+path = 'page'
+
 canonifyurls = true
 
 pygmentsstyle = "bw"
@@ -12,65 +16,69 @@ pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
 [params]
-    author = "Jesse Atkinson"
-    info = "Software Engineer"
-    description = "Jesse Atkinson's personal website"
-    keywords = "blog,developer,personal"
-    avatarurl = "images/avatar.jpg"
+author = "Jesse Atkinson"
+info = "Software Engineer"
+description = "Jesse Atkinson's personal website"
+keywords = "blog,developer,personal"
+avatarurl = "images/avatar.jpg"
 
-    footercontent = "🥃"
+footercontent = "🥃"
 
-    hidecredits = true
-    hidecopyright = false
+hidecredits = true
+hidecopyright = false
 
-    colorScheme = "auto"
-    hideColorSchemeToggle = false
+colorScheme = "auto"
+hideColorSchemeToggle = false
 
-    math = true
-    custom_css = ["css/custom.css"]
+math = true
+custom_css = ["css/custom.css"]
 
 # Social links
 [[params.social]]
-    name = "Github"
-    icon = "fa fa-github fa-2x"
-    weight = 1
-    url = "https://github.com/jsatk/"
+name = "Github"
+icon = "fa fa-github fa-2x"
+weight = 1
+url = "https://github.com/jsatk/"
 [[params.social]]
-    name = "Mastodon"
-    icon = "fa fa-mastodon fa-2x"
-    weight = 6
-    url = "https://sfba.social/@jsatk"
+name = "Mastodon"
+icon = "fa fa-mastodon fa-2x"
+weight = 6
+url = "https://sfba.social/@jsatk"
 [[params.social]]
-    name = "Twitter"
-    icon = "fa fa-twitter fa-2x"
-    weight = 2
-    url = "https://twitter.com/jsatk/"
+name = "Twitter"
+icon = "fa fa-twitter fa-2x"
+weight = 2
+url = "https://twitter.com/jsatk/"
 [[params.social]]
-    name = "LinkedIn"
-    icon = "fa fa-linkedin fa-2x"
-    weight = 4
-    url = "https://www.linkedin.com/in/jessesethatkinson/"
+name = "LinkedIn"
+icon = "fa fa-linkedin fa-2x"
+weight = 4
+url = "https://www.linkedin.com/in/jessesethatkinson/"
 [[params.social]]
-    name = "RSS"
-    icon = "fa fa-rss fa-2x"
-    weight = 5
-    url = "/posts/index.xml"
-    rel = "alternate"
-    type = "application/rss+xml"
+name = "RSS"
+icon = "fa fa-rss fa-2x"
+weight = 5
+url = "/posts/index.xml"
+rel = "alternate"
+type = "application/rss+xml"
 
 # Menu links
 [[menu.main]]
-    name = "Blog"
-    weight = 1
-    url  = "/posts/"
+name = "Blog"
+weight = 1
+url = "/posts/"
 [[menu.main]]
-    name = "About"
-    weight = 2
-    url = "/about/"
+name = "About"
+weight = 2
+url = "/about/"
 [[menu.main]]
-    name = "Et Cetera"
-    weight = 3
-    url = "/et-cetera/"
+name = "Et Cetera"
+weight = 3
+url = "/et-cetera/"
 
 [markup.goldmark.renderer]
-    unsafe = true
+unsafe = true
+
+[caches]
+[caches.images]
+dir = ':cacheDir/images'
