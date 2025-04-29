@@ -36,23 +36,23 @@ custom_css = ["css/custom.css"]
 # Social links
 [[params.social]]
 name = "Github"
-icon = "fa fa-github fa-2x"
-weight = 1
+icon = "fa-brands fa-github fa-2x"
+weight = 2
 url = "https://github.com/jsatk/"
 [[params.social]]
 name = "Mastodon"
-icon = "fa fa-mastodon fa-2x"
-weight = 6
+icon = "fa-brands fa-mastodon fa-2x"
+weight = 1
 url = "https://sfba.social/@jsatk"
 [[params.social]]
 name = "LinkedIn"
-icon = "fa fa-linkedin fa-2x"
-weight = 4
+icon = "fa-brands fa-linkedin fa-2x"
+weight = 3
 url = "https://www.linkedin.com/in/jessesethatkinson/"
 [[params.social]]
 name = "RSS"
 icon = "fa fa-rss fa-2x"
-weight = 5
+weight = 4
 url = "/posts/index.xml"
 rel = "alternate"
 type = "application/rss+xml"
